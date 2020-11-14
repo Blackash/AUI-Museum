@@ -1,0 +1,2 @@
+Tutankhamun Necklace and Athens Archeological Museum objects too large to push, to be reduced
+Question: do we need to go as light as possible? (ex. flute: 3D model of the tube + texture OR 3D model of tube+holes)
