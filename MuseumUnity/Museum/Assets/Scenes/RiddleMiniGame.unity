@@ -241,10 +241,45 @@ MonoBehaviour:
   riddleTextbox: {fileID: 1433515531}
   answerFill: {fileID: 904308976}
   riddles:
-  - riddle: aaaaaaaa
+  - riddle: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     answer: CIAO
-  - riddle: bbbbbb
+  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
     answer: ASDASD
+  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+    answer: ASDASD
+  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+    answer: ASDASD
+  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+    answer: ASDASD
+  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+    answer: ASDASD
+  alpha:
+  - {fileID: 21300000, guid: 8bff87dc8fb00094aae4a9c7e8cef73b, type: 3}
+  - {fileID: 21300000, guid: ef03be3858d960e4aab9390894f2ac7a, type: 3}
+  - {fileID: 21300000, guid: a6adb7839bbb9db4988fd24d69ae3f4b, type: 3}
+  - {fileID: 21300000, guid: 0b3452ff51b77ed47afe7cb065f3a8de, type: 3}
+  - {fileID: 21300000, guid: 9eb2d89329e655645ac18e4b46e82472, type: 3}
+  - {fileID: 21300000, guid: 1144300a53127d949bef25ff4ed94a2b, type: 3}
+  - {fileID: 21300000, guid: beb0f7ab2354aaf4c92f4b0f0e0debd1, type: 3}
+  - {fileID: 21300000, guid: d5408f4d670ba11498d542378267f28f, type: 3}
+  - {fileID: 21300000, guid: 1561a5c11ddb7bd4bb527d3ed1392d69, type: 3}
+  - {fileID: 21300000, guid: 2e09ee4842c1a8d48951865fe970595a, type: 3}
+  - {fileID: 21300000, guid: 11d4d69d967a8574eaa256b50a645575, type: 3}
+  - {fileID: 21300000, guid: bb75a61a13f19ab428ff312070842bba, type: 3}
+  - {fileID: 21300000, guid: d95d00c73f609d740b88363124c26185, type: 3}
+  - {fileID: 21300000, guid: fed82bfab1710874fb009fe712d29d7f, type: 3}
+  - {fileID: 21300000, guid: 4017312fc7764414e915766d5b34ca8d, type: 3}
+  - {fileID: 21300000, guid: 744dcf120eabac04eae403856fd54125, type: 3}
+  - {fileID: 21300000, guid: ff977c70e0a65184888cd7bec81c902b, type: 3}
+  - {fileID: 21300000, guid: dac1ba4043aa1684f8dbcc29c6709292, type: 3}
+  - {fileID: 21300000, guid: 70f47f9550d05314890b489b66560c64, type: 3}
+  - {fileID: 21300000, guid: b8dc722735e1b7e428334a7418aac51b, type: 3}
+  - {fileID: 21300000, guid: 541896cb496d9404fa3dfc97daacc4f3, type: 3}
+  - {fileID: 21300000, guid: c753d017249895c48aa9a139732a8c76, type: 3}
+  - {fileID: 21300000, guid: 784188d891e9164429303f6e80913001, type: 3}
+  - {fileID: 21300000, guid: 33a8929992125f34590f9abd64be1543, type: 3}
+  - {fileID: 21300000, guid: 9fb676869cb4b2445bfe6334692fb014, type: 3}
+  - {fileID: 21300000, guid: e18a9b0ef4ad19243bc7aeaa0ef41745, type: 3}
 --- !u!1 &98551831
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +307,7 @@ RectTransform:
   m_GameObject: {fileID: 98551831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.4713, y: 5.4713, z: 5.4713}
+  m_LocalScale: {x: 6.076426, y: 6.076426, z: 6.076426}
   m_Children:
   - {fileID: 1433515530}
   m_Father: {fileID: 38243367}
@@ -280,7 +315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 136, y: -132.6}
+  m_AnchoredPosition: {x: 55, y: -264}
   m_SizeDelta: {x: 214.21606, y: 85.75133}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &98551833
@@ -302,7 +337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 456037b3f1b6c7a4398d2656d2dcc30d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -444,13 +479,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.73558253, b: 0.17221434, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 06ae12668248c9d4db558ef3276b1d99, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -721,8 +756,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33, y: -0.0000038146973}
-  m_SizeDelta: {x: 104.13202, y: 46.90689}
+  m_AnchoredPosition: {x: 44.02101, y: 9.711102}
+  m_SizeDelta: {x: 126.17404, y: 66.329094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1433515531
 MonoBehaviour:
@@ -770,12 +805,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
+  m_fontSize: 15
   m_fontSizeBase: 12
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 7
+  m_fontSizeMax: 15
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256

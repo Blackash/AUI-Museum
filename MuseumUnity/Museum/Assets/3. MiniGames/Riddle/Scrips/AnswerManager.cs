@@ -19,8 +19,7 @@ public class AnswerManager : MonoBehaviour
         [SerializeField] public string answer;
     }
     public Riddle [] riddles;
-
-
+    public Sprite[] alpha;
 
     List<GameObject> letters;
     private int nCorrectLetters;
@@ -33,12 +32,24 @@ public class AnswerManager : MonoBehaviour
         riddleTextbox.text = riddles[randomN].riddle;
         nLetterAnswer = riddles[randomN].answer.Length;
         letters = new List<GameObject>();
+        char[] tmpC = new Char[26];
+        for(int i = 65; i< 65+26; i++)
+        {
+            tmpC[i - 65] = (char) i;
+        }
         foreach (char a in riddles[randomN].answer)
         {
             GameObject tmp;
             tmp = Instantiate(letterPrefab, new Vector3(0, 0, 0), Quaternion.identity,answerFill.transform);
             
-            tmp.GetComponent<LetterManager>().correctLetter(a, null); //TODO: aggiungere immagine giusta
+            for(int i = 0; i<tmpC.Length; i++)
+            {
+                if(tmpC[i] == a)
+                {
+                    tmp.GetComponent<LetterManager>().correctLetter(a, alpha[i]); //TODO: aggiungere immagine giusta
+                }
+            }
+            
             letters.Add(tmp);
         }
 
