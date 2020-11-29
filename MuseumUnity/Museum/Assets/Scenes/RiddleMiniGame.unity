@@ -241,17 +241,18 @@ MonoBehaviour:
   riddleTextbox: {fileID: 1433515531}
   answerFill: {fileID: 904308976}
   riddles:
-  - riddle: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    answer: CIAO
-  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  - riddle: "Cosa \xE8 pieno di buchi ma trattiene ancora l'acqua?"
+    answer: SPUGNA
+  - riddle: Mi hai comprato per cena ma non mi hai mai mangiato?
     answer: ASDASD
-  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  - riddle: Sono alto quando sono giovane e sono basso quando sono vecchio, cosa
+      sono?
     answer: ASDASD
-  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  - riddle: "Dove puoi trovare citt\xE0, paesi, negozi e strade ma nessuna persona?"
     answer: ASDASD
-  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  - riddle: Cosa ha le mani ma non applaude?
     answer: ASDASD
-  - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  - riddle: "Cosa ha 88 chiavi, ma non pu\xF2 aprire una sola porta?"
     answer: ASDASD
   alpha:
   - {fileID: 21300000, guid: 9d8a312dc8293da4a95e3a969a8afab3, type: 3}
