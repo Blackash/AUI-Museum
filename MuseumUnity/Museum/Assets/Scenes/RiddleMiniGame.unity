@@ -254,32 +254,32 @@ MonoBehaviour:
   - riddle: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
     answer: ASDASD
   alpha:
-  - {fileID: 21300000, guid: 8bff87dc8fb00094aae4a9c7e8cef73b, type: 3}
-  - {fileID: 21300000, guid: ef03be3858d960e4aab9390894f2ac7a, type: 3}
-  - {fileID: 21300000, guid: a6adb7839bbb9db4988fd24d69ae3f4b, type: 3}
-  - {fileID: 21300000, guid: 0b3452ff51b77ed47afe7cb065f3a8de, type: 3}
-  - {fileID: 21300000, guid: 9eb2d89329e655645ac18e4b46e82472, type: 3}
-  - {fileID: 21300000, guid: 1144300a53127d949bef25ff4ed94a2b, type: 3}
-  - {fileID: 21300000, guid: beb0f7ab2354aaf4c92f4b0f0e0debd1, type: 3}
-  - {fileID: 21300000, guid: d5408f4d670ba11498d542378267f28f, type: 3}
-  - {fileID: 21300000, guid: 1561a5c11ddb7bd4bb527d3ed1392d69, type: 3}
-  - {fileID: 21300000, guid: 2e09ee4842c1a8d48951865fe970595a, type: 3}
-  - {fileID: 21300000, guid: 11d4d69d967a8574eaa256b50a645575, type: 3}
-  - {fileID: 21300000, guid: bb75a61a13f19ab428ff312070842bba, type: 3}
-  - {fileID: 21300000, guid: d95d00c73f609d740b88363124c26185, type: 3}
-  - {fileID: 21300000, guid: fed82bfab1710874fb009fe712d29d7f, type: 3}
+  - {fileID: 21300000, guid: 9d8a312dc8293da4a95e3a969a8afab3, type: 3}
+  - {fileID: 21300000, guid: 36acd27684113b945a59433ae802f7d7, type: 3}
+  - {fileID: 21300000, guid: 79a59608b3104a44d89a835c73078185, type: 3}
+  - {fileID: 21300000, guid: 589efca8ee75bb748b0b090ac7e719df, type: 3}
+  - {fileID: 21300000, guid: ffd418f8d695eee4cb9889f6fed1eafd, type: 3}
+  - {fileID: 21300000, guid: b6c820612b662d44591e5818986a2f0d, type: 3}
+  - {fileID: 21300000, guid: 2675ac9921445204396055f8be9448c6, type: 3}
+  - {fileID: 21300000, guid: 68018d10d8529dc439a68bc5dd7c3501, type: 3}
+  - {fileID: 21300000, guid: 850c4ab81c23b4448bad615b3a282dba, type: 3}
+  - {fileID: 21300000, guid: 55d5e486419b47543897fdac66e95fde, type: 3}
+  - {fileID: 21300000, guid: f152c352f6b7e4f4c9db4545664c6a75, type: 3}
+  - {fileID: 21300000, guid: 7ec0f6f9afdabcd4f8f7cc68645810ef, type: 3}
+  - {fileID: 21300000, guid: dde6682ad17e408498c7e953e5ed1c1a, type: 3}
+  - {fileID: 21300000, guid: de96db3d2df8cea4eb3511774e2f727c, type: 3}
   - {fileID: 21300000, guid: 4017312fc7764414e915766d5b34ca8d, type: 3}
-  - {fileID: 21300000, guid: 744dcf120eabac04eae403856fd54125, type: 3}
-  - {fileID: 21300000, guid: ff977c70e0a65184888cd7bec81c902b, type: 3}
-  - {fileID: 21300000, guid: dac1ba4043aa1684f8dbcc29c6709292, type: 3}
-  - {fileID: 21300000, guid: 70f47f9550d05314890b489b66560c64, type: 3}
-  - {fileID: 21300000, guid: b8dc722735e1b7e428334a7418aac51b, type: 3}
-  - {fileID: 21300000, guid: 541896cb496d9404fa3dfc97daacc4f3, type: 3}
-  - {fileID: 21300000, guid: c753d017249895c48aa9a139732a8c76, type: 3}
-  - {fileID: 21300000, guid: 784188d891e9164429303f6e80913001, type: 3}
-  - {fileID: 21300000, guid: 33a8929992125f34590f9abd64be1543, type: 3}
-  - {fileID: 21300000, guid: 9fb676869cb4b2445bfe6334692fb014, type: 3}
-  - {fileID: 21300000, guid: e18a9b0ef4ad19243bc7aeaa0ef41745, type: 3}
+  - {fileID: 21300000, guid: 6da45a8b51454a0499b26a913f18e5a2, type: 3}
+  - {fileID: 21300000, guid: 84032584887e18a43a667f35c787a2c9, type: 3}
+  - {fileID: 21300000, guid: ce78405784903df42beb56feaaa0efed, type: 3}
+  - {fileID: 21300000, guid: b8dab57816ad17b40976345ad4321e07, type: 3}
+  - {fileID: 21300000, guid: e7252c2d6f3aaef409c9a38f24d06aee, type: 3}
+  - {fileID: 21300000, guid: 74f501abc2fdfe945bfc95c1d26ef097, type: 3}
+  - {fileID: 21300000, guid: fa8fc6835389f384f90ebe5e62395236, type: 3}
+  - {fileID: 21300000, guid: d6accaa13e2b61a49994bd06dc487e66, type: 3}
+  - {fileID: 21300000, guid: ddc01d61df4a3e048974a3b3f6773947, type: 3}
+  - {fileID: 21300000, guid: 73766b7265bec264a992888a02340c4e, type: 3}
+  - {fileID: 21300000, guid: 40995c5d247640e4e9eb507f5009ba16, type: 3}
 --- !u!1 &98551831
 GameObject:
   m_ObjectHideFlags: 0
