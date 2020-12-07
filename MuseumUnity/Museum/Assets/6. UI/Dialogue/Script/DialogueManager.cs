@@ -13,13 +13,16 @@ public class DialogueManager : Singleton<DialogueManager>
     public Image rightChar;
     public Image arrow;
     public GameObject dialogueUI;
-
+    public bool isMinigame = false;
 
 
     void Start()
     {
+        Debug.Log(sentences);
         sentences = new Queue<string>();
-        dialogueUI.SetActive(false);
+        Debug.Log(sentences);
+        if (!isMinigame)
+            dialogueUI.SetActive(false);
     }
 
 
@@ -33,7 +36,7 @@ public class DialogueManager : Singleton<DialogueManager>
         dialogueUI.SetActive(true);
 
         nameText.text = dialogue.name;
-
+        Debug.Log(sentences);
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
@@ -70,8 +73,8 @@ public class DialogueManager : Singleton<DialogueManager>
     public void EndDialogue()
     {
         Debug.Log("End Conversation");
-
-        dialogueUI.SetActive(false);
+        if(!isMinigame)
+            dialogueUI.SetActive(false);
     }
     
 

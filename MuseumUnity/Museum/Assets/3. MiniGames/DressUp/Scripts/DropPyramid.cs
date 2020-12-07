@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System;
-public class Drop : MonoBehaviour, IDropHandler
+public class DropPyramid : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private DressType positionType;
+
+    [SerializeField] private SocialClass socialClass;
     private DressUpManager dressUpManager;
     public void Start()
     {
@@ -17,14 +18,13 @@ public class Drop : MonoBehaviour, IDropHandler
         if (eventData.pointerDrag != null)
         {
             GameObject other = eventData.pointerDrag;
-            if(other.GetComponent<DragAndDrop>().GetDressType() == positionType)
+            if (other.GetComponent<DragAndDropHuman>().GetSocialClass() == socialClass)
             {
                 Debug.Log("Right position");
-                gameObject.GetComponent<Image>().sprite = other.GetComponent<Image>().sprite;
-                other.SetActive(false);
-                dressUpManager.correctDressDrop();
+                dressUpManager.correctSocialClass();
             }
+
         }
     }
-    
+
 }
