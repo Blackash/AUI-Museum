@@ -30,14 +30,28 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right * x * 0  + transform.forward * z ;
 
-        controllerChar.Move(move * speed * Time.deltaTime);
+        //controllerChar.Move(move * speed * Time.deltaTime);
 
         currentVelocity.y += gravity * Time.deltaTime;
 
-        controllerChar.Move(currentVelocity * Time.deltaTime);
+        //controllerChar.Move(currentVelocity * Time.deltaTime);
 
 
 
+
+    }
+
+
+
+
+    public void MovePlayer()
+    {
+        TrackerPlayerPosition tracker = FindObjectOfType<TrackerPlayerPosition>();
+        Vector3 position = tracker.transform.position;
+        if(position.x > 0)
+        {
+            controllerChar.Move(position * speed * Time.deltaTime);
+        }
 
     }
 }
