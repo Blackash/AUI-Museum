@@ -1,0 +1,7 @@
+generazione di un evento click in un punto dello schermo dove non è presente il mouse
+Spostare il mouse in modo automatico
+
+
+Luci: SetColor
+
+Bubble: SetChange

@@ -15,17 +15,12 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-        /* Debug.Log(creator);
-         Debug.Log(eventData);
-         if (eventData != null)
-         {
 
-         }*/
     }
     private void Start()
     {
         gameObject.GetComponent<Image>().sprite = dressSO.dressImage;
-        //charInventory = gameObject.GetComponentInParent<UiInventory>().charInventory;
+        
     }
 
     //Quando inizia un drag, viene creato un clone della UI dell'oggetto in cui stiamo facendo il drag, questo clone serve per dare l'effetto "l'oggetto rimane nella sua posizione dell'inventario finchè non viene posizionato in un'altra slot o droppato"
@@ -60,8 +55,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         
         
-        //eventData.pointerDrag = cube;
-        // ExecuteEvents.Execute<IBeginDragHandler>(cube, eventData, ExecuteEvents.beginDragHandler);
+        
     }
     public void CancelDrag()
     {
@@ -80,18 +74,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     //Se è stato usato il tasto destro su una cella, questa prova ad azzionare il TryUseItem che c'è dell'oggetto al suo interno
     public void OnPointerClick(PointerEventData eventData)
     {
-        /*if (eventData.button == PointerEventData.InputButton.Right)
-        {
-            if (gameObject.GetComponent<Image>().sprite != null)
-            {
-                if (!gameObject.name.Contains("Clone"))
-                {
-                    Debug.Log("Prova equip" + (int.Parse(gameObject.name.Remove(0, 3))));
-                    charInventory.TryUseItem(int.Parse(gameObject.name.Remove(0, 3)));
-                    FindObjectOfType<UICharStats>().Update();
-                }
-            }
-        }*/
+       
             
             
     }
@@ -102,7 +85,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         return dressSO.dressType;
     }
 
-    public SocialClass GetSocialClass()
+    public SocialClass  GetSocialClass()
     {
         return dressSO.socialClass;
     }
