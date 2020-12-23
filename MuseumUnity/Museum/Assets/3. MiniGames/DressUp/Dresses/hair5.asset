@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7abae1e6951b0240a4332618e73ccd3, type: 3}
+  m_Name: hair5
+  m_EditorClassIdentifier: 
+  dressName: Hair3
+  dressType: 1
+  socialClass: 2
+  dressImageCloset: {fileID: 21300000, guid: 133e59552bc30d648be5ad4bb9d0552a, type: 3}
+  dressImageHuman: {fileID: 21300000, guid: 608bd6d0218005e4186f525d44b987c9, type: 3}

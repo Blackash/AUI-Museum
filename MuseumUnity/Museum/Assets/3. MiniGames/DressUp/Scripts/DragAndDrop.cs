@@ -19,7 +19,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     }
     private void Start()
     {
-        gameObject.GetComponent<Image>().sprite = dressSO.dressImage;
+        gameObject.GetComponent<Image>().sprite = dressSO.dressImageCloset;
         
     }
 
@@ -88,5 +88,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     public SocialClass  GetSocialClass()
     {
         return dressSO.socialClass;
+    }
+
+    public DressSO getDressSO()
+    {
+        return dressSO;
     }
 }

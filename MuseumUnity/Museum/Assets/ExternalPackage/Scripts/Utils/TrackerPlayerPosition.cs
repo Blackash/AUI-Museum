@@ -149,7 +149,7 @@ public class TrackerPlayerPosition : MonoBehaviour
     {
         if (playerIdentifier != PlayerToFollow.Closest_player)
         {
-            Debug.Log(System.Convert.ToUInt64(playerIdentifier));
+            //Debug.Log(System.Convert.ToUInt64(playerIdentifier));
             foreach (ulong id in skel.Keys)
             {
                 if (id == System.Convert.ToUInt64(playerIdentifier))

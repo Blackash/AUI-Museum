@@ -2248,24 +2248,24 @@ MonoBehaviour:
     X: 1
     Y: 0
     Z: 1
-  playerIdentifier: 0
+  playerIdentifier: 1
   trackingSchema:
-    _Buckets: ffffffff00000000ffffffff
-    _HashCodes: 010000000000000000000000
-    _Next: ffffffff0000000000000000
-    _Count: 1
-    _Version: 5
+    _Buckets: ffffffff0000000001000000
+    _HashCodes: 010000001100000000000000
+    _Next: ffffffffffffffff00000000
+    _Count: 2
+    _Version: 20
     _FreeList: -1
     _FreeCount: 0
-    _Keys: 010000000000000000000000
+    _Keys: 010000001100000000000000
     _Values:
-    - {fileID: 9042027999847524008}
-    - {fileID: 0}
+    - {fileID: 2037012208}
+    - {fileID: 2037012208}
     - {fileID: 0}
   interactiveArea:
     center: {x: 0, y: 0, z: 0}
-    width: 1
-    depth: 1
+    width: 15
+    depth: 8.5
     height: 1
 --- !u!4 &2037012208
 Transform:
@@ -2447,9 +2447,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fef3698436ce89842838750c6d59b0e9, type: 3}
---- !u!4 &9042027999847524008 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 9042027999847524007}
-  m_PrefabAsset: {fileID: 0}
