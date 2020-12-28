@@ -5,3 +5,8 @@ Spostare il mouse in modo automatico
 Luci: SetColor
 
 Bubble: SetChange
+
+
+mixamo
+
+https://www.mixamo.com/#/
