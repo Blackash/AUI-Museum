@@ -241,19 +241,18 @@ MonoBehaviour:
   riddleTextbox: {fileID: 1433515531}
   answerFill: {fileID: 904308976}
   riddles:
-  - riddle: "Cosa \xE8 pieno di buchi ma trattiene ancora l'acqua?"
-    answer: SPUGNA
-  - riddle: Mi hai comprato per cena ma non mi hai mai mangiato?
-    answer: ASDASD
-  - riddle: Sono alto quando sono giovane e sono basso quando sono vecchio, cosa
-      sono?
-    answer: ASDASD
-  - riddle: "Dove puoi trovare citt\xE0, paesi, negozi e strade ma nessuna persona?"
-    answer: ASDASD
-  - riddle: Cosa ha le mani ma non applaude?
-    answer: ASDASD
-  - riddle: "Cosa ha 88 chiavi, ma non pu\xF2 aprire una sola porta?"
-    answer: ASDASD
+  - riddle: What is full of holes but still holds water?
+    answer: SPONGE
+  - riddle: You bought me for dinner but never eat me. What am I?
+    answer: CUTLERY
+  - riddle: I'm tall when I'm young, and I'm short when I'm old, what am I?
+    answer: CANDLE
+  - riddle: Where can you find cities, towns, shops, and streets but no people?
+    answer: MAP
+  - riddle: What has hands but doens't clap?
+    answer: CLOCK
+  - riddle: What has 88 keys, but cannot open a single door?
+    answer: PIANO
   alpha:
   - {fileID: 21300000, guid: 9d8a312dc8293da4a95e3a969a8afab3, type: 3}
   - {fileID: 21300000, guid: 36acd27684113b945a59433ae802f7d7, type: 3}
