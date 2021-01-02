@@ -21,7 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     private bool isGrounded;
-   
+    private bool frontMove;
+    private bool backMove;
     // Update is called once per frame
 
     
@@ -52,6 +53,8 @@ void Update()
 
 
 
+
+
     }
 
     private void FixedUpdate()
@@ -62,18 +65,31 @@ void Update()
 
     public void MovePlayer()
     {
-        TrackerPlayerPosition tracker = FindObjectOfType<TrackerPlayerPosition>();
-        
-        if(tracker.transform.position.z > 3)
+        if (frontMove)
         {
             Vector3 move = transform.right * 0 + transform.forward * 1;
             controllerChar.Move(move * speed * Time.fixedDeltaTime);
         }
-        if (tracker.transform.position.z < 0)
+        else
         {
-            Vector3 move = transform.right * 0 + transform.forward * -1;
-            controllerChar.Move(move * speed * Time.fixedDeltaTime);
+            if (backMove)
+            {
+                Vector3 move = transform.right * 0 + transform.forward * -1;
+                controllerChar.Move(move * speed * Time.fixedDeltaTime);
+            }
         }
        
     }
+
+    public void MoveFront(bool val)
+    {
+        backMove = false;
+        frontMove = val;
+    }
+    public void MoveBack(bool val)
+    {
+        frontMove = false;
+        backMove = val;
+    }
+
 }
