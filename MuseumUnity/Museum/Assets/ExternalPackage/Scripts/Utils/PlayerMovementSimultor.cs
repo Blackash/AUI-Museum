@@ -23,8 +23,8 @@ public class PlayerMovementSimultor : MonoBehaviour
         if (MagicRoomManager.instance.systemConfiguration != null)
         {
             sensorDisallinment = new Vector3(MagicRoomManager.instance.systemConfiguration.floorOffsetX, MagicRoomManager.instance.systemConfiguration.floorOffsetY, 0);
-            Debug.Log(MagicRoomManager.instance.systemConfiguration.floorSizeX);
-            Debug.Log(MagicRoomManager.instance.systemConfiguration.floorSizeY);
+            //Debug.Log(MagicRoomManager.instance.systemConfiguration.floorSizeX);
+            //Debug.Log(MagicRoomManager.instance.systemConfiguration.floorSizeY);
             reversedstandardizedFloorSize = new Vector3(MagicRoomManager.instance.systemConfiguration.floorSizeX * 0.065934f, 1, -MagicRoomManager.instance.systemConfiguration.floorSizeY* 0.125f);
         }
     }
