@@ -65,6 +65,10 @@ public class PlayerMovementSimultor : MonoBehaviour
             {
                 anim.SetTrigger("Jump");
             }
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                anim.SetTrigger("HandRise");
+            }
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 anim.SetBool("Walk", true);
