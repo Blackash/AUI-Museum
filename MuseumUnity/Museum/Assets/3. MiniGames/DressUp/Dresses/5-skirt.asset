@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7abae1e6951b0240a4332618e73ccd3, type: 3}
+  m_Name: 5-skirt
+  m_EditorClassIdentifier: 
+  dressName: 5-skirt
+  dressType: 3
+  socialClass: 2
+  dressImageCloset: {fileID: 21300000, guid: a1baabe351c388d498f489b33e185feb, type: 3}
+  dressImageHuman: {fileID: 21300000, guid: cec27cf9ab2cf5149b6ed8c918c7487a, type: 3}
