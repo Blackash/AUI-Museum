@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 193395329}
-  dressSO: {fileID: 11400000, guid: b87c00a9249388a4989ab8778827efa1, type: 2}
+  dressSO: {fileID: 11400000, guid: b7fdbf7fcdc916440b9ab84b35acd26a, type: 2}
 --- !u!225 &90922978
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 193395329}
-  dressSO: {fileID: 11400000, guid: 78403a4dcdfce9e44909faacc8ccf3bc, type: 2}
+  dressSO: {fileID: 11400000, guid: c09781c51bf2c86419831eb3bbb0243a, type: 2}
 --- !u!225 &301600559
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 193395329}
-  dressSO: {fileID: 11400000, guid: ccda65bd504100745a75ee142aa3e3fe, type: 2}
+  dressSO: {fileID: 11400000, guid: b7fdbf7fcdc916440b9ab84b35acd26a, type: 2}
 --- !u!225 &638141218
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 193395329}
-  dressSO: {fileID: 11400000, guid: b9d346935380e544aab079baf474fee1, type: 2}
+  dressSO: {fileID: 11400000, guid: 7c494fd0b0f467e4fbcb9c0127613b9a, type: 2}
 --- !u!225 &1393254398
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1799,7 +1799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 193395329}
-  dressSO: {fileID: 11400000, guid: e43ecd0b1d13832469f9bb302b4cde25, type: 2}
+  dressSO: {fileID: 11400000, guid: f4cd6f41a2b0dbd48bb9350f75884b6e, type: 2}
 --- !u!225 &1460711382
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2400,7 +2400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 193395329}
-  dressSO: {fileID: 11400000, guid: df294d7007a30d44f9cfd9156d2c410e, type: 2}
+  dressSO: {fileID: 11400000, guid: 01e3866b86f390c4eaafd002c48f1de4, type: 2}
 --- !u!225 &1997954412
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2761,7 +2761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0a72867e59d025c48a3aa9fb45a624de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14ad5dab3be648f4db17f63ce1988d41, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2804,7 +2804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 193395329}
-  socialClass: 1
+  socialClass: 2
 --- !u!1 &2145765785
 GameObject:
   m_ObjectHideFlags: 0

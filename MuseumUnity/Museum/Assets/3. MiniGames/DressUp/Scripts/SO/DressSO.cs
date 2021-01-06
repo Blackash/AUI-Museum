@@ -15,4 +15,6 @@ public class DressSO : ScriptableObject
     //public Material itemMaterial = null; //materiale?
     public Sprite dressImageCloset = null;
     public Sprite dressImageHuman = null;
+
+    public bool IsBodyTo = false;
 }
