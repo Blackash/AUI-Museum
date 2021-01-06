@@ -17,3 +17,4 @@ MonoBehaviour:
   socialClass: 3
   dressImageCloset: {fileID: 21300000, guid: 3eea1ed1e08c37f4c8323ad8aec9ff46, type: 3}
   dressImageHuman: {fileID: 21300000, guid: 089053d13c45c974e967ec9dc2f75ee4, type: 3}
+  IsBodyTo: 1
