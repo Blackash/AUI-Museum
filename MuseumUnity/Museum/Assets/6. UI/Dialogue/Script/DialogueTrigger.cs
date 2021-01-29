@@ -16,12 +16,22 @@ public class DialogueTrigger : MonoBehaviour
         if (isMinigame && !dialoguetrigger)
         {
             dialoguetrigger = true;
-            TriggerDialogue();
+            //TriggerDialogue();
         }
     }
     public void TriggerDialogue ()
     {
         DialogueManager.Instance.StartDialogue(dialogue, null, spriteLeft);
+    }
+
+    public void NextQuestion()
+    {
+        DialogueManager.Instance.DisplayNextSentence();
+    }
+
+    public void ResetQuestion()
+    {
+        TriggerDialogue();
     }
 
     

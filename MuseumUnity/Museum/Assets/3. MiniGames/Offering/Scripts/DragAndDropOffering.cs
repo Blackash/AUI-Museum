@@ -70,8 +70,13 @@ public class DragAndDropOffering : MonoBehaviour, IPointerDownHandler, IBeginDra
     }
 
 
-    public God GetGodOffering()
+    public bool[] GetGodOffering()
     {
-        return offeringSO.godOffering;
+        return offeringSO.gods;
+    }
+
+    public OfferingSO GetOffering()
+    {
+        return offeringSO;
     }
 }

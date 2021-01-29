@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : Singleton<DialogueManager>
 {
-    private Queue<string> sentences;
+    private Queue<string> sentences =  new Queue<string>();
 
     public Text nameText;
     public Text dialogueText;
@@ -19,7 +19,7 @@ public class DialogueManager : Singleton<DialogueManager>
     void Start()
     {
         Debug.Log(sentences);
-        sentences = new Queue<string>();
+        //sentences = new Queue<string>();
         Debug.Log(sentences);
         if (!isMinigame)
             dialogueUI.SetActive(false);

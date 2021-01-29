@@ -78,4 +78,9 @@ public class DragAndDropHuman : MonoBehaviour, IPointerDownHandler, IBeginDragHa
         gameObject.GetComponent<Image>().sprite = tmp;
     }
 
+    public void InsertSocialClass(SocialClass tmp)
+    {
+        socialClass = tmp;
+    }
+
 }

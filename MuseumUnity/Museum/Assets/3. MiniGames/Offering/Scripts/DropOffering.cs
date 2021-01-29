@@ -8,13 +8,15 @@ public class DropOffering : MonoBehaviour, IDropHandler
 {
 
     [SerializeField] private int totalOfferings;
-    [SerializeField] private God god;
+    [SerializeField] private int god;
+    [SerializeField] Flame flameAnimator;
+    [SerializeField] Sprite emptyImage;
     private int currentOfferings;
-    private DressUpManager dressUpManager;
+    private OfferingManager offeringManager;
     public void Start()
     {
         currentOfferings = 0;
-        dressUpManager = FindObjectOfType<DressUpManager>();
+        offeringManager = FindObjectOfType<OfferingManager>();
     }
 
     public void Update()
@@ -26,22 +28,34 @@ public class DropOffering : MonoBehaviour, IDropHandler
     }
     public void OnDrop(PointerEventData eventData)
     {
+        Debug.Log("drop");
         if (eventData.pointerDrag != null)
         {
             GameObject other = eventData.pointerDrag;
-            if (other.GetComponent<DragAndDropOffering>().GetGodOffering() == god)
+            GetComponent<Image>().sprite = other.GetComponent<DragAndDropOffering>().GetOffering().offeringImage;
+            if (other.GetComponent<DragAndDropOffering>().GetGodOffering()[god])
             {
                 Debug.Log("Right offering");
-                dressUpManager.correctSocialClass();
+                flameAnimator.turnGreen();
                 currentOfferings++;
+
             }
             else
             {
                 Debug.Log("Bad Offering");
             }
             other.SetActive(false);
-
+            StartCoroutine(BurnCouroutine());
         }
+
     }
 
+    IEnumerator BurnCouroutine()
+    {
+
+        yield return new WaitForSeconds(3f);
+        GetComponent<Image>().sprite = emptyImage;
+
+
+    }
 }

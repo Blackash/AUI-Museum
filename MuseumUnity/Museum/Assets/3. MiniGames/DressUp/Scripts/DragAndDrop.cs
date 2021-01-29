@@ -5,8 +5,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerClickHandler
 {
-    [SerializeField] private Canvas canvas;
-    [SerializeField] private DressSO dressSO;
+    [SerializeField] public Canvas canvas;
+    [SerializeField] public DressSO dressSO;
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
     private PointerEventData _lastPointerData;
