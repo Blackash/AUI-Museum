@@ -15,5 +15,6 @@ MonoBehaviour:
   dressName: 2-skirt
   dressType: 3
   socialClass: 5
-  dressImageCloset: {fileID: 21300000, guid: eaadb184c3411464fb75dea85dae25c4, type: 3}
+  dressImageCloset: {fileID: 21300000, guid: 14043eda237937044adddf0dc77d5ab5, type: 3}
   dressImageHuman: {fileID: 21300000, guid: a7378cfaa88f61449a451e17ed9e8c87, type: 3}
+  IsBodyTo: 0

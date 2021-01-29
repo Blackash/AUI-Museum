@@ -15,5 +15,6 @@ MonoBehaviour:
   dressName: 3-front hair
   dressType: 1
   socialClass: 4
-  dressImageCloset: {fileID: 21300000, guid: a39b9ade703750149a5f945b6e8337ab, type: 3}
+  dressImageCloset: {fileID: 21300000, guid: be18c3bc373af274d8d47ceee6b12a3e, type: 3}
   dressImageHuman: {fileID: 21300000, guid: ef749acad823c1a4b886f8521e9dfa3a, type: 3}
+  IsBodyTo: 0

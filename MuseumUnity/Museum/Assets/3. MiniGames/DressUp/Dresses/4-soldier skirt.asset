@@ -15,5 +15,6 @@ MonoBehaviour:
   dressName: 4-soldier skirt
   dressType: 3
   socialClass: 3
-  dressImageCloset: {fileID: 21300000, guid: afa360224fec2c4499f39624d76b8e35, type: 3}
+  dressImageCloset: {fileID: 21300000, guid: 067b0e9055551a5438773c79ada83bcf, type: 3}
   dressImageHuman: {fileID: 21300000, guid: 1bb3e3bcd4b1cac4bb21b6b38fd1d983, type: 3}
+  IsBodyTo: 0

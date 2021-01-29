@@ -15,5 +15,6 @@ MonoBehaviour:
   dressName: 6-pharaoh skirt
   dressType: 3
   socialClass: 1
-  dressImageCloset: {fileID: 21300000, guid: 411fcd9264b997b4d9b01d1575610792, type: 3}
+  dressImageCloset: {fileID: 21300000, guid: 54095091695425842888ba2a09a5d593, type: 3}
   dressImageHuman: {fileID: 21300000, guid: 671fd47e80057c84ca8d09b30a75988b, type: 3}
+  IsBodyTo: 0
