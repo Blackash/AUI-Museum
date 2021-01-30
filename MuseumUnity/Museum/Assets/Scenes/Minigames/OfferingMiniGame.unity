@@ -255,6 +255,12 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 305174130}
+    - target: {fileID: 7039299576417965598, guid: 3b0f10b1a9a176643b3f850b3109835b,
+        type: 3}
+      propertyPath: offeringSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 440cc3ee5a5b39449b6d71c82e5dc3ff,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0f10b1a9a176643b3f850b3109835b, type: 3}
 --- !u!1 &94658317
@@ -614,7 +620,7 @@ PrefabInstance:
         type: 3}
       propertyPath: offeringSO
       value: 
-      objectReference: {fileID: 11400000, guid: 2befc51d8f3de414eb29fe518d2d240e,
+      objectReference: {fileID: 11400000, guid: 3a79d291e0e5dcb44ba6c27b0d8c8705,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0f10b1a9a176643b3f850b3109835b, type: 3}
@@ -954,7 +960,7 @@ PrefabInstance:
         type: 3}
       propertyPath: offeringSO
       value: 
-      objectReference: {fileID: 11400000, guid: 592d83510a4fc5440bff18aaba26941d,
+      objectReference: {fileID: 11400000, guid: 3ae8278393691ce459ffb388b6d539f5,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0f10b1a9a176643b3f850b3109835b, type: 3}
@@ -1232,7 +1238,7 @@ PrefabInstance:
         type: 3}
       propertyPath: offeringSO
       value: 
-      objectReference: {fileID: 11400000, guid: 1fbb0f9fa9d46e24e95b3a1f4dd92c21,
+      objectReference: {fileID: 11400000, guid: 75f9c5fca66ec81449a4026cebc5224d,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0f10b1a9a176643b3f850b3109835b, type: 3}
@@ -1368,7 +1374,7 @@ PrefabInstance:
         type: 3}
       propertyPath: offeringSO
       value: 
-      objectReference: {fileID: 11400000, guid: a393d02be8c09c440806bab547501dd4,
+      objectReference: {fileID: 11400000, guid: c53e307d0229da14fbf3480281a322f9,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0f10b1a9a176643b3f850b3109835b, type: 3}
@@ -1676,7 +1682,7 @@ PrefabInstance:
         type: 3}
       propertyPath: offeringSO
       value: 
-      objectReference: {fileID: 11400000, guid: 5a7fe127f10ff2f418613d009a9438bd,
+      objectReference: {fileID: 11400000, guid: 0e4ddf51f0b507346804197ea62773cf,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0f10b1a9a176643b3f850b3109835b, type: 3}
