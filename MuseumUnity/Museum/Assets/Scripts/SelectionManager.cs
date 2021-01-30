@@ -20,9 +20,10 @@ public class SelectionManager : MonoBehaviour
     {
         if(_selection != null)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if(Input.GetMouseButtonDown(0))
                 {
                 _selection.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+                FindObjectOfType<PlayerMovement>().BlockMovement();
                 }
 
             Renderer selectionRender = _selection.GetComponent<Renderer>();

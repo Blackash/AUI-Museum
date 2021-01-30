@@ -73,8 +73,11 @@ public class DialogueManager : Singleton<DialogueManager>
     public void EndDialogue()
     {
         Debug.Log("End Conversation");
-        if(!isMinigame)
+        if (!isMinigame)
+        {
+            FindObjectOfType<PlayerMovement>().SblockMovement();
             dialogueUI.SetActive(false);
+        }
     }
     
 

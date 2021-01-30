@@ -8,6 +8,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public Sprite spriteLeft;
 
+    public Sprite spriteRight;
+
     public bool isMinigame = false;
 
     private bool dialoguetrigger = false;
@@ -21,7 +23,8 @@ public class DialogueTrigger : MonoBehaviour
     }
     public void TriggerDialogue ()
     {
-        DialogueManager.Instance.StartDialogue(dialogue, null, spriteLeft);
+        DialogueManager.Instance.StartDialogue(dialogue, spriteLeft, spriteRight);
+        StartCoroutine(DialogueCoroutine(dialogue));
     }
 
     public void NextQuestion()
@@ -34,7 +37,18 @@ public class DialogueTrigger : MonoBehaviour
         TriggerDialogue();
     }
 
-    
+
+    IEnumerator DialogueCoroutine(Dialogue d)
+    {
+        for(int i=0; i<d.sentences.Length; i++)
+        {
+            yield return new WaitForSeconds(d.time[i]);
+            NextQuestion();
+        }
+
+
+    }
+
 
 
 }

@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private bool frontMove;
     private bool backMove;
+    private bool blockMovement = false;
     // Update is called once per frame
 
     
@@ -65,6 +66,8 @@ void Update()
 
     public void MovePlayer()
     {
+        if (blockMovement)
+            return;
         if (frontMove)
         {
             Vector3 move = transform.right * 0 + transform.forward * 1;
@@ -90,6 +93,16 @@ void Update()
     {
         frontMove = false;
         backMove = val;
+    }
+
+    public void BlockMovement()
+    {
+        blockMovement = true;
+    }
+
+    public void SblockMovement()
+    {
+        blockMovement = false;
     }
 
 }
