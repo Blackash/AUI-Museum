@@ -5,8 +5,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class DragAndDropHuman : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerClickHandler
 {
-    [SerializeField] private Canvas canvas;
-    [SerializeField] private SocialClass socialClass;
+    public Canvas canvas;
+    public SocialClass socialClass;
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
     private PointerEventData _lastPointerData;

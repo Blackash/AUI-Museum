@@ -57,8 +57,10 @@ public class FloorManager : MonoBehaviour
             {
             yield return new WaitForSeconds(1f);
             if (!CheckIfInPosition())
-                Debug.Log("mettersi in posizione");
+            {
+                //Debug.Log("mettersi in posizione");
             }
+        }
             
         
 

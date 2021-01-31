@@ -10,6 +10,7 @@ public class DressUpManager : MonoBehaviour
     [SerializeField] private GameObject pyramid;
     [SerializeField] private GameObject warDrobe;
     [SerializeField] private GameObject human;
+    [SerializeField] private GameObject humanPrefab;
     [SerializeField] private string[] descriptionText = new string[6];
     [SerializeField] private Text Description;
     [SerializeField] private SocialClass socialClass;
@@ -17,18 +18,16 @@ public class DressUpManager : MonoBehaviour
     [SerializeField] private GameObject dressListObj;
     [SerializeField] private GameObject imagePrefab;
     private int phase;
+    private bool start;
     void Start()
     {
-        numberOfPanels = 0;
-        phase = 1;
-        correctDress = -1;
-        prepareMinigame();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (correctDress == numberOfPanels && phase == 1)
+        if (correctDress == numberOfPanels && phase == 1 && start)
         {
             faseTwo();
         }
@@ -53,7 +52,23 @@ public class DressUpManager : MonoBehaviour
 
     private void prepareMinigame()
     {
+        numberOfPanels = 0;
+        phase = 1;
+        correctDress = -1;
+        if(human == null)
+        {
+            human = Instantiate(humanPrefab,gameObject.transform);
+            //human.transform.parent = gameObject.transform;
+            human.GetComponent<DragAndDropHuman>().canvas = GetComponent<Canvas>();
+            human.GetComponent<RectTransform>().parent = gameObject.GetComponent<RectTransform>();
+            //human.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
+            human.GetComponent<RectTransform>().SetSiblingIndex(2);
+
+        }
         human.GetComponent<DragAndDropHuman>().InsertSocialClass(socialClass);
+        human.transform.localScale = new Vector3(0.8f, 0.8f, 1);
+        pyramid.transform.localScale = new Vector3(1f, 1f, 1f);
+        warDrobe.SetActive(true);
         AddCorrectDresses(socialClass);
         switch(socialClass)
         {
@@ -97,6 +112,14 @@ public class DressUpManager : MonoBehaviour
 
     public void correctSocialClass()
     {
-        //endMinigame();
+        start = false;
+        gameObject.SetActive(false);
+
+    }
+
+    public void StartMinigame()
+    {
+        start = true;
+        prepareMinigame();
     }
 }

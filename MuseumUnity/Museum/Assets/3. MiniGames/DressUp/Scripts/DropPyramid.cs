@@ -21,6 +21,7 @@ public class DropPyramid : MonoBehaviour, IDropHandler
             if (other.GetComponent<DragAndDropHuman>().GetSocialClass() == socialClass)
             {
                 Debug.Log("Right position");
+                Destroy(other);
                 dressUpManager.correctSocialClass();
             }
 

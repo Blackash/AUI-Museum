@@ -10,6 +10,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public Sprite spriteRight;
 
+    public bool startMiniGame = false;
+
+    [SerializeField] MiniGames miniGame;
+
     public bool isMinigame = false;
 
     private bool dialoguetrigger = false;
@@ -45,7 +49,8 @@ public class DialogueTrigger : MonoBehaviour
             yield return new WaitForSeconds(d.time[i]);
             NextQuestion();
         }
-
+        if (startMiniGame)
+            MinigameManager.Instance.StartMinigame(miniGame);
 
     }
 

@@ -6,6 +6,7 @@ using TMPro;
 public class AnswerManager : MonoBehaviour
 {
     private string answerRiddle;
+    private bool start = false;
 
     [SerializeField] GameObject letterPrefab;
     [SerializeField] TMP_Text riddleTextbox;
@@ -27,39 +28,27 @@ public class AnswerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nCorrectLetters = 0;
-        int randomN = UnityEngine.Random.Range(0, riddles.Length);
-        riddleTextbox.text = riddles[randomN].riddle;
-        nLetterAnswer = riddles[randomN].answer.Length;
-        letters = new List<GameObject>();
-        char[] tmpC = new Char[26];
-        for(int i = 65; i< 65+26; i++)
-        {
-            tmpC[i - 65] = (char) i;
-        }
-        foreach (char a in riddles[randomN].answer)
-        {
-            GameObject tmp;
-            tmp = Instantiate(letterPrefab, new Vector3(0, 0, 0), Quaternion.identity,answerFill.transform);
-            
-            for(int i = 0; i<tmpC.Length; i++)
-            {
-                if(tmpC[i] == a)
-                {
-                    tmp.GetComponent<LetterManager>().correctLetter(a, alpha[i]); //TODO: aggiungere immagine giusta
-                }
-            }
-            
-            letters.Add(tmp);
-        }
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!start)
+            return;
         if (nCorrectLetters == nLetterAnswer)
+        {
+            start = false;
+            
+            for(int i=0; i<letters.Count;i++)
+            {
+                Destroy(letters[i]);
+            }
+            letters.Clear();
+            gameObject.SetActive(false);
             return; //victory
+        }
+            
         string tmp = DetectPressedKeyOrButton();
         if(tmp != null)
         {
@@ -104,4 +93,40 @@ public class AnswerManager : MonoBehaviour
          }
 
      }*/
+
+    private void prepareMinigame()
+    {
+        nCorrectLetters = 0;
+        int randomN = UnityEngine.Random.Range(0, riddles.Length);
+        riddleTextbox.text = riddles[randomN].riddle;
+        nLetterAnswer = riddles[randomN].answer.Length;
+        letters = new List<GameObject>();
+        char[] tmpC = new Char[26];
+        for (int i = 65; i < 65 + 26; i++)
+        {
+            tmpC[i - 65] = (char)i;
+        }
+        foreach (char a in riddles[randomN].answer)
+        {
+            GameObject tmp;
+            tmp = Instantiate(letterPrefab, new Vector3(0, 0, 0), Quaternion.identity, answerFill.transform);
+
+            for (int i = 0; i < tmpC.Length; i++)
+            {
+                if (tmpC[i] == a)
+                {
+                    tmp.GetComponent<LetterManager>().correctLetter(a, alpha[i]); //TODO: aggiungere immagine giusta
+                }
+            }
+
+            letters.Add(tmp);
+        }
+
+    }
+
+    public void StartMinigame()
+    {
+        start = true;
+        prepareMinigame();
+    }
 }
