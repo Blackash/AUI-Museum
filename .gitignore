@@ -13,6 +13,7 @@
 GDD/*.pdf
 TDD/*.pdf
 TDD/TDD.pdf
+/MuseumUnity/Museum/[Aa]ssets/Prefabs/HeavyModels
 
 # This .gitignore file should be placed at the root of your Unity project directory
 #
