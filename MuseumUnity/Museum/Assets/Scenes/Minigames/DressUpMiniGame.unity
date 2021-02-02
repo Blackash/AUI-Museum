@@ -437,6 +437,70 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2236941767741519073, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f75681940ffaa6a41b5c9bd703e7934c,
+        type: 3}
+    - target: {fileID: 2236941767741519079, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941767741519079, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941767928816699, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941768200638204, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941768200638204, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941768200638206, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fe1c176ca2e0ca4bb999edbaa045986,
+        type: 3}
+    - target: {fileID: 2236941768496805064, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a06612df49d1944d9aad77ee8264419,
+        type: 3}
+    - target: {fileID: 2236941768496805070, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941768496805070, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000030518
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941768840411859, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941768840411886, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5269f0996f13cca449db3deaf6234279,
+        type: 3}
     - target: {fileID: 2236941769016268338, guid: c4a954853d75d3d41aba93c506298c50,
         type: 3}
       propertyPath: m_Name
@@ -547,5 +611,76 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2236941769016268495, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: socialClass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769016268495, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: descriptionText.Array.data[5]
+      value: They made up a large part of the population. They cultivated the fields,
+        raised animals and worked on the construction of canals and buildings.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769016268495, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: descriptionText.Array.data[4]
+      value: They were mostly prisoners of war or people who couldn't pay their debts.
+        They did the hardest and most humble jobs. They were considered the property
+        of their masters and could be sold.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769016268495, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: descriptionText.Array.data[3]
+      value: They sold the goods.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769016268495, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: descriptionText.Array.data[2]
+      value: They defended the kingdom and maintained order.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769016268495, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: descriptionText.Array.data[1]
+      value: They were important because they could write. They measured the fields,
+        recorded goods, and historical and politcial events. They collected taxes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769016268495, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: descriptionText.Array.data[0]
+      value: 'Political and religious leader of the people. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769150821833, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e98975759b7904d4799ee957b8a497db,
+        type: 3}
+    - target: {fileID: 2236941769150821839, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769150821839, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769381056516, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769381056516, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000030518
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236941769381056518, guid: c4a954853d75d3d41aba93c506298c50,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ea96723958248c458f4b0aa02b03c26,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a954853d75d3d41aba93c506298c50, type: 3}
