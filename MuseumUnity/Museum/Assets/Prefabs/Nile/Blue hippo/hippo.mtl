@@ -1,0 +1,7 @@
+# OBJ Material Export by Luxion KeyShot
+
+newmtl Marble White Advanced Translucent
+Kd 0.230152 0.230152 0.230152
+
+newmtl Ground Material
+Kd 0.5 0.5 0.5
