@@ -17,6 +17,8 @@ public class DressUpManager : MonoBehaviour
     [SerializeField] private DressSO[] dressList;
     [SerializeField] private GameObject dressListObj;
     [SerializeField] private GameObject imagePrefab;
+    [SerializeField] private GameObject startImage;
+    [SerializeField] private GameObject endImage;
     private int phase;
     private bool start;
     void Start()
@@ -113,13 +115,29 @@ public class DressUpManager : MonoBehaviour
     public void correctSocialClass()
     {
         start = false;
-        gameObject.SetActive(false);
+        StartCoroutine(EndImage());
 
     }
 
     public void StartMinigame()
     {
         start = true;
+        StartCoroutine(StartImage());
         prepareMinigame();
+    }
+
+    IEnumerator StartImage()
+    {
+        startImage.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        startImage.SetActive(false);
+    }
+
+    IEnumerator EndImage()
+    {
+        endImage.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        endImage.SetActive(false);
+        gameObject.SetActive(false);
     }
 }

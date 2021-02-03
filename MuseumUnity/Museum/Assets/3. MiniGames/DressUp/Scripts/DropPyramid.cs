@@ -8,6 +8,7 @@ public class DropPyramid : MonoBehaviour, IDropHandler
 {
 
     [SerializeField] private SocialClass socialClass;
+    [SerializeField] private GameObject human;
     private DressUpManager dressUpManager;
     public void Start()
     {
@@ -21,6 +22,7 @@ public class DropPyramid : MonoBehaviour, IDropHandler
             if (other.GetComponent<DragAndDropHuman>().GetSocialClass() == socialClass)
             {
                 Debug.Log("Right position");
+                human.SetActive(true);
                 Destroy(other);
                 dressUpManager.correctSocialClass();
             }

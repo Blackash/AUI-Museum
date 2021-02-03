@@ -7,7 +7,7 @@ public class SelectionManager : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private string selectableTag = "Selectable";
     [SerializeField] private Material highlightMaterial;
-    [SerializeField] private Material defaultMaterial;
+    private Material defaultMaterial;
 
     private Transform _selection;
     void Start()
@@ -27,8 +27,10 @@ public class SelectionManager : MonoBehaviour
                 }
 
             Renderer selectionRender = _selection.GetComponent<Renderer>();
-            selectionRender.material = defaultMaterial;
+            if(defaultMaterial != null)
+                selectionRender.material = defaultMaterial;
             _selection = null;
+            defaultMaterial = null;
         }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -40,6 +42,7 @@ public class SelectionManager : MonoBehaviour
                 Renderer selectionRenderer = selection.GetComponent<Renderer>();
                 if (selectionRenderer != null)
                 {
+                    defaultMaterial = selectionRenderer.material;
                     selectionRenderer.material = highlightMaterial;
                 }
 

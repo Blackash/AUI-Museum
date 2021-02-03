@@ -11,7 +11,8 @@ public class AnswerManager : MonoBehaviour
     [SerializeField] GameObject letterPrefab;
     [SerializeField] TMP_Text riddleTextbox;
     [SerializeField] GameObject answerFill;
-
+    [SerializeField] private GameObject startImage;
+    [SerializeField] private GameObject endImage;
 
     [System.Serializable]
     public class Riddle
@@ -45,7 +46,7 @@ public class AnswerManager : MonoBehaviour
                 Destroy(letters[i]);
             }
             letters.Clear();
-            gameObject.SetActive(false);
+            StartCoroutine(EndImage());
             return; //victory
         }
             
@@ -127,6 +128,23 @@ public class AnswerManager : MonoBehaviour
     public void StartMinigame()
     {
         start = true;
+        StartCoroutine(StartImage());
         prepareMinigame();
+    }
+
+
+    IEnumerator StartImage()
+    {
+        startImage.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        startImage.SetActive(false);
+    }
+
+    IEnumerator EndImage()
+    {
+        endImage.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        endImage.SetActive(false);
+        gameObject.SetActive(false);
     }
 }
