@@ -431,7 +431,7 @@ Transform:
   m_LocalScale: {x: 1.01, y: 1, z: 1.7}
   m_Children: []
   m_Father: {fileID: 948874604}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &52755886
 GameObject:
@@ -954,9 +954,10 @@ GameObject:
   - component: {fileID: 131117232}
   - component: {fileID: 131117231}
   - component: {fileID: 131117230}
+  - component: {fileID: 131117233}
   m_Layer: 0
   m_Name: Explanation (1)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -969,7 +970,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131117228}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -2.2400007, y: 1.2879992, z: -5.9380007}
+  m_LocalPosition: {x: -2.2400007, y: 1.25, z: -5.9380007}
   m_LocalScale: {x: 0.59999996, y: 0.24999997, z: 0.10000001}
   m_Children: []
   m_Father: {fileID: 1389185693}
@@ -1035,6 +1036,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131117228}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &131117233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131117228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Statue of the crodile-headed Egyptian god Sobek
+
+      Limestone, c. 1991-1783
+      BCE
+
+      Ashmolean Museum, Oxford University, England'
+    - '"Statue of the God Sobek" by David Anderson is licensed under Creative Commons
+      Attribution-NonCommercial.'
+    time:
+    - 3
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1 &169508563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2236941769016268338, guid: c4a954853d75d3d41aba93c506298c50,
@@ -2684,9 +2716,10 @@ GameObject:
   - component: {fileID: 540625522}
   - component: {fileID: 540625521}
   - component: {fileID: 540625520}
+  - component: {fileID: 540625524}
   m_Layer: 0
   m_Name: Explanation (3)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2759,12 +2792,43 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540625519}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 20.000013, y: 16.27537, z: -36.829773}
+  m_LocalPosition: {x: 19.442, y: 16.314, z: -36.829773}
   m_LocalScale: {x: 0.3000002, y: 0.1, z: 0.054090057}
   m_Children: []
   m_Father: {fileID: 1046770427}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!114 &540625524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540625519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Info Bull Figurine
+    sentences:
+    - 'Bull figurine
+
+      Copper alloy, c. 712-30 BCE
+
+      Harvard Museum of
+      the Ancient Near East, Boston, USA'
+    - '"Apis Bull Figurine" by Harvard Museum of the Ancient Near East is licensed
+      under Creative Commons Attribution.'
+    time:
+    - 3
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1001 &540870208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2956,9 +3020,10 @@ GameObject:
   - component: {fileID: 561078056}
   - component: {fileID: 561078055}
   - component: {fileID: 561078054}
+  - component: {fileID: 561078057}
   m_Layer: 0
   m_Name: Explanation (1)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3037,6 +3102,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561078052}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &561078057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561078052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Statuette of the godess Taweret
+
+      Wood, paint, c. 1292-1189 BCE
+
+      Museo
+      Egizio, Turin, Italy'
+    - '"A statue of the goddess Taweret" by the project MicroPasts is licensed under
+      Creative Commons Attribution.'
+    time:
+    - 3
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!4 &571977101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
@@ -3425,9 +3521,10 @@ GameObject:
   - component: {fileID: 694963001}
   - component: {fileID: 694963000}
   - component: {fileID: 694962999}
+  - component: {fileID: 694963003}
   m_Layer: 0
   m_Name: Explanation (2)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3500,12 +3597,42 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694962998}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 20.000013, y: 16.27537, z: -36.044773}
+  m_LocalPosition: {x: 19.442, y: 16.294, z: -36.044773}
   m_LocalScale: {x: 0.3000002, y: 0.1, z: 0.054090057}
   m_Children: []
   m_Father: {fileID: 1046770427}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!114 &694963003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694962998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Apis Bull Statue
+
+      Serpentinite, c. 400-100 BC
+
+      Cleveland Museum
+      of Art, USA'
+    - '"Apis bull" by Daniel Pett is licensed under Creative Commons Attribution.'
+    time:
+    - 3
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1001 &755840246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3793,9 +3920,10 @@ GameObject:
   - component: {fileID: 799365962}
   - component: {fileID: 799365961}
   - component: {fileID: 799365960}
+  - component: {fileID: 799365964}
   m_Layer: 0
   m_Name: Explanation
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3868,12 +3996,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799365959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.61, y: -9.300001, z: 0.27}
+  m_LocalPosition: {x: 9.61, y: -9.300001, z: 0.15}
   m_LocalScale: {x: 3, y: 2, z: 0.25}
   m_Children: []
   m_Father: {fileID: 1754172424}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &799365964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799365959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Info Map
+    sentences:
+    - Color map of the territory of ancient Egypt, and of the Egyptian empire about
+      1450 BCE
+    time:
+    - 3
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1 &806868604
 GameObject:
   m_ObjectHideFlags: 0
@@ -4575,8 +4727,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 984747582}
-  - {fileID: 50210878}
   - {fileID: 1523838091}
+  - {fileID: 50210878}
   - {fileID: 691008959}
   - {fileID: 1996875703}
   - {fileID: 983739283}
@@ -4887,7 +5039,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1.2}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1009984093
 MeshRenderer:
@@ -5578,9 +5730,10 @@ GameObject:
   - component: {fileID: 1199620819}
   - component: {fileID: 1199620818}
   - component: {fileID: 1199620817}
+  - component: {fileID: 1199620821}
   m_Layer: 0
   m_Name: Explanation (1)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5659,6 +5812,33 @@ Transform:
   m_Father: {fileID: 1046770427}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1199620821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199620816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Info Transport of Grain
+    sentences:
+    - "Wall painting: transport and storing of grain\nTempera painting on clay and
+      straw, c. 2118\u20131980 BCE\nMuseo Egizio, Turin, Italy"
+    - Picture by Museo Egizio is licensed under Creative Commons Attribution 2.0
+      Italy.
+    time:
+    - 3
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1 &1208457214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6225,17 +6405,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 66cd1ee80421aa14a89bf6ce940213da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.670013
+      value: 21.233
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66cd1ee80421aa14a89bf6ce940213da,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.36937
+      value: 16.549
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66cd1ee80421aa14a89bf6ce940213da,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -36.301773
+      value: -36.817
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66cd1ee80421aa14a89bf6ce940213da,
         type: 3}
@@ -6280,17 +6460,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 66cd1ee80421aa14a89bf6ce940213da,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66cd1ee80421aa14a89bf6ce940213da,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66cd1ee80421aa14a89bf6ce940213da,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 66cd1ee80421aa14a89bf6ce940213da,
         type: 3}
@@ -6701,9 +6881,10 @@ GameObject:
   - component: {fileID: 1405875178}
   - component: {fileID: 1405875177}
   - component: {fileID: 1405875176}
+  - component: {fileID: 1405875180}
   m_Layer: 0
   m_Name: Explanation (1)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6782,6 +6963,64 @@ Transform:
   m_Father: {fileID: 1659693404}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1405875180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405875175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Info Fauna
+    sentences:
+    - 'Hippopotamus statuette
+
+      Faience, greenish-blue glaze, painted, c. 2000
+      BCE
+
+      Kunst historisches Museum Wien, Vienna, Austria'
+    - 'Crocodile figurine
+
+      Baked Ceramic
+
+      Harvard Museum of the Ancient
+      Near East, Boston, USA'
+    - 'Reptile amulet
+
+      Copper alloy, c. 712-30 BCE
+
+      Harvard Museum of
+      the Ancient Near East, Boston, USA'
+    - 'Frog lamp
+
+      Baked ceramic, c. 304-30 BCE
+
+      Harvard Museum of the
+      Ancient Near East, Boston, USA'
+    - "Coffin for a fish, containing mummy\nWood, 722\u2013332 BCE\nMuseo Egizio,
+      Turin, Italy"
+    - Picture of "Coffin for a fish, containing mummy" by Museo Egizio is licensed
+      under CreativeCommons Attribution 2.0 Italy.
+    - '"Crocodile Figurine", "Reptile Amulet", "Frog Lamp" by Harvard Museum of the
+      Ancient Near East are licensed under Creative Commons Attribution.'
+    time:
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 2
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1 &1426537926
 GameObject:
   m_ObjectHideFlags: 0
@@ -6980,9 +7219,10 @@ GameObject:
   - component: {fileID: 1457761676}
   - component: {fileID: 1457761675}
   - component: {fileID: 1457761674}
+  - component: {fileID: 1457761677}
   m_Layer: 0
   m_Name: Explanation
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7061,6 +7301,61 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457761672}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1457761677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457761672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Lotus flowers, pomegranates, dates, brown bread, straw basket
+    - 'Broken Bowl
+
+      Anthropology department at University of North Carolina,
+      Greensboro, USA'
+    - 'Two predynastic bowls, one with hippos
+
+      Clay
+
+      Petrie Museum, UCL,
+      London, UK'
+    - 'Cooking pot
+
+      Ceramic
+
+      Harvard Museum of the Ancient Near East,
+      Boston, USA'
+    - '"Lotus Seed Pod" by RISD Nature Lab; "Dates" by dzeno60; "Brown Bread" by
+      Francesco Coldesina are licensed under Creative Commons Attribution.
+
+'
+    - '"Old pomegranate" by 3dhdscan is licensed under Creative Commons Attribution-NonCommercial.'
+    - '"Cooking Pot" by Harvard Museum of the Ancient Near East; "Egyptian Bowl"
+      by UNCG Imaging Lab are licensed under Creative Commons Attribution.'
+    - '"Predynastic C-Ware Bowl with Hippos" and "Predynastic C-Ware Bowl" by David
+      Anderson are licensed under Creative Commons Attribution.'
+    time:
+    - 3
+    - 3
+    - 3
+    - 3
+    - 2
+    - 2
+    - 2
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1001 &1464616095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8084,8 +8379,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624217619}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.354013, y: 15.543371, z: -36.389774}
-  m_LocalScale: {x: 1, y: 1.5, z: 1.8}
+  m_LocalPosition: {x: 20.163, y: 15.543371, z: -36.389774}
+  m_LocalScale: {x: 2, y: 1.5, z: 1.8}
   m_Children: []
   m_Father: {fileID: 1046770427}
   m_RootOrder: 0
@@ -8632,9 +8927,10 @@ GameObject:
   - component: {fileID: 1751696177}
   - component: {fileID: 1751696176}
   - component: {fileID: 1751696175}
+  - component: {fileID: 1751696179}
   m_Layer: 0
   m_Name: Explanation (2)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8713,6 +9009,39 @@ Transform:
   m_Father: {fileID: 1659693404}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1751696179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751696174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Info Boats
+    sentences:
+    - "Funerary boat model\nWood, pigment, c. 1900 BCE.\nMus\xE9e Art & Histoire,
+      Brussels, Belgium"
+    - "Boat model\nWood, pigment, ca. 2010\u20131961 BCE\nHarvard Museum of the Ancient
+      Near East, Boston, USA"
+    - '"Model funerary barque of Mersou" by Geoffrey Marchal is licensed under Creative
+      Commons Attribution-NonCommercial.'
+    - '"Boat Model" by Harvard Museum of the Ancient Near East is licensed under
+      Creative Commons Attribution.'
+    time:
+    - 3
+    - 3
+    - 2
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1 &1754172421
 GameObject:
   m_ObjectHideFlags: 0
@@ -9154,7 +9483,7 @@ PrefabInstance:
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
@@ -9164,7 +9493,7 @@ PrefabInstance:
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.59
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
@@ -10056,9 +10385,10 @@ GameObject:
   - component: {fileID: 2032425913}
   - component: {fileID: 2032425912}
   - component: {fileID: 2032425911}
+  - component: {fileID: 2032425914}
   m_Layer: 0
   m_Name: Explanation
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10137,6 +10467,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032425909}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2032425914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032425909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Info Papyrus
+    sentences:
+    - 'Persea and papyrus branches bound with twigs
+
+      Museo Egizio, Turin, Italy'
+    - "Papyrus with love poems known as \"Song of the Grove\"\nCyperus papyrus, ink.
+      1190\u20131077 BCE\nMuseo Egizio, Turin, Italy"
+    - Pictures by Museo Egizio are licensed under CreativeCommons Attribution 2.0
+      Italy
+    time:
+    - 3
+    - 3
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1001 &2048106459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10604,9 +10965,10 @@ GameObject:
   - component: {fileID: 2141726216}
   - component: {fileID: 2141726215}
   - component: {fileID: 2141726214}
+  - component: {fileID: 2141726217}
   m_Layer: 0
   m_Name: Explanation (2)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10685,6 +11047,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141726212}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2141726217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141726212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Figurine of the Godess Taweret
+
+      Faience, c. 664 - 332 BCE
+
+      Harvard
+      Museum of the Ancient Near East, Boston, USA'
+    - '"Goddess Taweret (Thoueris) figurine" by Harvard Museum of the Ancient Near
+      East is licensed under Creative Commons Attribution.'
+    time:
+    - 3
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!4 &355436659552138089
 Transform:
   m_ObjectHideFlags: 0
@@ -10758,7 +11151,7 @@ MonoBehaviour:
     - 10
     - 10
   spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
-  spriteRight: {fileID: 21300000, guid: 2393f6f7533885b41906edd2a29851b0, type: 3}
+  spriteRight: {fileID: 21300000, guid: ce0f78ee73e1fe64ebb522283d592b7d, type: 3}
   startMiniGame: 0
   miniGame: 0
   isMinigame: 0
@@ -10881,7 +11274,7 @@ PrefabInstance:
     - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
         type: 3}
