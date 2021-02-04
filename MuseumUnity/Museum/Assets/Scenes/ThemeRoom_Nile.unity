@@ -1065,8 +1065,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &169508563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2236941769016268338, guid: c4a954853d75d3d41aba93c506298c50,
@@ -1357,8 +1359,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 13dfb1895666cc548a3af1e5b6cbe9a3, type: 3}
 --- !u!4 &229770449 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 229770448}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &229770450 stripped
@@ -1388,8 +1389,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
   spriteRight: {fileID: 21300000, guid: be8853ad084ce6048b0ce1705ee2166d, type: 3}
   startMiniGame: 1
+  tokenValue: 1
   miniGame: 2
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!65 &229770452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1945,8 +1948,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83, type: 3}
   spriteRight: {fileID: 21300000, guid: 981d2d30b3e0b664d8d96b07eba50abd, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!65 &330028021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2525,6 +2530,11 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 425479689}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &425479691 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 425479689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &431654333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2926,8 +2936,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1001 &540870208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3230,8 +3242,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!4 &571977101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
@@ -3730,8 +3744,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1001 &755840246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3859,8 +3875,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
   spriteRight: {fileID: 21300000, guid: a11dc1240033ae9429d3d2a55ce6795f, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!65 &755840250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4175,8 +4193,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &806868604
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,11 +4580,11 @@ Transform:
   m_Children:
   - {fileID: 1553403456}
   - {fileID: 1566404994}
-  - {fileID: 425479690}
-  - {fileID: 1633688437}
+  - {fileID: 425479691}
+  - {fileID: 1457761673}
   - {fileID: 1474337679}
   - {fileID: 755840247}
-  - {fileID: 1457761673}
+  - {fileID: 1633688438}
   - {fileID: 110501702}
   - {fileID: 787064602}
   m_Father: {fileID: 0}
@@ -4755,6 +4775,49 @@ Transform:
   m_Father: {fileID: 691008959}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &909867052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909867053}
+  - component: {fileID: 909867054}
+  m_Layer: 0
+  m_Name: TokenManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &909867053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909867052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1627101964}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909867054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909867052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9419d93b391d89445a041633dd0c3df1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &942757318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5469,8 +5532,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
   spriteRight: {fileID: 21300000, guid: 3a7b995673aaf3d41894143ae1f521f4, type: 3}
   startMiniGame: 1
+  tokenValue: 1
   miniGame: 1
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!65 &1029217906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5514,8 +5579,8 @@ Transform:
   - {fileID: 1624217623}
   - {fileID: 1426537929}
   - {fileID: 1296763291}
-  - {fileID: 229770449}
   - {fileID: 1199620820}
+  - {fileID: 229770449}
   - {fileID: 694963002}
   - {fileID: 540625523}
   m_Father: {fileID: 0}
@@ -5686,8 +5751,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
   spriteRight: {fileID: 21300000, guid: 864cca50551b4b142853a6f1b5b4bc6d, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1001 &1083606582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5998,7 +6065,7 @@ Transform:
   m_LocalScale: {x: 0.3000002, y: 0.2, z: 0.05409006}
   m_Children: []
   m_Father: {fileID: 1046770427}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1199620821
 MonoBehaviour:
@@ -6025,8 +6092,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &1208457214
 GameObject:
   m_ObjectHideFlags: 0
@@ -7010,8 +7079,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
   spriteRight: {fileID: 21300000, guid: 649315fad1701b645be0ea906dca4aeb, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!65 &1389185697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7264,8 +7335,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &1426537926
 GameObject:
   m_ObjectHideFlags: 0
@@ -7484,7 +7557,7 @@ Transform:
   m_LocalScale: {x: 0.30000013, y: 0.29999998, z: 0.050000038}
   m_Children: []
   m_Father: {fileID: 862600992}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1457761674
 BoxCollider:
@@ -7599,8 +7672,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1001 &1464616095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8660,6 +8735,7 @@ Transform:
   - {fileID: 169508568}
   - {fileID: 844363086}
   - {fileID: 1076246089}
+  - {fileID: 909867053}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8756,6 +8832,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 89b80b14ad5df1148a79b8a649aafa26,
     type: 3}
+  m_PrefabInstance: {fileID: 1633688436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1633688438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 1633688436}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1646560412
@@ -9285,8 +9366,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &1754172421
 GameObject:
   m_ObjectHideFlags: 0
@@ -10330,7 +10413,7 @@ Transform:
   m_LocalScale: {x: 0.74, y: 0.19999996, z: 0.73999983}
   m_Children: []
   m_Father: {fileID: 425479690}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988905434
 GameObject:
@@ -10737,8 +10820,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1001 &2048106459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11317,8 +11402,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!4 &355436659552138089
 Transform:
   m_ObjectHideFlags: 0
@@ -11334,7 +11421,7 @@ Transform:
   - {fileID: 6418824056245895062}
   - {fileID: 806868605}
   m_Father: {fileID: 1633688437}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683813336214842267
 GameObject:
@@ -11394,8 +11481,10 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
   spriteRight: {fileID: 21300000, guid: ce0f78ee73e1fe64ebb522283d592b7d, type: 3}
   startMiniGame: 0
+  tokenValue: 1
   miniGame: 0
   isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &1127328647618882003
 GameObject:
   m_ObjectHideFlags: 0

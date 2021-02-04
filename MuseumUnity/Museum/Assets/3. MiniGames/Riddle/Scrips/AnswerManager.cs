@@ -7,7 +7,7 @@ public class AnswerManager : MonoBehaviour
 {
     private string answerRiddle;
     private bool start = false;
-
+    private int tokenValue = 0;
     [SerializeField] GameObject letterPrefab;
     [SerializeField] TMP_Text riddleTextbox;
     [SerializeField] GameObject answerFill;
@@ -140,8 +140,9 @@ public class AnswerManager : MonoBehaviour
 
     }
 
-    public void StartMinigame()
+    public void StartMinigame(int n)
     {
+        tokenValue = n;
         start = true;
         StartCoroutine(StartImage());
         
@@ -161,13 +162,14 @@ public class AnswerManager : MonoBehaviour
     {
         if(count%2 != 0)
         {
-            StartMinigame();
+            StartMinigame(tokenValue);
         }
         else
         {
             endImage.SetActive(true);
             yield return new WaitForSeconds(3f);
             endImage.SetActive(false);
+            TokenManager.Instance.NewTokenHalf(tokenValue);
             gameObject.SetActive(false);
         }
         
