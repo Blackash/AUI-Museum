@@ -19,6 +19,7 @@ public class DressUpManager : MonoBehaviour
     [SerializeField] private GameObject imagePrefab;
     [SerializeField] private GameObject startImage;
     [SerializeField] private GameObject endImage;
+    private int tokenValue = 0;
     private int phase;
     private bool start;
     private int count = 0;
@@ -141,8 +142,9 @@ public class DressUpManager : MonoBehaviour
 
     }
 
-    public void StartMinigame()
+    public void StartMinigame(int n)
     {
+        tokenValue = n;
         start = true;
         if(count % 3 == 0)
             StartCoroutine(StartImage());
@@ -165,7 +167,7 @@ public class DressUpManager : MonoBehaviour
         if (count % 3 != 0)
         {
             yield return new WaitForSeconds(2f);
-            StartMinigame();
+            StartMinigame(tokenValue);
         }
         else
         {
@@ -173,6 +175,7 @@ public class DressUpManager : MonoBehaviour
             endImage.SetActive(true);
             yield return new WaitForSeconds(3f);
             endImage.SetActive(false);
+            TokenManager.Instance.NewTokenHalf(tokenValue);
             gameObject.SetActive(false);
         }
     }

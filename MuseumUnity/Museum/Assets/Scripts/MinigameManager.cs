@@ -13,20 +13,20 @@ public class MinigameManager : Singleton<MinigameManager>
 
 
 
-    public void StartMinigame(MiniGames mini)
+    public void StartMinigame(MiniGames mini, int tokenValue)
     {
         switch(mini)
         {
             case MiniGames.Riddle:
                 {
                     riddleMinigame.SetActive(true);
-                    riddleMinigame.GetComponent<AnswerManager>().StartMinigame();
+                    riddleMinigame.GetComponent<AnswerManager>().StartMinigame(tokenValue);
                     break;
                 }
             case MiniGames.DressUp:
                 {
                     dressUpMinigame.SetActive(true);
-                    dressUpMinigame.GetComponent<DressUpManager>().StartMinigame();
+                    dressUpMinigame.GetComponent<DressUpManager>().StartMinigame(tokenValue);
                     break;
                 }
             case MiniGames.Offering:

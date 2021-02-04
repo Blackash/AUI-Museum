@@ -18,7 +18,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
     void Start()
     {
-        Debug.Log(sentences);
+       
         //sentences = new Queue<string>();
         Debug.Log(sentences);
         if (!isMinigame)

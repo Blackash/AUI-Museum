@@ -11,12 +11,17 @@ public class DialogueTrigger : MonoBehaviour
     public Sprite spriteRight;
 
     public bool startMiniGame = false;
+    public int tokenValue = 1;
 
-    [SerializeField] MiniGames miniGame;
+   [SerializeField] MiniGames miniGame;
 
     public bool isMinigame = false;
 
+    public bool isPartOfBigDialogue = false;
+
     private bool dialoguetrigger = false;
+
+   
     public void Update()
     {
         if (isMinigame && !dialoguetrigger)
@@ -50,8 +55,9 @@ public class DialogueTrigger : MonoBehaviour
             NextQuestion();
         }
         if (startMiniGame)
-            MinigameManager.Instance.StartMinigame(miniGame);
-
+            MinigameManager.Instance.StartMinigame(miniGame,tokenValue);
+        if (isPartOfBigDialogue)
+            GetComponentInParent<StartingRoomDialogue>().NextDialogue();
     }
 
 
