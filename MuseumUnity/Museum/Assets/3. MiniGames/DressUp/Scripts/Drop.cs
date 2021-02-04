@@ -13,13 +13,14 @@ public class Drop : MonoBehaviour, IDropHandler
     public void Start()
     {
         dressUpManager = FindObjectOfType<DressUpManager>();
-        human = FindObjectOfType<DragAndDropHuman>();
+        human = GetComponentInParent<DragAndDropHuman>();
     }
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
         {
             GameObject other = eventData.pointerDrag;
+            Debug.Log(other.GetComponent<DragAndDrop>().GetDressType() + " " + other.GetComponent<DragAndDrop>().getDressSO().socialClass + " " + human.GetSocialClass());
             if(other.GetComponent<DragAndDrop>().GetDressType() == positionType && other.GetComponent<DragAndDrop>().getDressSO().socialClass == human.GetSocialClass())
             {
                 Debug.Log("Right position");

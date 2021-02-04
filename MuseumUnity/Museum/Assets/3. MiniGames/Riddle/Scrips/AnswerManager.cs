@@ -26,9 +26,24 @@ public class AnswerManager : MonoBehaviour
     List<GameObject> letters;
     private int nCorrectLetters;
     private int nLetterAnswer;
+    private int count = 0;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        for (int t = 0; t < riddles.Length; t++)
+        {
+            Riddle tmp = riddles[t];
+            int r = UnityEngine.Random.Range(t, riddles.Length);
+            riddles[t] = riddles[r];
+            riddles[r] = tmp;
+        }
+    }
     void Start()
     {
+        
+
+            
         
     }
 
@@ -95,19 +110,19 @@ public class AnswerManager : MonoBehaviour
 
      }*/
 
-    private void prepareMinigame()
+    private void prepareMinigame(int n)
     {
         nCorrectLetters = 0;
-        int randomN = UnityEngine.Random.Range(0, riddles.Length);
-        riddleTextbox.text = riddles[randomN].riddle;
-        nLetterAnswer = riddles[randomN].answer.Length;
+        //int randomN = UnityEngine.Random.Range(0, riddles.Length);
+        riddleTextbox.text = riddles[n].riddle;
+        nLetterAnswer = riddles[n].answer.Length;
         letters = new List<GameObject>();
         char[] tmpC = new Char[26];
         for (int i = 65; i < 65 + 26; i++)
         {
             tmpC[i - 65] = (char)i;
         }
-        foreach (char a in riddles[randomN].answer)
+        foreach (char a in riddles[n].answer)
         {
             GameObject tmp;
             tmp = Instantiate(letterPrefab, new Vector3(0, 0, 0), Quaternion.identity, answerFill.transform);
@@ -129,7 +144,9 @@ public class AnswerManager : MonoBehaviour
     {
         start = true;
         StartCoroutine(StartImage());
-        prepareMinigame();
+        
+        prepareMinigame(count);
+        count++;
     }
 
 
@@ -142,9 +159,17 @@ public class AnswerManager : MonoBehaviour
 
     IEnumerator EndImage()
     {
-        endImage.SetActive(true);
-        yield return new WaitForSeconds(3f);
-        endImage.SetActive(false);
-        gameObject.SetActive(false);
+        if(count%2 != 0)
+        {
+            StartMinigame();
+        }
+        else
+        {
+            endImage.SetActive(true);
+            yield return new WaitForSeconds(3f);
+            endImage.SetActive(false);
+            gameObject.SetActive(false);
+        }
+        
     }
 }

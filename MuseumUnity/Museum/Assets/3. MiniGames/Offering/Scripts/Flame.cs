@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class Flame : MonoBehaviour
 {
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
-
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
 
     public void turnRed()
     {
@@ -21,13 +16,14 @@ public class Flame : MonoBehaviour
     public void turnGreen()
     {
         animator.SetBool("Red", false);
+        StartCoroutine(FlameCourutine());
     }
 
     IEnumerator FlameCourutine()
     {
         
             yield return new WaitForSeconds(4f);
-            turnRed();
+        gameObject.SetActive(false);
 
 
     }

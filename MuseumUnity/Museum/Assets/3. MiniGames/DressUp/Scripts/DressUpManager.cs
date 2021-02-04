@@ -21,9 +21,29 @@ public class DressUpManager : MonoBehaviour
     [SerializeField] private GameObject endImage;
     private int phase;
     private bool start;
+    private int count = 0;
+    private SocialClass[] selectClass = { SocialClass.CONTADINI , SocialClass.FARAONE, SocialClass.MERCANTI, SocialClass.SCHIAVI, SocialClass.SCRIBI, SocialClass.SOLDATI };
+
+    private void Awake()
+    {
+        for (int t = 0; t < selectClass.Length; t++)
+        {
+            SocialClass tmp = selectClass[t];
+            int r = UnityEngine.Random.Range(t, selectClass.Length);
+            selectClass[t] = selectClass[r];
+            selectClass[r] = tmp;
+        }
+
+        for (int t = 0; t < selectClass.Length; t++)
+        {
+            Debug.Log(selectClass[t]);
+        }
+    }
     void Start()
     {
         
+        
+
     }
 
     // Update is called once per frame
@@ -59,6 +79,7 @@ public class DressUpManager : MonoBehaviour
         correctDress = -1;
         if(human == null)
         {
+            Debug.Log("entra qua");
             human = Instantiate(humanPrefab,gameObject.transform);
             //human.transform.parent = gameObject.transform;
             human.GetComponent<DragAndDropHuman>().canvas = GetComponent<Canvas>();
@@ -67,6 +88,7 @@ public class DressUpManager : MonoBehaviour
             human.GetComponent<RectTransform>().SetSiblingIndex(2);
 
         }
+        Debug.Log("passa di qua con "+ human);
         human.GetComponent<DragAndDropHuman>().InsertSocialClass(socialClass);
         human.transform.localScale = new Vector3(0.8f, 0.8f, 1);
         pyramid.transform.localScale = new Vector3(1f, 1f, 1f);
@@ -74,22 +96,22 @@ public class DressUpManager : MonoBehaviour
         AddCorrectDresses(socialClass);
         switch(socialClass)
         {
-            case SocialClass.FARAONE: Description.text = descriptionText[5];
+            case SocialClass.FARAONE: Description.text = descriptionText[0];
                 break;
             case SocialClass.SCRIBI:
-                Description.text = descriptionText[4];
+                Description.text = descriptionText[1];
                 break;
             case SocialClass.SOLDATI:
-                Description.text = descriptionText[3];
-                break;
-            case SocialClass.MERCANTI:
                 Description.text = descriptionText[2];
                 break;
+            case SocialClass.MERCANTI:
+                Description.text = descriptionText[3];
+                break;
             case SocialClass.CONTADINI:
-                Description.text = descriptionText[0];
+                Description.text = descriptionText[5];
                 break;
             case SocialClass.SCHIAVI:
-                Description.text = descriptionText[1];
+                Description.text = descriptionText[4];
                 break;
 
             default: break;
@@ -122,8 +144,12 @@ public class DressUpManager : MonoBehaviour
     public void StartMinigame()
     {
         start = true;
-        StartCoroutine(StartImage());
+        if(count % 3 == 0)
+            StartCoroutine(StartImage());
+        socialClass = selectClass[count];
+        count++;
         prepareMinigame();
+        
     }
 
     IEnumerator StartImage()
@@ -135,9 +161,19 @@ public class DressUpManager : MonoBehaviour
 
     IEnumerator EndImage()
     {
-        endImage.SetActive(true);
-        yield return new WaitForSeconds(3f);
-        endImage.SetActive(false);
-        gameObject.SetActive(false);
+        Debug.Log("errore " + count);
+        if (count % 3 != 0)
+        {
+            yield return new WaitForSeconds(2f);
+            StartMinigame();
+        }
+        else
+        {
+            
+            endImage.SetActive(true);
+            yield return new WaitForSeconds(3f);
+            endImage.SetActive(false);
+            gameObject.SetActive(false);
+        }
     }
 }

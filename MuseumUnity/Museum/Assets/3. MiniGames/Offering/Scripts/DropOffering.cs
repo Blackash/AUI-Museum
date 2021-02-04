@@ -8,7 +8,7 @@ public class DropOffering : MonoBehaviour, IDropHandler
 {
 
     [SerializeField] private int totalOfferings;
-    [SerializeField] private int god;
+    public int god;
     [SerializeField] Flame flameAnimator;
     [SerializeField] Sprite emptyImage;
     private int currentOfferings;
@@ -36,6 +36,7 @@ public class DropOffering : MonoBehaviour, IDropHandler
             if (other.GetComponent<DragAndDropOffering>().GetGodOffering()[god])
             {
                 Debug.Log("Right offering");
+                flameAnimator.gameObject.SetActive(true);
                 flameAnimator.turnGreen();
                 currentOfferings++;
 
@@ -43,6 +44,8 @@ public class DropOffering : MonoBehaviour, IDropHandler
             else
             {
                 Debug.Log("Bad Offering");
+                flameAnimator.gameObject.SetActive(true);
+                flameAnimator.turnRed();
             }
             other.SetActive(false);
             StartCoroutine(BurnCouroutine());
