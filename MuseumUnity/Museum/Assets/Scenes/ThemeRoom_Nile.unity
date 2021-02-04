@@ -1348,6 +1348,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Agriculture_Bull2
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13dfb1895666cc548a3af1e5b6cbe9a3, type: 3}
 --- !u!4 &229770449 stripped
@@ -1356,6 +1361,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 229770448}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &229770450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 229770448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &229770451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229770450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: agri_bull2_mini_game
+    sentences:
+    - Oh look! A game! Good luck!
+    time:
+    - 5
+  spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
+  spriteRight: {fileID: 21300000, guid: be8853ad084ce6048b0ce1705ee2166d, type: 3}
+  startMiniGame: 1
+  miniGame: 2
+  isMinigame: 0
+--- !u!65 &229770452
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229770450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0989946, y: 1.0640963, z: 0.33065435}
+  m_Center: {x: -0.12492938, y: -0.33698106, z: 0.10128137}
 --- !u!1001 &235432596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1853,6 +1900,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: cc944febd08d7fa49bcc6c760413ad84,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc944febd08d7fa49bcc6c760413ad84, type: 3}
 --- !u!4 &330028018 stripped
@@ -1861,6 +1913,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 330028017}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &330028019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: cc944febd08d7fa49bcc6c760413ad84,
+    type: 3}
+  m_PrefabInstance: {fileID: 330028017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &330028020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330028019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Modelboat2_content
+    sentences:
+    - "Wooden boats were used to transport people and goods, but also to transport
+      the big stones used to construct the pyramids, over more than 1000km from the
+      limestone quarries to the pyramids\u2019 construction sites. "
+    - 'Egyptians had mastered the art of navigation, and each use had its own boat
+      type. '
+    time:
+    - 20
+    - 10
+  spriteLeft: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83, type: 3}
+  spriteRight: {fileID: 21300000, guid: 981d2d30b3e0b664d8d96b07eba50abd, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
+--- !u!65 &330028021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330028019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16721423, y: 0.2318047, z: 0.09145368}
+  m_Center: {x: 0.015446901, y: -0.021075286, z: 0.046880268}
 --- !u!1001 &346023086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3715,6 +3814,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diet_Bowl2
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 9ff81bba99ef0cc458bec1c64f3206f6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ff81bba99ef0cc458bec1c64f3206f6, type: 3}
 --- !u!4 &755840247 stripped
@@ -3723,6 +3827,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 755840246}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &755840248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 9ff81bba99ef0cc458bec1c64f3206f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 755840246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &755840249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755840248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: diet_bowl2_content
+    sentences:
+    - 'Egyptians back then did not eat the same as you do today. They ate bread and
+      drank beer that were made from the cereals that grew on the fertile black land
+      near the Nile. '
+    - 'Vegetables, fruits and fish were a common diet but meat was a privilege of
+      the rich population. Sugar did not exist, so they used dates and honey as sweeteners. '
+    time:
+    - 20
+    - 20
+  spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
+  spriteRight: {fileID: 21300000, guid: a11dc1240033ae9429d3d2a55ce6795f, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
+--- !u!65 &755840250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755840248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4958583, y: 1.4924009, z: 0.63525873}
+  m_Center: {x: -0.267698, y: 1.8561339, z: -1.551557}
 --- !u!1001 &787064601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5263,6 +5414,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5235501788432820312, guid: 8de45b3e900499f4b9c038c77da8211d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     - target: {fileID: -3045432527599743547, guid: 8de45b3e900499f4b9c038c77da8211d,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -5305,12 +5461,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Fish Coffin
+    name: fish_coffin_mini_game
     sentences:
-    - Are you ready children?
-    time: []
+    - Oo look children! Look's like we are playing a game!
+    time:
+    - 5
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
-  spriteRight: {fileID: 0}
+  spriteRight: {fileID: 21300000, guid: 3a7b995673aaf3d41894143ae1f521f4, type: 3}
   startMiniGame: 1
   miniGame: 1
   isMinigame: 0
@@ -5423,9 +5580,10 @@ GameObject:
   - component: {fileID: 1077179391}
   - component: {fileID: 1077179390}
   - component: {fileID: 1077179389}
+  - component: {fileID: 1077179393}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5439,7 +5597,7 @@ BoxCollider:
   m_GameObject: {fileID: 1077179388}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5504,6 +5662,32 @@ Transform:
   m_Father: {fileID: 1988905437}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1077179393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077179388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: papyrus_written_content
+    sentences:
+    - 'The papyrus plant stem was weaved to make papyruses, the paper on which Egyptians
+      invented the hieroglyph system. '
+    - 'The plant was also used to make sails, cloth, mats, and cords. '
+    time:
+    - 15
+    - 10
+  spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
+  spriteRight: {fileID: 21300000, guid: 864cca50551b4b142853a6f1b5b4bc6d, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
 --- !u!1001 &1083606582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6757,6 +6941,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrocodileSobek
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 98629e9be18433042828a2adc2aabf26,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 98629e9be18433042828a2adc2aabf26,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98629e9be18433042828a2adc2aabf26, type: 3}
 --- !u!1 &1389185692 stripped
@@ -6784,6 +6978,53 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 2.5, z: 3}
   m_Center: {x: -0.6, y: -0.1, z: -4.4}
+--- !u!1 &1389185695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 98629e9be18433042828a2adc2aabf26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1389185691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1389185696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389185695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: sobek_content
+    sentences:
+    - 'In the delta, the Nile flooded every year between May and August, leaving
+      residues that fertilized the earth and permitted abundant harvests. '
+    - "Ancient Egyptians believed it was because of the goddess Isis\u2019 tears,
+      as she cried over the death of Osiris her husband. The river grew almost 14
+      meters! "
+    time:
+    - 15
+    - 15
+  spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
+  spriteRight: {fileID: 21300000, guid: 649315fad1701b645be0ea906dca4aeb, type: 3}
+  startMiniGame: 0
+  miniGame: 0
+  isMinigame: 0
+--- !u!65 &1389185697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389185695}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.454263, y: 3.55216, z: 2.6526382}
+  m_Center: {x: -0.6165645, y: -0.40802896, z: -4.355156}
 --- !u!1001 &1401779718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11141,15 +11382,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Seti/Blue Earthenware Hippo????????
+    name: blue_hippo_content
     sentences:
     - 'The hippopotamus was very common in the northern part of the Nile. You might
       think it is a big friendly animal, but it is very dangerous! '
     - It flipped boats, mauled their passengers, and sometimes ate all the harvest
       of peasants. Actually, it is still today the deadliest animal of Africa.
     time:
-    - 10
-    - 10
+    - 15
+    - 15
   spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
   spriteRight: {fileID: 21300000, guid: ce0f78ee73e1fe64ebb522283d592b7d, type: 3}
   startMiniGame: 0
