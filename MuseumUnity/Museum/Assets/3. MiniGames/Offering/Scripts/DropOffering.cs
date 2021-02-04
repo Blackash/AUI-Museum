@@ -13,18 +13,14 @@ public class DropOffering : MonoBehaviour, IDropHandler
     [SerializeField] Sprite emptyImage;
     private int currentOfferings;
     private OfferingManager offeringManager;
+    [SerializeField] private OfferingManager manager;
     public void Start()
     {
-        currentOfferings = 0;
         offeringManager = FindObjectOfType<OfferingManager>();
     }
 
     public void Update()
     {
-        if(currentOfferings == totalOfferings)
-        {
-            //game end
-        }
     }
     public void OnDrop(PointerEventData eventData)
     {
@@ -38,7 +34,7 @@ public class DropOffering : MonoBehaviour, IDropHandler
                 Debug.Log("Right offering");
                 flameAnimator.gameObject.SetActive(true);
                 flameAnimator.turnGreen();
-                currentOfferings++;
+                manager.correctOffering();
 
             }
             else

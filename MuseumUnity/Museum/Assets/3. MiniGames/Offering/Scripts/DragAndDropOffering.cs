@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class DragAndDropOffering : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerClickHandler
 {
-    [SerializeField] private Canvas canvas;
+    public Canvas canvas;
     [SerializeField] private OfferingSO offeringSO;
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
@@ -19,6 +19,7 @@ public class DragAndDropOffering : MonoBehaviour, IPointerDownHandler, IBeginDra
     }
     private void Start()
     {
+        
         gameObject.GetComponent<Image>().sprite = offeringSO.offeringImage;
   
     }

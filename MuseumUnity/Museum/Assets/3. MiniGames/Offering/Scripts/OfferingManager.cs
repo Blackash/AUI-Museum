@@ -28,6 +28,16 @@ public class OfferingManager : MonoBehaviour
         altar.god = countGod;
     }
 
+    private bool test = false;
+    private void Update()
+    {
+        if(!test)
+        {
+            test = true;
+            StartMinigame();
+        }
+    }
+
     public void correctOffering()
     {
         currentOffering++;
@@ -52,9 +62,20 @@ public class OfferingManager : MonoBehaviour
 
     IEnumerator EndImage()
     {
+        if (countGod != 2)
+        {
+            Destroy(offeringList);
+            yield return new WaitForSeconds(1f);
+            countGod++;
+            currentOffering = 0;
+            prepareMinigame();
+        }
+        else
+        {
             endImage.SetActive(true);
             yield return new WaitForSeconds(3f);
             endImage.SetActive(false);
             gameObject.SetActive(false);
+        }
     }
 }
