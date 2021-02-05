@@ -5,6 +5,7 @@ using UnityEngine;
 public class StartingRoomDialogue : MonoBehaviour
 {
     [SerializeField] DialogueTrigger[] LongDialogue;
+    [SerializeField] private bool isStartingDialogue = false;
     int count = 0;
     private bool oneTime = false;
     private void Start()
@@ -14,7 +15,7 @@ public class StartingRoomDialogue : MonoBehaviour
 
     private void Update()
     {
-        if(!oneTime)
+        if(!oneTime && isStartingDialogue)
         {
             oneTime = true;
             NextDialogue();
