@@ -22,7 +22,10 @@ public class SelectionManager : MonoBehaviour
         {
             if(Input.GetMouseButtonDown(0))
                 {
-                _selection.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+                if(_selection.gameObject.GetComponent<DialogueTrigger>() != null)
+                    _selection.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+                if (_selection.gameObject.GetComponent<SelectableDialogue>() != null)
+                    _selection.gameObject.GetComponent<SelectableDialogue>().dialogue();
                 FindObjectOfType<PlayerMovement>().BlockMovement();
                 }
 

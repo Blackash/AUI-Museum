@@ -176,6 +176,7 @@ public class DressUpManager : MonoBehaviour
             yield return new WaitForSeconds(3f);
             endImage.SetActive(false);
             TokenManager.Instance.NewTokenHalf(tokenValue);
+            //triggero qua un dialogue
             gameObject.SetActive(false);
         }
     }
