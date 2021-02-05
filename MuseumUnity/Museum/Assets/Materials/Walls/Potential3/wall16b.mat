@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: wall16b
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _NORMALMAP _PARALLAXMAP
-  m_LightmapFlags: 5
+  m_ShaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -74,8 +74,10 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 0
-    - _Glossiness: 0.17
-    - _Metallic: 0.092
+    - _GlossMapScale: 1
+    - _Glossiness: 0.527
+    - _GlossyReflections: 1
+    - _Metallic: 0.553
     - _Mode: 0
     - _OcclusionStrength: 0.791
     - _Parallax: 0.0065
@@ -83,12 +85,14 @@ Material:
     - _ShadeRange: 0.02
     - _ShadingStrength: 0.14925373
     - _Shininess: 0.27831945
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _UseAlpha: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8980392, g: 0.8980392, b: 0.8980392, a: 1}
+    - _Color: {r: 0.50980395, g: 0.5152724, b: 0.6901961, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
