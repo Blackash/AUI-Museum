@@ -254,6 +254,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.019
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b174c414a297af24da4dfe59daa3e638,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b174c414a297af24da4dfe59daa3e638, type: 3}
 --- !u!4 &12621762 stripped
@@ -262,6 +267,58 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 12621761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &12621763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: b174c414a297af24da4dfe59daa3e638,
+    type: 3}
+  m_PrefabInstance: {fileID: 12621761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &12621764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12621763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: horus_content2
+    sentences:
+    - In the creation myth of Heliopolis, Nut, goddess of the Sky, represented as
+      a bending woman covered of stars, mated with Geb, her twin brother god of the
+      Earth.
+    - 'She gave birth to Osiris, Isis, Horus, Seth and Nephthys, major gods whose
+      myths are fundamental to the ancient Egyptian religion. '
+    - 'She gives order to the cosmos and protects it from chaos. Her toes and fingers,
+      on which she takes equilibrium to stand on the earth, are the cardinal points. '
+    time:
+    - 15
+    - 10
+    - 15
+  spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
+  spriteRight: {fileID: 21300000, guid: 6f3711af2243a02428def064818730dc, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &12621765
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12621763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28169024, y: 0.7201911, z: 0.41123894}
+  m_Center: {x: 0, y: 0.000000059604645, z: 0.000000059604645}
 --- !u!1 &50210874
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,11 +524,67 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1040775451}
-  - {fileID: 1477286070}
+  - {fileID: 1040775452}
+  - {fileID: 1477286071}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &113344214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113344215}
+  - component: {fileID: 113344216}
+  m_Layer: 0
+  m_Name: GameObject (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &113344215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113344214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 730231139}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &113344216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113344214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: dia-4
+    sentences:
+    - "\u2026 like Anubis\u2026"
+    time:
+    - 3
+  spriteLeft: {fileID: 21300000, guid: 646004a80d991fe498c1af16c7cd5812, type: 3}
+  spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
 --- !u!1001 &122359468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1530,6 +1643,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 365913603}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &365913605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4243699309619047747, guid: 1901fd884af0053489ff691967b22a8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 365913603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &365913606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365913605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: eyeofrah_minigame
+    sentences:
+    - Look children! A game is about to start!
+    time:
+    - 5
+  spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
+  spriteRight: {fileID: 21300000, guid: 9cd7c6ae37e9a0845aad1387e92874b4, type: 3}
+  startMiniGame: 1
+  tokenValue: 2
+  miniGame: 1
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &365913607
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365913605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3485029, y: 0.21398799, z: 1.1138289}
+  m_Center: {x: -0.03191751, y: 0.010795, z: -0.0645095}
 --- !u!1 &381811931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,6 +1966,62 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422086586}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &425171556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 425171558}
+  - component: {fileID: 425171557}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &425171557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425171556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: dia-3
+    sentences:
+    - Sorry?
+    time:
+    - 3
+  spriteLeft: {fileID: 21300000, guid: 77a7801c2dcd8ca4390cff6883a5a458, type: 3}
+  spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
+--- !u!4 &425171558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425171556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 730231139}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &431646113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,6 +2481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EX_SM1902.17.31_141
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6913d1d39972e0d43bca2f731a509e1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6913d1d39972e0d43bca2f731a509e1e, type: 3}
 --- !u!4 &509411895 stripped
@@ -2276,6 +2494,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 509411894}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &509411896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6913d1d39972e0d43bca2f731a509e1e,
+    type: 3}
+  m_PrefabInstance: {fileID: 509411894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &509411897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509411896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: stela ra_content
+    sentences:
+    - Ra is the sun-god. Every day, he travels on his solar boat through the sky
+      where he shines a bright light on the human realm.
+    - "Every night, his boat goes in the Douat, the river of the underworld, where
+      he fights with Apophis, the snake of the darkness. He succeeds each time to
+      kill the snake, and that is why the sun rises every morning. \r"
+    time:
+    - 10
+    - 20
+  spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
+  spriteRight: {fileID: 21300000, guid: a3752696adda84549bf8711b9f1eae74, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &509411898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509411896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &542338078
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,6 +3695,206 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
     type: 3}
   m_PrefabInstance: {fileID: 699564903}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &730231138
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83,
+        type: 3}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919,
+        type: 3}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.name
+      value: dia-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "With a pantheon of more than a thousand gods, ancient Egypt religion
+        is one of the oldest and most studied religions ever worshiped by humankind.
+        From minor gods, like Taweret that you just met... \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: tokenValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3438752
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4018867
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.420125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: isStartingDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.data[2]
+      value: 
+      objectReference: {fileID: 425171557}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.data[3]
+      value: 
+      objectReference: {fileID: 1461507778}
+    - target: {fileID: 4741861279158940851, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_Name
+      value: StartingDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63,
+        type: 3}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919,
+        type: 3}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.name
+      value: dia-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Its formidable faun was a treasure for hunters and fishers, but also
+        a source for myths and legends. The mighty hippopotamuses, the numerous fishes,
+        the dangerous crocodiles... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: My dear friends, welcome to the Temple.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "This 6000 km-long ribbon permitted travel and trade through remote
+        parts of the nation through boats. Thanks to the Nile, Egypt developed as
+        a prosperous and complex civilization\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[1]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[2]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: isPartOfBigDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: tokenValue
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f09428ab8311af45bd935aad31d3a5b, type: 3}
+--- !u!4 &730231139 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 730231138}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &736881430
 GameObject:
@@ -4994,6 +5461,11 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1040775450}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1040775452 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1040775450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1044942601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5756,6 +6228,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfferingTableDefdji
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b86d43c484fbec347b787750d064e35b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b86d43c484fbec347b787750d064e35b, type: 3}
 --- !u!4 &1193045998 stripped
@@ -5764,6 +6241,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1193045997}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1193045999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: b86d43c484fbec347b787750d064e35b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1193045997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1193046000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193045999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: offerings_minigame
+    sentences:
+    - Oh goodie! Another game!
+    time:
+    - 5
+  spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
+  spriteRight: {fileID: 21300000, guid: 0f349a13398cf3d44b38066dd07b4052, type: 3}
+  startMiniGame: 1
+  tokenValue: 1
+  miniGame: 3
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &1193046001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193045999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.784714, y: 0.4117018, z: 1.731812}
+  m_Center: {x: 0.010586175, y: 0.20258811, z: 0.037057288}
 --- !u!1001 &1196396174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5831,8 +6352,63 @@ PrefabInstance:
       propertyPath: m_Name
       value: Horus2
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0c5e293e10cf7d647952efc3c3008ea9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c5e293e10cf7d647952efc3c3008ea9, type: 3}
+--- !u!1 &1196396175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 0c5e293e10cf7d647952efc3c3008ea9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1196396174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1196396176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196396175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: horus2_content
+    sentences:
+    - "Horus, a major god and the son of Isis and Osiris, wants to avenge the death
+      of his father, murdered by Seth. During their fight, Seth hurts Horus\u2019
+      eye, but Horus finally triumphs and wins over Seth. "
+    - "Horus\u2019 eye is later healed by Thot, the god of wisdom. Egyptians wore
+      amulets of the Udjat eye as a protection, and boats were decorated with it
+      so that they would \u201Csee\u201D the path. "
+    time:
+    - 15
+    - 15
+  spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
+  spriteRight: {fileID: 21300000, guid: ed02ef3bdd780524a89d3398772f5259, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &1196396177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196396175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.44178483, y: 0.6874431, z: 0.89857304}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1220786016
 GameObject:
   m_ObjectHideFlags: 0
@@ -5861,7 +6437,7 @@ BoxCollider:
   m_GameObject: {fileID: 1220786016}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7140,6 +7716,62 @@ Transform:
   m_Father: {fileID: 1796608843}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1461507777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1461507779}
+  - component: {fileID: 1461507778}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1461507778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461507777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: dia-4
+    sentences:
+    - "\u2026to major gods\u2026"
+    time:
+    - 3
+  spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
+  spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
+--- !u!4 &1461507779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461507777}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 730231139}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1464616095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7410,6 +8042,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d6ea40506b82ee7408d01716e6c8de66,
     type: 3}
+  m_PrefabInstance: {fileID: 1477286069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1477286071 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 1477286069}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1492611060
@@ -7691,7 +8328,7 @@ Transform:
   m_LocalScale: {x: 0.7142857, y: 0.49999997, z: 0.7142857}
   m_Children: []
   m_Father: {fileID: 1477286070}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1553758629
 GameObject:
@@ -7973,8 +8610,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: OsirisSlab
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a3814280603aa0419cc74b9beeea4a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2a3814280603aa0419cc74b9beeea4a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a3814280603aa0419cc74b9beeea4a5, type: 3}
+--- !u!1 &1574478814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 2a3814280603aa0419cc74b9beeea4a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1574478813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1574478815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574478814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: osiris_content
+    sentences:
+    - 'Osiris is an Egyptian god that was believed to be the first Pharaoh of Egypt.
+      His brother Seth, god of the Desert and of the Storms, was jealous of him and
+      wanted to gain access to the throne. One day, he organized a competition were
+      the contestants had to enter a coffin. '
+    - 'But the competition was rigged: all the other contestants were allies of Seth
+      and faked that they could not enter the coffin. So, when Osiris entered the
+      coffin, Seth and his friends sealed the coffin and threw it into the Nile. '
+    - 'Osiris was later found by his wife, the queen Isis and brought back to life
+      thanks to her magic powers. They had a son, Horus, and Osiris went back to
+      the underworld to reign over the dead. '
+    time:
+    - 20
+    - 15
+    - 15
+  spriteLeft: {fileID: 21300000, guid: 646004a80d991fe498c1af16c7cd5812, type: 3}
+  spriteRight: {fileID: 21300000, guid: 819d1c7fe3141294bad269338c170bfa, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &1574478816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574478814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3890076, y: 2.6113186, z: 0.75168985}
+  m_Center: {x: -0.59408987, y: -0.052497238, z: 0.33509827}
 --- !u!1001 &1600647122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8070,6 +8772,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1600647122}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1606010650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1606010651}
+  - component: {fileID: 1606010652}
+  m_Layer: 0
+  m_Name: GameObject (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1606010651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606010650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 730231139}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1606010652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606010650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: dia-4
+    sentences:
+    - "\u2026 their conflicts or their satisfaction were believed to influence all
+      sorts of events; from the birth of a baby to a catastrophic absence of flood
+      in the Nile delta. Horus, Amon-R\xE2, Seth, Isis, Osiris\u2026 "
+    - Temples were all over the nation, and rituals like offerings were very important
+      in the daily Egyptian life. Enter and cross this room carefully, as silent
+      deities might be watching our steps. The pyramid is two rooms away.
+    time:
+    - 20
+    - 20
+  spriteLeft: {fileID: 21300000, guid: 74bc7c14854836d4994988ec7da24a92, type: 3}
+  spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
 --- !u!1001 &1628613207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8152,8 +8916,63 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thot
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8379bedfdfc576c47bf63559a9fb4352,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8379bedfdfc576c47bf63559a9fb4352, type: 3}
+--- !u!1 &1628613208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 8379bedfdfc576c47bf63559a9fb4352,
+    type: 3}
+  m_PrefabInstance: {fileID: 1628613207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1628613209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628613208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: thot_content
+    sentences:
+    - When ancient Egyptians died, they believed that their heart was weighed. Anubis,
+      the god the Dead, held the balance, and Thot, the god of Writing and Mathematics,
+      wrote the results.
+    - 'If they had done good things, their heart was light, and they could access
+      afterlife. If not, they were eaten by Ammit, the goddess with a crocodile head,
+      a lion upper body and a hippopotamus lower body. '
+    time:
+    - 15
+    - 20
+  spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
+  spriteRight: {fileID: 21300000, guid: d21e8516630a5ee4ba2fdb1e81533088, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &1628613210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628613208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1843022, y: 4.840873, z: 1.6608948}
+  m_Center: {x: -0.91441923, y: 1.2000105, z: -12.509312}
 --- !u!1 &1633282365
 GameObject:
   m_ObjectHideFlags: 0
@@ -9144,6 +9963,62 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812443951}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1828586953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828586954}
+  - component: {fileID: 1828586955}
+  m_Layer: 0
+  m_Name: GameObject (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1828586954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828586953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 730231139}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1828586955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828586953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: dia-4
+    sentences:
+    - ...
+    time:
+    - 2
+  spriteLeft: {fileID: 21300000, guid: 1621ddd5fc6573e479e5c080233bd9a1, type: 3}
+  spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
 --- !u!1 &1829886239
 GameObject:
   m_ObjectHideFlags: 0
@@ -9328,7 +10203,7 @@ Transform:
   m_LocalScale: {x: 1.6666664, y: 1.4999995, z: 1.6666664}
   m_Children: []
   m_Father: {fileID: 1040775451}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1854683259
 PrefabInstance:
@@ -9425,6 +10300,62 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1854683259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1854683261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 73e6fe0eba7817d4dba0c75aa3e6c6b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1854683259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1854683262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854683261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: outerupper_content
+    sentences:
+    - 'The process of mummification would take seventy days during which some internal
+      parts of the body had to be removed like the brain, which had to be pulled
+      out through the nostrils, the liver, lungs, stomach and intestines. '
+    - 'Only the heart was left in place because they believed it was the centre of
+      a person''s being and intelligence. The body was then dried out and wrapped
+      in linen. To make it more human-like, fake eyes were added to the mummy''s
+      face. '
+    - "Then the mummy was put in several layers of wooden coffins, themselves often
+      put in a stone sarcophagus. \rThe Egyptians believed that the mummified body
+      was the home for this soul or spirit. If the body was destroyed, the spirit
+      might be lost. "
+    time:
+    - 25
+    - 25
+    - 25
+  spriteLeft: {fileID: 21300000, guid: 74bc7c14854836d4994988ec7da24a92, type: 3}
+  spriteRight: {fileID: 21300000, guid: 290da2c7279d9a24ab9dd19bd862bd13, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &1854683263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854683261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7262692, y: 0.43994498, z: 1.9730124}
+  m_Center: {x: -0.041940045, y: 0.6737355, z: 0.02244792}
 --- !u!1 &1857727281
 GameObject:
   m_ObjectHideFlags: 0
@@ -10585,10 +11516,55 @@ GameObject:
   - component: {fileID: 1151388027814391320}
   - component: {fileID: 2823090747268503378}
   - component: {fileID: 1587545475182146502}
+  - component: {fileID: 8164078560036633893}
+  - component: {fileID: 8164078560036633892}
   m_Layer: 0
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8164078560036633892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164078560036633891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: luxor_content
+    sentences:
+    - The Luxor Temple is a group of several temples located near the city of Luxor.
+      It was built under four different pharaohs including Tutankhamun and Ramesses
+      II.
+    - 'At the entrance stood two obelisks, the smaller of which is now located in
+      Place de la Concorde in Paris. '
+    time:
+    - 15
+    - 10
+  spriteLeft: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &8164078560036633893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164078560036633891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6800001, y: 0.35499996, z: 0.9000002}
+  m_Center: {x: -0.024587026, y: 0.17249736, z: 0.01000357}

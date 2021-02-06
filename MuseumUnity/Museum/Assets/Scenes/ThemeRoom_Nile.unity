@@ -451,13 +451,13 @@ PrefabInstance:
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: spriteLeft
       value: 
-      objectReference: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919,
+      objectReference: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83,
         type: 3}
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -465,6 +465,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919,
         type: 3}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.name
+      value: dia-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: A nation that I once ruled.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: tokenValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -547,14 +562,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: spriteLeft
       value: 
-      objectReference: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919,
+      objectReference: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b,
         type: 3}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -562,6 +587,52 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919,
         type: 3}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.name
+      value: dia-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Its formidable faun was a treasure for hunters and fishers, but also
+        a source for myths and legends. The mighty hippopotamuses, the numerous fishes,
+        the dangerous crocodiles... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Oh, the Nile\u2026 This mighty river is the blessing on which the whole
+        Egyptian civilization flourished. The annual flood of its delta, the northern
+        part where the river meets the sea, brought fertility to the soils. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "This 6000 km-long ribbon permitted travel and trade through remote
+        parts of the nation through boats. Thanks to the Nile, Egypt developed as
+        a prosperous and complex civilization\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[1]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[2]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: isPartOfBigDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: tokenValue
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f09428ab8311af45bd935aad31d3a5b, type: 3}
 --- !u!4 &90071956 stripped
@@ -1074,22 +1145,6 @@ MonoBehaviour:
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0
---- !u!1 &135275200
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1633688438}
-  m_Layer: 0
-  m_Name: Diet_Bowl (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &194076663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,41 +1421,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13dfb1895666cc548a3af1e5b6cbe9a3, type: 3}
---- !u!4 &229770449
+--- !u!4 &229770449 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
+    type: 3}
   m_PrefabInstance: {fileID: 229770448}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949401708}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 229770453}
-  - {fileID: 645045368}
-  m_Father: {fileID: 1046770427}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &229770450
+--- !u!1 &229770450 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
     type: 3}
   m_PrefabInstance: {fileID: 229770448}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 229770453}
-  - component: {fileID: 229770452}
-  - component: {fileID: 229770451}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!114 &229770451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,7 +1454,7 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
   spriteRight: {fileID: 21300000, guid: be8853ad084ce6048b0ce1705ee2166d, type: 3}
   startMiniGame: 1
-  tokenValue: 1
+  tokenValue: 2
   miniGame: 2
   isMinigame: 0
   isPartOfBigDialogue: 0
@@ -1439,20 +1471,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0989946, y: 1.0640963, z: 0.33065435}
   m_Center: {x: -0.12492938, y: -0.33698106, z: 0.10128137}
---- !u!4 &229770453
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229770450}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 229770449}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &235432596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1817,22 +1835,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257587891}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &265930061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 425479690}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &330028017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1980,7 +1982,7 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83, type: 3}
   spriteRight: {fileID: 21300000, guid: 981d2d30b3e0b664d8d96b07eba50abd, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0
@@ -2624,38 +2626,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29d91d0759514e04e8369a786fe10e36, type: 3}
---- !u!4 &425479690
+--- !u!4 &425479690 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 29d91d0759514e04e8369a786fe10e36,
     type: 3}
   m_PrefabInstance: {fileID: 425479689}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 265930061}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1972070574}
-  m_Father: {fileID: 425479691}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &425479691
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865746952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 425479690}
-  - {fileID: 1262723997}
-  m_Father: {fileID: 862600992}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &431654333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3527,36 +3503,6 @@ Transform:
   m_Father: {fileID: 1963281276}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &585250976
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 585250977}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &585250977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 585250976}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1633688438}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &642784155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3646,36 +3592,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd567ad534f348541ace0a957b25a9e6, type: 3}
---- !u!1 &645045367
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 645045368}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &645045368
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645045367}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 229770449}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &657552710
 GameObject:
   m_ObjectHideFlags: 0
@@ -3735,22 +3651,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &660232619
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1633688437}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &675880952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4151,7 +4051,7 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
   spriteRight: {fileID: 21300000, guid: a11dc1240033ae9429d3d2a55ce6795f, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0
@@ -4844,11 +4744,11 @@ Transform:
   m_Children:
   - {fileID: 1553403456}
   - {fileID: 1566404994}
-  - {fileID: 425479691}
-  - {fileID: 1457761673}
+  - {fileID: 425479690}
+  - {fileID: 1633688437}
   - {fileID: 1474337679}
   - {fileID: 755840247}
-  - {fileID: 1633688438}
+  - {fileID: 1457761673}
   - {fileID: 110501702}
   - {fileID: 787064602}
   m_Father: {fileID: 0}
@@ -4946,22 +4846,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &865746952
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 425479691}
-  m_Layer: 0
-  m_Name: Diet_CookingPot (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &900122460
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,15 +4969,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 
+    name: dia-4
     sentences:
-    - AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    - But we can also take a glance at these souvenirs in passing.
     time:
-    - 1
-  spriteLeft: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+    - 5
+  spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 1
@@ -5960,8 +5844,8 @@ Transform:
   - {fileID: 1624217623}
   - {fileID: 1426537929}
   - {fileID: 1296763291}
-  - {fileID: 1199620820}
   - {fileID: 229770449}
+  - {fileID: 1199620820}
   - {fileID: 694963002}
   - {fileID: 540625523}
   m_Father: {fileID: 0}
@@ -6134,7 +6018,7 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
   spriteRight: {fileID: 21300000, guid: 864cca50551b4b142853a6f1b5b4bc6d, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0
@@ -6505,7 +6389,7 @@ Transform:
   m_LocalScale: {x: 0.3000002, y: 0.2, z: 0.05409006}
   m_Children: []
   m_Father: {fileID: 1046770427}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1199620821
 MonoBehaviour:
@@ -7002,36 +6886,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1132337728}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1262723996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1262723997}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1262723997
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262723996}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 425479691}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1274245942
 PrefabInstance:
@@ -7549,7 +7403,7 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
   spriteRight: {fileID: 21300000, guid: 649315fad1701b645be0ea906dca4aeb, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0
@@ -7839,15 +7693,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 
+    name: dia-3
     sentences:
-    - AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    - "Well, my pyramid is in the third room at the end of this exhibition. We can
+      try to go there! \r"
     time:
-    - 1
-  spriteLeft: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+    - 10
+  spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 1
@@ -8083,7 +7938,7 @@ Transform:
   m_LocalScale: {x: 0.30000013, y: 0.29999998, z: 0.050000038}
   m_Children: []
   m_Father: {fileID: 862600992}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1457761674
 BoxCollider:
@@ -9353,38 +9208,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89b80b14ad5df1148a79b8a649aafa26, type: 3}
---- !u!4 &1633688437
+--- !u!4 &1633688437 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 89b80b14ad5df1148a79b8a649aafa26,
     type: 3}
   m_PrefabInstance: {fileID: 1633688436}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660232619}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 355436659552138089}
-  m_Father: {fileID: 1633688438}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1633688438
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135275200}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1633688437}
-  - {fileID: 585250977}
-  m_Father: {fileID: 862600992}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1646560412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10808,22 +10637,6 @@ MonoBehaviour:
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 1
---- !u!1 &1949401708
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 229770449}
-  m_Layer: 0
-  m_Name: Agriculture_Bull2 (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1963281275
 GameObject:
   m_ObjectHideFlags: 0
@@ -12151,7 +11964,7 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
   spriteRight: {fileID: 21300000, guid: ce0f78ee73e1fe64ebb522283d592b7d, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0

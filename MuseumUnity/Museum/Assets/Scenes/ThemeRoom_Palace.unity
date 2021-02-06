@@ -216,6 +216,228 @@ Transform:
   m_Father: {fileID: 456715343}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1001 &58372852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0,
+        type: 3}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919,
+        type: 3}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.name
+      value: dia-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'But! We died with even more flair. Our people built enormous pyramids,
+        we were mummified and protected from time in beautiful sarcophaguses. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Also\u2026 we went in the underworld with our earthy treasures, and
+        the discoveries some Egyptologists made could make you dream for days\u2026 
+        \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[1]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: tokenValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3438752
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4018867
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.420125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: isStartingDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.data[2]
+      value: 
+      objectReference: {fileID: 2021432263}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.data[3]
+      value: 
+      objectReference: {fileID: 689537311}
+    - target: {fileID: 4741861279158940851, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_Name
+      value: StartingDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83,
+        type: 3}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919,
+        type: 3}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.name
+      value: dia-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Its formidable faun was a treasure for hunters and fishers, but also
+        a source for myths and legends. The mighty hippopotamuses, the numerous fishes,
+        the dangerous crocodiles... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'Pharaohs lived in the comfort of a richly decorated house. We had an
+        elaborate toiletry, and even domesticated cats. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "This 6000 km-long ribbon permitted travel and trade through remote
+        parts of the nation through boats. Thanks to the Nile, Egypt developed as
+        a prosperous and complex civilization\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[1]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[2]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: isPartOfBigDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: tokenValue
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f09428ab8311af45bd935aad31d3a5b, type: 3}
+--- !u!4 &58372853 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 58372852}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &74623983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1748,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 669233982}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &689537310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 689537312}
+  - component: {fileID: 689537311}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &689537311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689537310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: dia-3.2
+    sentences:
+    - Though, a lot of grave robbers found our heritage before scholars. They egoistically
+      profited from it to enrich themselves.
+    time:
+    - 5
+  spriteLeft: {fileID: 21300000, guid: 1331c013ef0edcf4fb47045ccfc0f178, type: 3}
+  spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
+--- !u!4 &689537312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689537310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 58372853}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &708806223
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,6 +4494,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1945955440}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2021432262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021432264}
+  - component: {fileID: 2021432263}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2021432263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021432262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: dia-3.1
+    sentences:
+    - Though, a lot of grave robbers found our heritage before scholars. They egoistically
+      profited from it to enrich themselves.
+    time:
+    - 5
+  spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
+  spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
+--- !u!4 &2021432264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021432262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 58372853}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2037792038
 GameObject:
   m_ObjectHideFlags: 0
