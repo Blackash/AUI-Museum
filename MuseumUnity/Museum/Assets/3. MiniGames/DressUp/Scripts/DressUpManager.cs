@@ -19,6 +19,7 @@ public class DressUpManager : MonoBehaviour
     [SerializeField] private GameObject imagePrefab;
     [SerializeField] private GameObject startImage;
     [SerializeField] private GameObject endImage;
+    [SerializeField] private GameObject FloorProjection;
     private int tokenValue = 0;
     private int phase;
     private bool start;
@@ -144,6 +145,7 @@ public class DressUpManager : MonoBehaviour
 
     public void StartMinigame(int n)
     {
+        FloorProjection.SetActive(true);
         tokenValue = n;
         start = true;
         if(count % 3 == 0)
@@ -177,6 +179,8 @@ public class DressUpManager : MonoBehaviour
             endImage.SetActive(false);
             TokenManager.Instance.NewTokenHalf(tokenValue);
             //triggero qua un dialogue
+            FloorProjection.SetActive(false);
+            MinigameManager.Instance.MinigameEnd();
             gameObject.SetActive(false);
         }
     }

@@ -23,6 +23,8 @@ public class NavigatorManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!MinigameManager.Instance.GetIfCanAction())
+            return;
         if (_trasform.position.z > 4)
         {
             playerController.MoveFront(true);
@@ -39,11 +41,11 @@ public class NavigatorManager : MonoBehaviour
                 playerController.MoveBack(false); //se chiamato con il false, fa rimare fermo il player
             }
         }
-        if (_shoulderLeftTrasform.position.z - _shoulderRightTrasform.position.z > 0.07f)
+        if (_shoulderLeftTrasform.localPosition.z - _shoulderRightTrasform.localPosition.z > 0.3f)
             mouseManager.CameraRotationRight(true);
         else
         {
-            if (_shoulderLeftTrasform.position.z - _shoulderRightTrasform.position.z < -0.07f)
+            if (_shoulderLeftTrasform.localPosition.z - _shoulderRightTrasform.localPosition.z < -0.3f)
                 mouseManager.CameraRotationLeft(true);
             else
             {

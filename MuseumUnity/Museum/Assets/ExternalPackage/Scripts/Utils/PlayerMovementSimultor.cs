@@ -72,22 +72,22 @@ public class PlayerMovementSimultor : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 anim.SetBool("Walk", true);
-                transform.position += transform.forward * 0.05f;
+                transform.position += transform.forward * 0.10f;
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
                 anim.SetBool("Walk", true);
-                transform.position += transform.forward * -0.05f;
+                transform.position += transform.forward * -0.10f;
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 anim.SetBool("Walk", true);
-                transform.RotateAround(transform.position, Vector3.up, 1);
+                transform.RotateAround(transform.position, Vector3.up, 1.5f);
             }
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 anim.SetBool("Walk", true);
-                transform.RotateAround(transform.position, Vector3.up, -1);
+                transform.RotateAround(transform.position, Vector3.up, -1.5f);
             }
             if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow)) {
                 anim.SetBool("Walk", false);

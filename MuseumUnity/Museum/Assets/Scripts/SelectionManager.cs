@@ -18,6 +18,8 @@ public class SelectionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!MinigameManager.Instance.GetIfCanAction())
+            return;
         if(_selection != null)
         {
             if(Input.GetMouseButtonDown(0))

@@ -17,9 +17,13 @@ public class BagChildManager : MonoBehaviour
 
     private void Update()
     {
+        if(!MinigameManager.Instance.GetIfCanAction())
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.B))
             StartCoroutine(BagCoroutine());
-        if (_transform.localPosition.y > 2 && singleJump)
+        if (_transform.localPosition.y > 4.5f && singleJump)
             CheckBag();
     }
 

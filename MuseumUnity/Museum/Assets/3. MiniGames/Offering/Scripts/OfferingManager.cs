@@ -12,6 +12,7 @@ public class OfferingManager : MonoBehaviour
     [SerializeField] private Sprite[] godSprites;
     [SerializeField] private DropOffering altar;
     [SerializeField] private int[] godNumberOfOfferings;
+    [SerializeField] private GameObject floorProjection;
     // Start is called before the first frame update
     private bool start = false;
     private GameObject offeringList;
@@ -47,6 +48,7 @@ public class OfferingManager : MonoBehaviour
 
     public void StartMinigame()
     {
+        floorProjection.SetActive(true);
         currentOffering = 0;
         start = true;
         StartCoroutine(StartImage());
@@ -75,6 +77,7 @@ public class OfferingManager : MonoBehaviour
             endImage.SetActive(true);
             yield return new WaitForSeconds(3f);
             endImage.SetActive(false);
+            floorProjection.SetActive(false);
             gameObject.SetActive(false);
         }
     }

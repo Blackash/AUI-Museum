@@ -5,7 +5,7 @@ using UnityEngine;
 public class SelectableDialogue : MonoBehaviour
 {
     [SerializeField] bool IsDoor = false;
-    [SerializeField] DialogueTrigger[] dialogues;
+    [SerializeField] GameObject[] dialogues;
     [SerializeField] int selector = 0;
     [SerializeField] GameObject firstTokenObj;
     [SerializeField] GameObject secondTokenObj;
@@ -17,10 +17,13 @@ public class SelectableDialogue : MonoBehaviour
         {
             updateSelector();
         }
-       
-            dialogues[selector].TriggerDialogue();
-        
-        
+        if(dialogues[selector].GetComponent<DialogueTrigger>() != null )
+            dialogues[selector].GetComponent<DialogueTrigger>().TriggerDialogue();
+        if (dialogues[selector].GetComponent<StartingRoomDialogue>() != null)
+            dialogues[selector].GetComponent<StartingRoomDialogue>().NextDialogue();
+
+
+
     }
     
     public void setSelector(int n)
