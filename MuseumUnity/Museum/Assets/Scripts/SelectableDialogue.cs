@@ -9,7 +9,7 @@ public class SelectableDialogue : MonoBehaviour
     [SerializeField] int selector = 0;
     [SerializeField] GameObject firstTokenObj;
     [SerializeField] GameObject secondTokenObj;
-
+    private bool doorBool = false;
 
     public void dialogue()
     {
@@ -33,8 +33,15 @@ public class SelectableDialogue : MonoBehaviour
 
     public void updateSelector()
     {
-        if (selector == dialogues.Length - 1)
+        if (selector == dialogues.Length - 2)
+        {
+            selector = dialogues.Length - 1;
             return;
+        }
+        if(selector == dialogues.Length -1)
+        {
+            return;
+        }
         bool[] tmp = TokenManager.Instance.GetHalfTokens();
         int tmp2 = 0;
         if (tmp[0])
