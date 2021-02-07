@@ -24,11 +24,12 @@ public class PlayerMovement : MonoBehaviour
     private bool frontMove;
     private bool backMove;
     private bool blockMovement = false;
+    private bool blockKeyboardRotation = true;
     // Update is called once per frame
 
-    
 
-void Update()
+
+    void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -39,14 +40,25 @@ void Update()
         
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-        //Vector3 move = transform.right * x * 0  + transform.forward * z ;
-        
+
+
         /*if (Input.GetKeyDown(KeyCode.G))
         {
             SetCursorPos(xPos, yPos);//Call this when you want to set the mouse position
         }*/
-        //controllerChar.Move(move * speed * Time.deltaTime);
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            if (blockKeyboardRotation)
+                blockKeyboardRotation = false;
+            else
+                blockKeyboardRotation = true;
+        }
 
+        if (!blockKeyboardRotation)
+        {
+            Vector3 move = transform.right * x * 0 + transform.forward * z;
+            controllerChar.Move(move * speed * Time.deltaTime);
+        }
         currentVelocity.y += gravity * Time.deltaTime;
 
         controllerChar.Move(currentVelocity * Time.deltaTime);
