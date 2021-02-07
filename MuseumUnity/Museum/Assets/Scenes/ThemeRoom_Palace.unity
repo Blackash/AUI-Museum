@@ -1863,6 +1863,10 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: end of minigame
       objectReference: {fileID: 0}
+    - target: {fileID: 902992294, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: "Oh my! I am happy to witness than a few millenniums after us, some
@@ -4717,7 +4721,7 @@ MonoBehaviour:
   - {fileID: 1671466467}
   - {fileID: 2048119348}
   isStartingDialogue: 0
-  isEndingDialogue: 0
+  isEndingDialogue: 1
 --- !u!1 &1635880244
 GameObject:
   m_ObjectHideFlags: 0

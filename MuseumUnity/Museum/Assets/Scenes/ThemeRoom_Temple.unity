@@ -632,7 +632,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
@@ -863,6 +863,69 @@ Transform:
   m_Father: {fileID: 1674567587}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &179185869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179185870}
+  - component: {fileID: 179185871}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &179185870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179185869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 859296895}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &179185871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179185869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Before I let you go through this door, I must know if you are serious about
+      your mission.
+    - What is the most common beverage in Egyptian diet? Hot chocolate, beer or orange
+      juice?
+    time:
+    - 5
+    - 7
+    sound:
+    - Door_Taweret_2
+    - Nile_Question_Beverage
+  spriteLeft: {fileID: 21300000, guid: d42f5134b51da174fa42c054c1a9e813, type: 3}
+  spriteRight: {fileID: 21300000, guid: dea3e995f21dfa94f811c2713086d856, type: 3}
+  startMiniGame: 1
+  tokenValue: 0
+  miniGame: 4
+  isMinigame: 0
+  isPartOfBigDialogue: 1
 --- !u!1001 &202365418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1345,7 +1408,7 @@ Transform:
   m_LocalScale: {x: 0.04, y: 0.04, z: 1}
   m_Children: []
   m_Father: {fileID: 1070492304}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232471376
 GameObject:
@@ -1438,7 +1501,7 @@ Transform:
   m_LocalScale: {x: 2.67, y: 5, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1070492304}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &286823270
 PrefabInstance:
@@ -1723,7 +1786,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -2378,7 +2441,7 @@ Transform:
   m_LocalScale: {x: 2.67, y: 5, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1070492304}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &438325214
 BoxCollider:
@@ -3240,7 +3303,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
@@ -3513,7 +3576,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -4695,6 +4758,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &859296894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 859296895}
+  - component: {fileID: 859296896}
+  m_Layer: 0
+  m_Name: Dialogue3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &859296895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859296894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1427856143}
+  - {fileID: 1711706918}
+  - {fileID: 1630649189}
+  - {fileID: 179185870}
+  m_Father: {fileID: 1064172698}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859296896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859296894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea32dada8d6b284faf4378f80c27f36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LongDialogue:
+  - {fileID: 1427856144}
+  - {fileID: 1711706919}
+  - {fileID: 1630649190}
+  - {fileID: 179185871}
+  isStartingDialogue: 0
+  isEndingDialogue: 1
 --- !u!1 &862975752
 GameObject:
   m_ObjectHideFlags: 0
@@ -5874,7 +5991,40 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1070492304}
-  m_RootOrder: 9
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1064172697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1064172698}
+  m_Layer: 0
+  m_Name: Dialogues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1064172698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064172697}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.65323, y: 38.532246, z: 20.093925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1475041013}
+  - {fileID: 1817765921}
+  - {fileID: 859296895}
+  m_Father: {fileID: 1070492304}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070492303
 GameObject:
@@ -5903,6 +6053,7 @@ Transform:
   m_LocalPosition: {x: -17.65323, y: -36.732246, z: -14.593926}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1064172698}
   - {fileID: 576551187}
   - {fileID: 122359469}
   - {fileID: 337999479}
@@ -7002,7 +7153,7 @@ Transform:
   m_LocalScale: {x: 0.04, y: 0.04, z: 1}
   m_Children: []
   m_Father: {fileID: 1070492304}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1326523380
 GameObject:
@@ -7684,6 +7835,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1427856142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1427856143}
+  - component: {fileID: 1427856144}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1427856143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427856142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 859296895}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1427856144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427856142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - You completed the token, children! Well done! Look, the guardian of the door
+      is about to appear! Let us call for him!
+    time:
+    - 12
+    sound:
+    - Door_FullToken_her
+  spriteLeft: {fileID: 21300000, guid: a51cf33ec29306847a1195caba5c81fc, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
 --- !u!1 &1436650064
 GameObject:
   m_ObjectHideFlags: 0
@@ -8190,6 +8400,65 @@ Transform:
   m_Father: {fileID: 840881913}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1475041012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1475041013}
+  - component: {fileID: 1475041014}
+  m_Layer: 0
+  m_Name: Dialogue1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1475041013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475041012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1064172698}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475041014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475041012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: no token
+    sentences:
+    - Hm, it looks like we need a sort of key for this door. Maybe it is somewhere
+      in the room?
+    time:
+    - 7
+    sound:
+    - Door_NoToken
+  spriteLeft: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 1
+  tokenValue: 0
+  miniGame: 4
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1001 &1477286069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9212,6 +9481,65 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1843022, y: 4.840873, z: 1.6608948}
   m_Center: {x: -0.91441923, y: 1.2000105, z: -12.509312}
+--- !u!1 &1630649188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630649189}
+  - component: {fileID: 1630649190}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1630649189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630649188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 859296895}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1630649190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630649188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - ...Aaand I thought I could rest in peace after the last Pharaoh died... What
+      do you want, mortals? Seti, still there?
+    time:
+    - 8
+    sound:
+    - Door_Taweret_1
+  spriteLeft: {fileID: 21300000, guid: d42f5134b51da174fa42c054c1a9e813, type: 3}
+  spriteRight: {fileID: 21300000, guid: 77ed71061ecb32b46a5deffb079f7de3, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
 --- !u!1 &1633282365
 GameObject:
   m_ObjectHideFlags: 0
@@ -9604,6 +9932,69 @@ Transform:
   m_Father: {fileID: 2133695402}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1711706917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1711706918}
+  - component: {fileID: 1711706919}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1711706918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711706917}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 859296895}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1711706919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711706917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: end 1.1
+    sentences:
+    - Oh you, whose name preceded the name of glorious pharaohs, you, the one who
+      is above, ruler of the sky and god of the kings,
+    - "you, who looks at our glorious country with that powerful glance of your falcon
+      form, please receive us...Horus! \r"
+    time:
+    - 10
+    - 10
+    sound:
+    - Door_TaweretIncantation_1
+    - Door_TaweretIncantation_2
+  spriteLeft: {fileID: 21300000, guid: 61b64297a850ff04b88e71bff7850d35, type: 3}
+  spriteRight: {fileID: 21300000, guid: abd12a00f2b06ca4cb58b8aa52b26a5c, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
 --- !u!1 &1719128221
 GameObject:
   m_ObjectHideFlags: 0
@@ -10021,7 +10412,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8d0eb4955e29e2a499986f79f6942eef,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d0eb4955e29e2a499986f79f6942eef,
         type: 3}
@@ -10202,6 +10593,65 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812443951}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1817765920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817765921}
+  - component: {fileID: 1817765922}
+  m_Layer: 0
+  m_Name: DIalogue2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1817765921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817765920}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1064172698}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1817765922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817765920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: half token
+    sentences:
+    - It looks like we found half of the key. The other half must be somewhere in
+      the room.
+    time:
+    - 5
+    sound:
+    - Door_HalfToken
+  spriteLeft: {fileID: 21300000, guid: d4dff3ef2acd541459f17995fe42feb1, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &1828586953
 GameObject:
   m_ObjectHideFlags: 0
@@ -10688,7 +11138,7 @@ Transform:
   m_LocalScale: {x: 2.67, y: 5, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1070492304}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882881392
 GameObject:
@@ -11207,7 +11657,7 @@ Transform:
   m_LocalScale: {x: 10, y: 5, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1070492304}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2094007416
 GameObject:
