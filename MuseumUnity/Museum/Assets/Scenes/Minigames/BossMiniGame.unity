@@ -469,23 +469,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnswerLists:
   - answers:
-    - asd
-    - 123
-    - asd
-    - 123
+    - Dates
+    - Honey
+    - Apple
+    - Flowers
     correct: 2
   - answers:
-    - dawdwa
-    - dwa123
-    - 123d
-    - t2312
+    - In Paris
+    - 'In the British Museum '
+    - Under the Sea
+    - Turin Museum
     correct: 1
   - answers:
-    - blabla
-    - lelel
-    - dododo
-    - rptptp
+    - A vase
+    - A boat
+    - A chest
+    - A coffin
     correct: 4
+  - answers:
+    - The crocodille
+    - The hippopotamus
+    - The lion
+    - The ox
+    correct: 2
+  - answers:
+    - 14 centimeters
+    - 1,4 meters
+    - 14 meters
+    - 140 meters
+    correct: 3
+  - answers:
+    - Champignon
+    - Champion
+    - Champollion
+    - Chameleon
+    correct: 3
+  - answers:
+    - 'Heart '
+    - Brain
+    - Stomach
+    - Lungs
+    correct: 1
+  - answers:
+    - Tutankhamon
+    - Toutunjambon
+    - Tristan Cameron
+    - Turkmenistan
+    correct: 1
+  - answers:
+    - Cat
+    - Lion
+    - Bear
+    - Dolphin
+    correct: 2
   answersButtons:
   - {fileID: 1094354244}
   - {fileID: 1481060249}
@@ -1667,19 +1703,30 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "Wiki \xE8 un'applicazione web che permette la creazione, la modifica e l'illustrazione
-      collaborativa di pagine all'interno di un sito web. \xC8 dunque un software
-      ..."
-    - BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-    - "Con Antico Egitto si intende la civilt\xE0 sviluppatasi lungo il fiume Nilo
-      a partire dalle cateratte, a sud e al confine con l\u2019attuale Sudan, alla
-      foce, al delta, nel Mar Mediterraneo, per un\u2019estensione co"
-    time: []
+    - What food did Egyptians not use to sweeten their dishes?
+    - Where is the second obelisk of the Luxor temple?
+    - What did Seth use to throw his brother Osiris in the Nile?
+    - 'Which animal killed the most people in Ancient Egypt? '
+    - How high was the Nile during the floods?
+    - What was the name of the Egyptologist that translated the hieroglyphs?
+    - Which organ stays in the mummy?
+    - What name belonged to the child pharaoh?
+    - "The sphinx is half Pharaoh half\u2026"
+    time:
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
     sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+  spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 1
   isPartOfBigDialogue: 0

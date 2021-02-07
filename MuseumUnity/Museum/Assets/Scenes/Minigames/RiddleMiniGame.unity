@@ -369,6 +369,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5533480135731031964, guid: d45d8222a019fa349809d12e4642066c,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5533480135731031965, guid: d45d8222a019fa349809d12e4642066c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -488,6 +493,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RiddleMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533480137021691327, guid: d45d8222a019fa349809d12e4642066c,
+        type: 3}
+      propertyPath: riddles.Array.data[4].riddle
+      value: What has hands but doesn't clap?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d45d8222a019fa349809d12e4642066c, type: 3}
