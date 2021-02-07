@@ -41,10 +41,10 @@ void Update()
         float z = Input.GetAxis("Vertical");
         //Vector3 move = transform.right * x * 0  + transform.forward * z ;
         
-        if (Input.GetKeyDown(KeyCode.G))
+        /*if (Input.GetKeyDown(KeyCode.G))
         {
             SetCursorPos(xPos, yPos);//Call this when you want to set the mouse position
-        }
+        }*/
         //controllerChar.Move(move * speed * Time.deltaTime);
 
         currentVelocity.y += gravity * Time.deltaTime;
