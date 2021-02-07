@@ -303,7 +303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50210874}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 5, z: 8.25}
+  m_LocalPosition: {x: 0, y: 5, z: 5.45}
   m_LocalScale: {x: 1.01, y: 1, z: 1.7}
   m_Children: []
   m_Father: {fileID: 948874604}
@@ -450,8 +450,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -479,6 +484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: tokenValue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Nile_Intro_4
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -518,7 +528,7 @@ PrefabInstance:
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -577,8 +587,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -601,7 +616,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
       value: 'Its formidable faun was a treasure for hunters and fishers, but also
-        a source for myths and legends. The mighty hippopotamuses, the numerous fishes,
+        a source for myths and legends. The mighty hippopotamuses, the numerous fish,
         the dangerous crocodiles... '
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
@@ -616,17 +631,17 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[2]
       value: "This 6000 km-long ribbon permitted travel and trade through remote
         parts of the nation through boats. Thanks to the Nile, Egypt developed as
-        a prosperous and complex civilization\u2026"
+        a prosperous and complex nation\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.data[1]
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.data[2]
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -637,6 +652,21 @@ PrefabInstance:
         type: 3}
       propertyPath: tokenValue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Nile_Intro_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[1]
+      value: Nile_Intro_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[2]
+      value: Nile_Intro_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f09428ab8311af45bd935aad31d3a5b, type: 3}
@@ -780,7 +810,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5da312b1c00137a4ca617556f464c30e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5da312b1c00137a4ca617556f464c30e,
         type: 3}
@@ -1143,7 +1173,9 @@ MonoBehaviour:
     time:
     - 3
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -1238,8 +1270,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194076663}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 2.5, z: 2.07}
-  m_LocalScale: {x: 0.2, y: 5, z: 4.5}
+  m_LocalPosition: {x: 5, y: 2.5, z: 1.25}
+  m_LocalScale: {x: 0.2, y: 5, z: 6}
   m_Children: []
   m_Father: {fileID: 948874604}
   m_RootOrder: 8
@@ -1427,40 +1459,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13dfb1895666cc548a3af1e5b6cbe9a3, type: 3}
---- !u!4 &229770449
+--- !u!4 &229770449 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
     type: 3}
   m_PrefabInstance: {fileID: 229770448}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739729374}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 651242421}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &229770450
+--- !u!1 &229770450 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
     type: 3}
   m_PrefabInstance: {fileID: 229770448}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 229770453}
-  - component: {fileID: 229770452}
-  - component: {fileID: 229770451}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!114 &229770451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,7 +1489,8 @@ MonoBehaviour:
     - Oh look! A game! Good luck!
     time:
     - 5
-    sound: []
+    sound:
+    - MiniGame_Intro_1
   spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
   spriteRight: {fileID: 21300000, guid: be8853ad084ce6048b0ce1705ee2166d, type: 3}
   startMiniGame: 1
@@ -1500,20 +1511,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0989946, y: 1.0640963, z: 0.33065435}
   m_Center: {x: -0.12492938, y: -0.33698106, z: 0.10128137}
---- !u!4 &229770453
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229770450}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 651242421}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &235432596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2020,9 +2017,11 @@ MonoBehaviour:
     - 'Egyptians had mastered the art of navigation, and each use had its own boat
       type. '
     time:
-    - 20
-    - 10
-    sound: []
+    - 17
+    - 8
+    sound:
+    - Nile_Info_Boat_1
+    - Nile_Info_Boat_2
   spriteLeft: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83, type: 3}
   spriteRight: {fileID: 21300000, guid: 981d2d30b3e0b664d8d96b07eba50abd, type: 3}
   startMiniGame: 0
@@ -2183,7 +2182,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7ab5419603cdd1b47bcffeff55825849, type: 2}
+  - {fileID: 2100000, guid: 6faf837b8b50cc8418ea86bf025b23e9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2377,12 +2376,14 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - aaaaaaaaaaaaaaaa
+    - Hm, it looks like we need a sort of key for this door. Maybe it is somewhere
+      in the room?
     time:
-    - 2
-    sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+    - 7
+    sound:
+    - Door_NoToken
+  spriteLeft: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 1
   tokenValue: 0
   miniGame: 4
@@ -2659,22 +2660,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29d91d0759514e04e8369a786fe10e36, type: 3}
---- !u!4 &425479690
+--- !u!4 &425479690 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 29d91d0759514e04e8369a786fe10e36,
     type: 3}
   m_PrefabInstance: {fileID: 425479689}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620422593}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1972070574}
-  m_Father: {fileID: 1032340454}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &431654333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2775,37 +2766,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 431654333}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &455235293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 455235294}
-  m_Layer: 0
-  m_Name: Diet_Bowl (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &455235294
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455235293}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1633688437}
-  m_Father: {fileID: 862600992}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &483556752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3104,7 +3064,9 @@ MonoBehaviour:
     time:
     - 3
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -3247,12 +3209,18 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Ciao mamma
+    - Oh you, goddess of fertility, kept near every fearful home, that kept the family
+      safe and the harvests abundant,
+    - you, whose forms are gracious and generous, let us receive the privilege of
+      your presence...Taweret?
     time:
-    - 2
-    sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+    - 10
+    - 10
+    sound:
+    - Door_TaweretIncantation_1
+    - Door_TaweretIncantation_2
+  spriteLeft: {fileID: 21300000, guid: 61b64297a850ff04b88e71bff7850d35, type: 3}
+  spriteRight: {fileID: 21300000, guid: 9098beac9c745d048bc8df0c0b6fca6f, type: 3}
   startMiniGame: 0
   tokenValue: 0
   miniGame: 0
@@ -3473,7 +3441,9 @@ MonoBehaviour:
     time:
     - 3
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -3481,12 +3451,6 @@ MonoBehaviour:
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0
---- !u!4 &571977101 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-    type: 3}
-  m_PrefabInstance: {fileID: 819476999}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &584644313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,22 +3544,6 @@ Transform:
   m_Father: {fileID: 1963281276}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &620422593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 425479690}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &642784155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3685,38 +3633,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd567ad534f348541ace0a957b25a9e6, type: 3}
---- !u!1 &651242420
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 651242421}
-  m_Layer: 0
-  m_Name: Agriculture_Bull2 (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &651242421
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651242420}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 229770453}
-  - {fileID: 229770449}
-  m_Father: {fileID: 1046770427}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &657552710
 GameObject:
   m_ObjectHideFlags: 0
@@ -3774,7 +3690,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &675880952
 PrefabInstance:
@@ -4042,7 +3958,9 @@ MonoBehaviour:
     time:
     - 3
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -4172,9 +4090,11 @@ MonoBehaviour:
     - 'Vegetables, fruits and fish were a common diet but meat was a privilege of
       the rich population. Sugar did not exist, so they used dates and honey as sweeteners. '
     time:
-    - 20
-    - 20
-    sound: []
+    - 15
+    - 13
+    sound:
+    - Nile_Info_Diet_1
+    - Nile_Info_Diet_2
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
   spriteRight: {fileID: 21300000, guid: a11dc1240033ae9429d3d2a55ce6795f, type: 3}
   startMiniGame: 0
@@ -4193,7 +4113,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4958583, y: 1.4924009, z: 0.63525873}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.267698, y: 1.8561339, z: -1.551557}
 --- !u!1001 &787064601
 PrefabInstance:
@@ -4240,7 +4160,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ce2831ddce107a54985628b9bd2a62c1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce2831ddce107a54985628b9bd2a62c1,
         type: 3}
@@ -4493,7 +4413,8 @@ MonoBehaviour:
       1450 BCE
     time:
     - 3
-    sound: []
+    sound:
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -4760,95 +4681,6 @@ Transform:
   m_Father: {fileID: 691008959}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &819476999
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 948874604}
-    m_Modifications:
-    - target: {fileID: 3242467153092098244, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_Range
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.29883623
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.64085644
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.29883623
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.64085644
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.10000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420988, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_Name
-      value: Spotlight (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 519cdc2117802a145bc97f03c8cd7831, type: 3}
 --- !u!1 &862600991
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,11 +4710,10 @@ Transform:
   m_Children:
   - {fileID: 1553403456}
   - {fileID: 1566404994}
-  - {fileID: 1032340454}
-  - {fileID: 1457761673}
+  - {fileID: 425479690}
+  - {fileID: 1633688437}
   - {fileID: 1474337679}
   - {fileID: 755840247}
-  - {fileID: 455235294}
   - {fileID: 110501702}
   - {fileID: 787064602}
   m_Father: {fileID: 0}
@@ -5107,8 +4938,9 @@ MonoBehaviour:
     sentences:
     - But we can also take a glance at these souvenirs in passing.
     time:
-    - 5
-    sound: []
+    - 1
+    sound:
+    - Nile_Intro_6
   spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -5128,6 +4960,69 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 90071956}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &939636715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939636717}
+  - component: {fileID: 939636716}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &939636716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939636715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Before I let you go through this door, I must know if you are serious about
+      your mission.
+    - What is the most common beverage in Egyptian diet? Hot chocolate, beer or orange
+      juice?
+    time:
+    - 5
+    - 7
+    sound:
+    - Door_Taweret_2
+    - Nile_Question_Beverage
+  spriteLeft: {fileID: 21300000, guid: d42f5134b51da174fa42c054c1a9e813, type: 3}
+  spriteRight: {fileID: 21300000, guid: dea3e995f21dfa94f811c2713086d856, type: 3}
+  startMiniGame: 1
+  tokenValue: 0
+  miniGame: 4
+  isMinigame: 0
+  isPartOfBigDialogue: 1
+--- !u!4 &939636717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939636715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1061526740}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &942757318
@@ -5263,7 +5158,6 @@ Transform:
   - {fileID: 194076667}
   - {fileID: 1963281276}
   - {fileID: 1132337728}
-  - {fileID: 571977101}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5348,6 +5242,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &979253817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979253819}
+  - component: {fileID: 979253818}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &979253818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979253817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - ...Aaand I thought I could rest in peace after the last Pharaoh died... What
+      do you want, mortals? Seti, still there?
+    time:
+    - 8
+    sound:
+    - Door_Taweret_1
+  spriteLeft: {fileID: 21300000, guid: d42f5134b51da174fa42c054c1a9e813, type: 3}
+  spriteRight: {fileID: 21300000, guid: 77ed71061ecb32b46a5deffb079f7de3, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
+--- !u!4 &979253819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979253817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1061526740}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &983739279
 GameObject:
   m_ObjectHideFlags: 0
@@ -5530,7 +5483,7 @@ Transform:
   m_GameObject: {fileID: 984747578}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 6.5}
-  m_LocalScale: {x: 1.01, y: 1, z: 1.3}
+  m_LocalScale: {x: 1.01, y: 1, z: 1.6}
   m_Children: []
   m_Father: {fileID: 948874604}
   m_RootOrder: 0
@@ -5929,7 +5882,8 @@ MonoBehaviour:
     - Oo look children! Look's like we are playing a game!
     time:
     - 5
-    sound: []
+    sound:
+    - MiniGame_Intro_Sphinx
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
   spriteRight: {fileID: 21300000, guid: 3a7b995673aaf3d41894143ae1f521f4, type: 3}
   startMiniGame: 1
@@ -5950,37 +5904,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3232985, y: 0.29611346, z: 0.3638173}
   m_Center: {x: -0.12048364, y: 0.011352479, z: 0.13059507}
---- !u!1 &1032340453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1032340454}
-  m_Layer: 0
-  m_Name: Diet_CookingPot (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1032340454
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032340453}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 425479690}
-  m_Father: {fileID: 862600992}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1046770426
 GameObject:
   m_ObjectHideFlags: 0
@@ -6011,12 +5934,12 @@ Transform:
   - {fileID: 1624217623}
   - {fileID: 1426537929}
   - {fileID: 1296763291}
+  - {fileID: 229770449}
   - {fileID: 1199620820}
-  - {fileID: 651242421}
   - {fileID: 694963002}
   - {fileID: 540625523}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1061526739
 GameObject:
@@ -6048,6 +5971,8 @@ Transform:
   m_Children:
   - {fileID: 1872539447}
   - {fileID: 545168292}
+  - {fileID: 979253819}
+  - {fileID: 939636717}
   m_Father: {fileID: 1583581200}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6066,6 +5991,8 @@ MonoBehaviour:
   LongDialogue:
   - {fileID: 1872539448}
   - {fileID: 545168293}
+  - {fileID: 979253818}
+  - {fileID: 939636716}
   isStartingDialogue: 0
   isEndingDialogue: 0
 --- !u!1 &1077179388
@@ -6178,12 +6105,12 @@ MonoBehaviour:
     name: papyrus_written_content
     sentences:
     - 'The papyrus plant stem was weaved to make papyruses, the paper on which Egyptians
-      invented the hieroglyph system. '
-    - 'The plant was also used to make sails, cloth, mats, and cords. '
+      invented the hieroglyph system. The plant was also used to make sails, cloth,
+      mats, and cords. '
     time:
-    - 15
-    - 10
-    sound: []
+    - 18
+    sound:
+    - Nile_Info_Papyrus
   spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
   spriteRight: {fileID: 21300000, guid: 864cca50551b4b142853a6f1b5b4bc6d, type: 3}
   startMiniGame: 0
@@ -6312,12 +6239,14 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - bbbbbbbbb
+    - It looks like we found half of the key. The other half must be somewhere in
+      the room.
     time:
-    - 2
-    sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+    - 5
+    sound:
+    - Door_HalfToken
+  spriteLeft: {fileID: 21300000, guid: d4dff3ef2acd541459f17995fe42feb1, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
   tokenValue: 1
   miniGame: 0
@@ -6337,22 +6266,6 @@ Transform:
   m_Father: {fileID: 1583581200}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1128905270
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1633688437}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1132337727
 GameObject:
   m_ObjectHideFlags: 0
@@ -6377,7 +6290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132337727}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.8, z: 0}
+  m_LocalPosition: {x: 0, y: 1.8, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2062566185}
@@ -6433,7 +6346,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 35260d43a9b623a49ad9741b117825fc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 35260d43a9b623a49ad9741b117825fc,
         type: 3}
@@ -6575,7 +6488,7 @@ Transform:
   m_LocalScale: {x: 0.3000002, y: 0.2, z: 0.05409006}
   m_Children: []
   m_Father: {fileID: 1046770427}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1199620821
 MonoBehaviour:
@@ -6599,7 +6512,9 @@ MonoBehaviour:
     time:
     - 3
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -7118,14 +7033,200 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Test1
-    clip: {fileID: 8300000, guid: ec7dd8ca48caae042a0f23f66c801435, type: 3}
+  - name: Nile_Intro_1
+    clip: {fileID: 8300000, guid: aba4f6d246baa814a921d4f58460567a, type: 3}
     volume: 1
     pitch: 1
     audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
     source: {fileID: 0}
-  - name: Test2
-    clip: {fileID: 8300000, guid: ec7dd8ca48caae042a0f23f66c801435, type: 3}
+  - name: Nile_Intro_2
+    clip: {fileID: 8300000, guid: b7742fc57e84f954482df83652aac8f5, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_3
+    clip: {fileID: 8300000, guid: d470aa7e76b653443b87765aa47ce8c0, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_4
+    clip: {fileID: 8300000, guid: b9d8af2591743e840aea33b91f99236e, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_5
+    clip: {fileID: 8300000, guid: 313734e1a7f6efe4eb1658ae80e075bf, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_6
+    clip: {fileID: 8300000, guid: bba03e20439a5d3409c84ab61e837f46, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Blank
+    clip: {fileID: 8300000, guid: 26a0ec16f217c5d4fad98ecfe7a35446, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Hippo_1
+    clip: {fileID: 8300000, guid: 36c5beb9f3fa9bf4a970a17b8fdf6c05, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Hippo_2
+    clip: {fileID: 8300000, guid: 2d3233f6d0f01ff47863887d6aefdc12, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Papyrus
+    clip: {fileID: 8300000, guid: 06e3a8356dc64a04d81bbed798fa7697, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Diet_1
+    clip: {fileID: 8300000, guid: 3398116ac9d1635418172243df7ef665, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Diet_2
+    clip: {fileID: 8300000, guid: a971fdb9e2b164943a42e8e1f0091a15, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Boat_1
+    clip: {fileID: 8300000, guid: b36bfc66d58c68c4fb6f966de0ba8e30, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Boat_2
+    clip: {fileID: 8300000, guid: 05aa225e014e5fa4791deb63a0efc306, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Intro_1
+    clip: {fileID: 8300000, guid: aee4cf104bf0ccf4fbb2fb8e826a2086, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Intro_2
+    clip: {fileID: 8300000, guid: 4be1ce3e4dffade4baa8529f8674c4d2, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Intro_Sphinx
+    clip: {fileID: 8300000, guid: 4c9bd494ae632a54b8205e63a7800fc9, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Outro_1
+    clip: {fileID: 8300000, guid: 1be04354f53d4c44aa3f59f075627bec, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Outro_2
+    clip: {fileID: 8300000, guid: 0bffadcc207b3b248b4ad0eb1f2e5157, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Outro_3
+    clip: {fileID: 8300000, guid: 1d71acaa902ff17469776f91d4f4c7d3, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Floods_1
+    clip: {fileID: 8300000, guid: 845f3fbe8f065034bbb6fa3a9fab5c8b, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Floods_2
+    clip: {fileID: 8300000, guid: 2df51a323a7ee98459f9359224ac205b, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_FalseAnswer
+    clip: {fileID: 8300000, guid: 51b2fa3f3e308ca46a4e825de57a0943, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_GoodAnswer_1
+    clip: {fileID: 8300000, guid: 43d2dd8d017017445abcf7d28eb20d28, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_GoodAnswer_2
+    clip: {fileID: 8300000, guid: 0426ef4150fe31a4f9cd7d75a732c4ad, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_NoToken
+    clip: {fileID: 8300000, guid: 8d4af5e9c463a894c806dc49bbe08449, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_HalfToken
+    clip: {fileID: 8300000, guid: dc2292b1b5c2e6b4f816d195cfbbf344, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_FullToken_her
+    clip: {fileID: 8300000, guid: ccbb32126acf4324aa670e4a5d4987ea, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_TaweretIncantation_1
+    clip: {fileID: 8300000, guid: 1c89c45a388e66744bf2d5388efd5ae6, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_TaweretIncantation_2
+    clip: {fileID: 8300000, guid: 5f917162227c2e549bfdb82b25355439, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_Taweret_1
+    clip: {fileID: 8300000, guid: 2a72ed857d8333045b91c9142e38d6c8, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_Taweret_2
+    clip: {fileID: 8300000, guid: a0642ac018d73d04e9373e2b2a6b06d4, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Question_Beverage
+    clip: {fileID: 8300000, guid: 8273c859f2a968c47a35059fd331a50f, type: 3}
     volume: 1
     pitch: 1
     audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
@@ -7641,9 +7742,11 @@ MonoBehaviour:
       as she cried over the death of Osiris her husband. The river grew almost 14
       meters! "
     time:
-    - 15
-    - 15
-    sound: []
+    - 10
+    - 14
+    sound:
+    - Nile_Info_Floods_1
+    - Nile_Info_Floods_2
   spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
   spriteRight: {fileID: 21300000, guid: 649315fad1701b645be0ea906dca4aeb, type: 3}
   startMiniGame: 0
@@ -7900,7 +8003,14 @@ MonoBehaviour:
     - 3
     - 2
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
+    - Blank
+    - Blank
+    - Blank
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -7943,8 +8053,9 @@ MonoBehaviour:
     - "Well, my pyramid is in the third room at the end of this exhibition. We can
       try to go there! \r"
     time:
-    - 10
-    sound: []
+    - 1
+    sound:
+    - Nile_Intro_5
   spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -8180,11 +8291,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457761672}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -7.206, y: 55.936325, z: -17.259998}
-  m_LocalScale: {x: 0.30000013, y: 0.29999998, z: 0.050000038}
+  m_LocalPosition: {x: -4.89, y: 1.1599998, z: 9.450001}
+  m_LocalScale: {x: 0.3000002, y: 0.29999998, z: 0.050000053}
   m_Children: []
-  m_Father: {fileID: 862600992}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1457761674
 BoxCollider:
@@ -8197,7 +8308,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1.5, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1457761675
 MeshRenderer:
@@ -8296,7 +8407,15 @@ MonoBehaviour:
     - 2
     - 2
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
+    - Blank
+    - Blank
+    - Blank
+    - Blank
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -9455,22 +9574,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89b80b14ad5df1148a79b8a649aafa26, type: 3}
---- !u!4 &1633688437
+--- !u!4 &1633688437 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 89b80b14ad5df1148a79b8a649aafa26,
     type: 3}
   m_PrefabInstance: {fileID: 1633688436}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128905270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 355436659552138089}
-  m_Father: {fileID: 455235294}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1646560412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9873,22 +9982,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd567ad534f348541ace0a957b25a9e6, type: 3}
---- !u!1 &1739729374
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 229770449}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1751696174
 GameObject:
   m_ObjectHideFlags: 0
@@ -10011,7 +10104,11 @@ MonoBehaviour:
     - 3
     - 2
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -10460,7 +10557,7 @@ PrefabInstance:
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
@@ -10470,7 +10567,7 @@ PrefabInstance:
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.67
+      value: 11.9
       objectReference: {fileID: 0}
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
@@ -10612,7 +10709,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6077e4f498f74ac48ad21c2bead7fd35, type: 2}
+  - {fileID: 2100000, guid: daa7a06d219ad9a43898820179464369, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10901,12 +10998,14 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Luuuu
+    - You completed the token, children! Well done! Look, the guardian of the door
+      is about to appear! Let us call for her!
     time:
-    - 2
-    sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+    - 12
+    sound:
+    - Door_FullToken_her
+  spriteLeft: {fileID: 21300000, guid: a51cf33ec29306847a1195caba5c81fc, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
   tokenValue: 1
   miniGame: 0
@@ -11449,8 +11548,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996875699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 2.5, z: 2.0699997}
-  m_LocalScale: {x: 0.2, y: 5, z: 4.5}
+  m_LocalPosition: {x: -5, y: 2.5, z: 1.25}
+  m_LocalScale: {x: 0.2, y: 5, z: 6}
   m_Children: []
   m_Father: {fileID: 948874604}
   m_RootOrder: 4
@@ -11575,7 +11674,10 @@ MonoBehaviour:
     - 3
     - 3
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -11628,7 +11730,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c0f00f8ec4cad04b98a661088c1d370,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c0f00f8ec4cad04b98a661088c1d370,
         type: 3}
@@ -12158,7 +12260,9 @@ MonoBehaviour:
     time:
     - 3
     - 2
-    sound: []
+    sound:
+    - Blank
+    - Blank
   spriteLeft: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -12239,8 +12343,8 @@ MonoBehaviour:
     - 15
     - 15
     sound:
-    - Test1
-    - Test2
+    - Nile_Info_Hippo_1
+    - Nile_Info_Hippo_2
   spriteLeft: {fileID: 21300000, guid: adba08d02a51d0c498364dc119cf2c63, type: 3}
   spriteRight: {fileID: 21300000, guid: ce0f78ee73e1fe64ebb522283d592b7d, type: 3}
   startMiniGame: 0
@@ -12324,17 +12428,127 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: dea3e995f21dfa94f811c2713086d856,
+        type: 3}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Beware of Anubis. That's quite illegal what you did here Seti, staying
+        alive all this time...
+      objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_GoodAnswer_2
+      objectReference: {fileID: 0}
     - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.data[0]
-      value: Test1
+      value: MiniGame_Outro_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 61b64297a850ff04b88e71bff7850d35,
+        type: 3}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Look what I've picked up during the mini-game!
+      objectReference: {fileID: 0}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 902992294, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 593f81b89037e9141819a5c2e3124031,
+        type: 3}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Ouuh I see you are serious! You might go through the door, I wish you
+        all the best in your quest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_GoodAnswer_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.time.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 77ed71061ecb32b46a5deffb079f7de3,
+        type: 3}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: False answer! You might try again once you improve your knowledge of
+        our culture!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_FalseAnswer
       objectReference: {fileID: 0}
     - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
@@ -12409,8 +12623,25 @@ PrefabInstance:
     - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: dialogue.sound.Array.data[0]
-      value: Test1
+      value: Blank
       objectReference: {fileID: 0}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Seems like we have done this minigame already.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4,
+        type: 3}
     - target: {fileID: 7638708835781808296, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: floorProjection

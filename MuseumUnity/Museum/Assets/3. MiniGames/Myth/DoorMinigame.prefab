@@ -77,7 +77,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Answer3
+  m_Text: Lemonade
 --- !u!1 &3481658229638594883
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Answer2
+  m_Text: Beer
 --- !u!1 &3481658229716805912
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Answer1
+  m_Text: Hot chocolate
 --- !u!1 &3481658229932863029
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +311,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: What is the most common beverage in the Egyptian diet?
 --- !u!1 &3481658229935053143
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,7 +649,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Answer3
+  m_Text: Orange juice
 --- !u!1 &3481658230365012719
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,6 +908,7 @@ MonoBehaviour:
       collaborativa di pagine all'interno di un sito web. \xC8 dunque un software
       ..."
     time: []
+    sound: []
   spriteLeft: {fileID: 0}
   spriteRight: {fileID: 0}
   startMiniGame: 0
@@ -1233,7 +1234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd1d9149284eeaf41aa5c41cbca7902e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dea3e995f21dfa94f811c2713086d856, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1370,6 +1371,8 @@ MonoBehaviour:
   - risposta3
   - risposta4
   correct: 2
+  failedDialogue: {fileID: 0}
+  endDialogue: {fileID: 0}
 --- !u!1 &3481658231015472680
 GameObject:
   m_ObjectHideFlags: 0
