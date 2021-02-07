@@ -456,7 +456,7 @@ PrefabInstance:
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -573,7 +573,7 @@ PrefabInstance:
     - target: {fileID: 4741861279158940851, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -593,7 +593,7 @@ PrefabInstance:
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 1
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -636,12 +636,12 @@ PrefabInstance:
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.data[1]
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.data[2]
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -1459,11 +1459,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13dfb1895666cc548a3af1e5b6cbe9a3, type: 3}
---- !u!4 &229770449 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 229770448}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &229770450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
@@ -2383,9 +2378,9 @@ MonoBehaviour:
     - Door_NoToken
   spriteLeft: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
-  startMiniGame: 1
+  startMiniGame: 0
   tokenValue: 0
-  miniGame: 4
+  miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0
 --- !u!1 &400951076
@@ -2663,11 +2658,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 29d91d0759514e04e8369a786fe10e36,
     type: 3}
-  m_PrefabInstance: {fileID: 425479689}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &425479691 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 425479689}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &431654333
@@ -4708,10 +4698,10 @@ Transform:
   m_Children:
   - {fileID: 1553403456}
   - {fileID: 1566404994}
-  - {fileID: 425479691}
+  - {fileID: 425479690}
+  - {fileID: 1633688437}
   - {fileID: 1474337679}
   - {fileID: 755840247}
-  - {fileID: 1633688438}
   - {fileID: 110501702}
   - {fileID: 787064602}
   m_Father: {fileID: 0}
@@ -4936,7 +4926,7 @@ MonoBehaviour:
     sentences:
     - But we can also take a glance at these souvenirs in passing.
     time:
-    - 1
+    - 5
     sound:
     - Nile_Intro_6
   spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
@@ -5271,7 +5261,7 @@ MonoBehaviour:
     - ...Aaand I thought I could rest in peace after the last Pharaoh died... What
       do you want, mortals? Seti, still there?
     time:
-    - 8
+    - 10
     sound:
     - Door_Taweret_1
   spriteLeft: {fileID: 21300000, guid: 77a7801c2dcd8ca4390cff6883a5a458, type: 3}
@@ -5928,8 +5918,8 @@ Transform:
   - {fileID: 1624217623}
   - {fileID: 1426537929}
   - {fileID: 1296763291}
+  - {fileID: 1911892818}
   - {fileID: 1199620820}
-  - {fileID: 229770449}
   - {fileID: 694963002}
   - {fileID: 540625523}
   m_Father: {fileID: 0}
@@ -5988,7 +5978,7 @@ MonoBehaviour:
   - {fileID: 979253818}
   - {fileID: 939636716}
   isStartingDialogue: 0
-  isEndingDialogue: 1
+  isEndingDialogue: 0
 --- !u!1 &1077179388
 GameObject:
   m_ObjectHideFlags: 0
@@ -6482,7 +6472,7 @@ Transform:
   m_LocalScale: {x: 0.3000002, y: 0.2, z: 0.05409006}
   m_Children: []
   m_Father: {fileID: 1046770427}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1199620821
 MonoBehaviour:
@@ -7805,7 +7795,7 @@ MonoBehaviour:
     - "Well, my pyramid is in the third room at the end of this exhibition. We can
       try to go there! \r"
     time:
-    - 1
+    - 8
     sound:
     - Nile_Intro_5
   spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
@@ -9332,11 +9322,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1633688436}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1633688438 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1633688436}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1646560412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10261,6 +10246,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 543450652710229033, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6205940506145265802, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -10314,7 +10304,7 @@ PrefabInstance:
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.21
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
@@ -10324,7 +10314,7 @@ PrefabInstance:
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.9
+      value: 11.53
       objectReference: {fileID: 0}
     - target: {fileID: 6205940507747367553, guid: 1db76aa2e5bb7f243b1eb8403d4e1ed5,
         type: 3}
@@ -10764,10 +10754,16 @@ MonoBehaviour:
   spriteLeft: {fileID: 21300000, guid: a51cf33ec29306847a1195caba5c81fc, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
-  tokenValue: 1
+  tokenValue: 0
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 1
+--- !u!4 &1911892818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13dfb1895666cc548a3af1e5b6cbe9a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 229770448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1963281275
 GameObject:
   m_ObjectHideFlags: 0
@@ -12216,6 +12212,10 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: Taweret-2
       objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: tokenValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.size
       value: 1
@@ -12276,6 +12276,15 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: Taweret-1
       objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: tokenValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509082758383, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_Text
+      value: What is the most common beverage in the Egyptian diet?
+      objectReference: {fileID: 0}
     - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: dialogue.time.Array.size
@@ -12317,6 +12326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.name
       value: diet qs
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: tokenValue
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
