@@ -299,6 +299,7 @@ MonoBehaviour:
     - 15
     - 10
     - 15
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   spriteRight: {fileID: 21300000, guid: 6f3711af2243a02428def064818730dc, type: 3}
   startMiniGame: 0
@@ -458,7 +459,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 36c1767d9e318e948ab8eaa4c6813271,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36c1767d9e318e948ab8eaa4c6813271,
         type: 3}
@@ -527,7 +528,7 @@ Transform:
   - {fileID: 1040775452}
   - {fileID: 1477286071}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &113344214
 GameObject:
@@ -578,6 +579,7 @@ MonoBehaviour:
     - "\u2026 like Anubis\u2026"
     time:
     - 3
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 646004a80d991fe498c1af16c7cd5812, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -766,7 +768,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1 &166532845
 GameObject:
@@ -1036,6 +1038,234 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 206553615}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &211478918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: dea3e995f21dfa94f811c2713086d856,
+        type: 3}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Beware of Anubis. That's quite illegal what you did here Seti, staying
+        alive all this time...
+      objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_GoodAnswer_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: MiniGame_Outro_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 61b64297a850ff04b88e71bff7850d35,
+        type: 3}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Look what I've picked up during the mini-game!
+      objectReference: {fileID: 0}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 902992294, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 593f81b89037e9141819a5c2e3124031,
+        type: 3}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Ouuh I see you are serious! You might go through the door, I wish you
+        all the best in your quest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_GoodAnswer_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.time.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 77ed71061ecb32b46a5deffb079f7de3,
+        type: 3}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: False answer! You might try again once you improve your knowledge of
+        our culture!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_FalseAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.133832
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25245094
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 27.754663
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794760557326924676, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_Name
+      value: Minigames
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162396176528523627, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: FloorProjection
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Blank
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Seems like we have done this minigame already.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4,
+        type: 3}
+    - target: {fileID: 7638708835781808296, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: floorProjection
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
 --- !u!1 &214437213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1543,7 @@ Transform:
   - {fileID: 1854683260}
   - {fileID: 741614822}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &314830426
 GameObject:
@@ -1351,7 +1581,7 @@ Transform:
   - {fileID: 819477000}
   - {fileID: 3242467152631536738}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &321467322
 PrefabInstance:
@@ -1667,6 +1897,7 @@ MonoBehaviour:
     - Look children! A game is about to start!
     time:
     - 5
+    sound: []
   spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
   spriteRight: {fileID: 21300000, guid: 9cd7c6ae37e9a0845aad1387e92874b4, type: 3}
   startMiniGame: 1
@@ -1871,7 +2102,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &422086586
 GameObject:
@@ -2001,6 +2232,7 @@ MonoBehaviour:
     - Sorry?
     time:
     - 3
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 77a7801c2dcd8ca4390cff6883a5a458, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -2113,7 +2345,7 @@ Transform:
   m_LocalScale: {x: 3.4, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &438325212
 GameObject:
@@ -2299,7 +2531,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.4, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &493025638
 GameObject:
@@ -2523,6 +2755,7 @@ MonoBehaviour:
     time:
     - 10
     - 20
+    sound: []
   spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
   spriteRight: {fileID: 21300000, guid: a3752696adda84549bf8711b9f1eae74, type: 3}
   startMiniGame: 0
@@ -2634,7 +2867,7 @@ Transform:
   m_LocalScale: {x: 3.4, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &543899196
 GameObject:
@@ -2960,7 +3193,7 @@ Transform:
   m_LocalScale: {x: 1.8, y: 1.5, z: 1.7}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &576551186
 PrefabInstance:
@@ -3233,7 +3466,7 @@ Transform:
   m_LocalScale: {x: 0.18, y: 0.4, z: 0.18}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.77}
 --- !u!1001 &609084637
 PrefabInstance:
@@ -3514,7 +3747,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1001 &675860982
 PrefabInstance:
@@ -3775,7 +4008,7 @@ PrefabInstance:
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 50
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -3987,7 +4220,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.1, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &741614821
 PrefabInstance:
@@ -4175,7 +4408,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &801346249
 GameObject:
@@ -4268,7 +4501,7 @@ Transform:
   m_LocalScale: {x: 0.18, y: 0.4, z: 0.18}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: -14.141001, z: 0}
 --- !u!1001 &819476999
 PrefabInstance:
@@ -4320,7 +4553,7 @@ PrefabInstance:
     - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
         type: 3}
@@ -4460,7 +4693,7 @@ Transform:
   - {fileID: 1468342416}
   - {fileID: 1346674034}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &862975752
 GameObject:
@@ -4645,7 +4878,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.3, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1001 &870440151
 PrefabInstance:
@@ -4692,7 +4925,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d3a3b2fe3794af144bf2628ff7c75e1d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3a3b2fe3794af144bf2628ff7c75e1d,
         type: 3}
@@ -4822,7 +5055,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.5, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &911105858
 GameObject:
@@ -4915,7 +5148,7 @@ Transform:
   m_LocalScale: {x: 3.6, y: 1, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &978170633
 GameObject:
@@ -5101,7 +5334,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &984747578
 GameObject:
@@ -5369,7 +5602,7 @@ Transform:
   m_LocalScale: {x: 3.4, y: 1.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1040775450
 PrefabInstance:
@@ -5511,7 +5744,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: eea31b3ab2a8f0747be100bcd1a1d8d2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eea31b3ab2a8f0747be100bcd1a1d8d2,
         type: 3}
@@ -5776,7 +6009,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1 &1137275183
 GameObject:
@@ -5869,7 +6102,7 @@ Transform:
   m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1150185794
 GameObject:
@@ -5962,7 +6195,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.1, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1158509136
 GameObject:
@@ -6055,7 +6288,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1180168660
 PrefabInstance:
@@ -6102,7 +6335,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d15f6a840ded3644b901cc236ed22503,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d15f6a840ded3644b901cc236ed22503,
         type: 3}
@@ -6265,6 +6498,7 @@ MonoBehaviour:
     - Oh goodie! Another game!
     time:
     - 5
+    sound: []
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
   spriteRight: {fileID: 21300000, guid: 0f349a13398cf3d44b38066dd07b4052, type: 3}
   startMiniGame: 1
@@ -6330,7 +6564,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c5e293e10cf7d647952efc3c3008ea9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c5e293e10cf7d647952efc3c3008ea9,
         type: 3}
@@ -6389,6 +6623,7 @@ MonoBehaviour:
     time:
     - 15
     - 15
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   spriteRight: {fileID: 21300000, guid: ed02ef3bdd780524a89d3398772f5259, type: 3}
   startMiniGame: 0
@@ -6500,7 +6735,7 @@ Transform:
   m_LocalScale: {x: 3.6, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1220951694
 GameObject:
@@ -6593,7 +6828,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1 &1252966110
 GameObject:
@@ -6686,7 +6921,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.3, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324675694
 GameObject:
@@ -6802,7 +7037,7 @@ Transform:
   - {fileID: 1564813242}
   - {fileID: 365913604}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1332543693
 GameObject:
@@ -7350,7 +7585,7 @@ Transform:
   m_LocalScale: {x: 0.16, y: 0.3, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: -14.141001, z: 0}
 --- !u!1 &1424654328
 GameObject:
@@ -7447,7 +7682,7 @@ Transform:
   - {fileID: 635956808}
   - {fileID: 1633282366}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1436650064
 GameObject:
@@ -7751,6 +7986,7 @@ MonoBehaviour:
     - "\u2026to major gods\u2026"
     time:
     - 3
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -8235,7 +8471,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1534217767
 GameObject:
@@ -8421,7 +8657,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.2, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1564813241
 PrefabInstance:
@@ -8573,7 +8809,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2a3814280603aa0419cc74b9beeea4a5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a3814280603aa0419cc74b9beeea4a5,
         type: 3}
@@ -8657,6 +8893,7 @@ MonoBehaviour:
     - 20
     - 15
     - 15
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 646004a80d991fe498c1af16c7cd5812, type: 3}
   spriteRight: {fileID: 21300000, guid: 819d1c7fe3141294bad269338c170bfa, type: 3}
   startMiniGame: 0
@@ -8827,6 +9064,7 @@ MonoBehaviour:
     time:
     - 20
     - 20
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 74bc7c14854836d4994988ec7da24a92, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -8879,7 +9117,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8379bedfdfc576c47bf63559a9fb4352,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8379bedfdfc576c47bf63559a9fb4352,
         type: 3}
@@ -8953,6 +9191,7 @@ MonoBehaviour:
     time:
     - 15
     - 20
+    sound: []
   spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
   spriteRight: {fileID: 21300000, guid: d21e8516630a5ee4ba2fdb1e81533088, type: 3}
   startMiniGame: 0
@@ -9549,7 +9788,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.3, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1734817216
 GameObject:
@@ -9735,7 +9974,7 @@ Transform:
   m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1788838175
 PrefabInstance:
@@ -10012,6 +10251,7 @@ MonoBehaviour:
     - ...
     time:
     - 2
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 1621ddd5fc6573e479e5c080233bd9a1, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -10110,7 +10350,7 @@ Transform:
   m_LocalScale: {x: 3.6, y: 1.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830111924
 GameObject:
@@ -10336,6 +10576,7 @@ MonoBehaviour:
     - 25
     - 25
     - 25
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 74bc7c14854836d4994988ec7da24a92, type: 3}
   spriteRight: {fileID: 21300000, guid: 290da2c7279d9a24ab9dd19bd862bd13, type: 3}
   startMiniGame: 0
@@ -10482,7 +10723,7 @@ Transform:
   - {fileID: 1719128225}
   - {fileID: 2094007417}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1915064232
 GameObject:
@@ -10513,7 +10754,7 @@ Transform:
   m_Children:
   - {fileID: 509411895}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950084801
 GameObject:
@@ -10606,7 +10847,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.1, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971231074
 GameObject:
@@ -10699,7 +10940,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.2, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1986268050
 GameObject:
@@ -11096,7 +11337,7 @@ Transform:
   - {fileID: 1193045998}
   - {fileID: 1388578327}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &543450652279217984
 Transform:
@@ -11424,7 +11665,7 @@ PrefabInstance:
     - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
         type: 3}
@@ -11548,6 +11789,7 @@ MonoBehaviour:
     time:
     - 15
     - 10
+    sound: []
   spriteLeft: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0

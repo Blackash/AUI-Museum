@@ -170,12 +170,14 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Test 2
+    - Beware of Anubis. That's quite illegal what you did here Seti, staying alive
+      all this time...
     time:
-    - 3
-    sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+    - 9
+    sound:
+    - Door_GoodAnswer_2
+  spriteLeft: {fileID: 21300000, guid: dea3e995f21dfa94f811c2713086d856, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
   tokenValue: 1
   miniGame: 0
@@ -226,11 +228,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: 
-    sentences: []
-    time: []
-    sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+    sentences:
+    - False answer! You might try again once you improve your knowledge of our culture!
+    time:
+    - 7
+    sound:
+    - Door_FalseAnswer
+  spriteLeft: {fileID: 21300000, guid: 77ed71061ecb32b46a5deffb079f7de3, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
   tokenValue: 1
   miniGame: 0
@@ -420,11 +425,12 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Test End Minigame Dialogue
+    - Look what I've picked up during the mini-game!
     time:
-    - 2
-    sound: []
-  spriteLeft: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
+    - 3
+    sound:
+    - MiniGame_Outro_3
+  spriteLeft: {fileID: 21300000, guid: 61b64297a850ff04b88e71bff7850d35, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
   tokenValue: 1
@@ -744,12 +750,14 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Test 1
+    - Ouuh I see you are serious! You might go through the door, I wish you all the
+      best in your quest.
     time:
-    - 2
-    sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+    - 7
+    sound:
+    - Door_GoodAnswer_1
+  spriteLeft: {fileID: 21300000, guid: 593f81b89037e9141819a5c2e3124031, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
   tokenValue: 1
   miniGame: 0
@@ -801,12 +809,13 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Minigame Already Completed
+    - Seems like we have done this minigame already.
     time:
     - 4
-    sound: []
-  spriteLeft: {fileID: 0}
-  spriteRight: {fileID: 0}
+    sound:
+    - Blank
+  spriteLeft: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
   tokenValue: 0
   miniGame: 0
