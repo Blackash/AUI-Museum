@@ -95,6 +95,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5966369860935694555}
+  - {fileID: 1243127178}
   m_Father: {fileID: 8060214000215816002}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -162,6 +163,248 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectableTag: Selectable
   highlightMaterial: {fileID: 2100000, guid: f02d0a69c138e2f49adf3ccde4d825b9, type: 2}
+--- !u!1 &1243127177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1243127178}
+  - component: {fileID: 1243127179}
+  m_Layer: 0
+  m_Name: DialogueSoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1243127178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243127177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 872762662}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243127179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243127177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78a6fd84b1f89204bb66881a53344470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Nile_Intro_1
+    clip: {fileID: 8300000, guid: aba4f6d246baa814a921d4f58460567a, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_2
+    clip: {fileID: 8300000, guid: b7742fc57e84f954482df83652aac8f5, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_3
+    clip: {fileID: 8300000, guid: d470aa7e76b653443b87765aa47ce8c0, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_4
+    clip: {fileID: 8300000, guid: b9d8af2591743e840aea33b91f99236e, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_5
+    clip: {fileID: 8300000, guid: 313734e1a7f6efe4eb1658ae80e075bf, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Intro_6
+    clip: {fileID: 8300000, guid: bba03e20439a5d3409c84ab61e837f46, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Blank
+    clip: {fileID: 8300000, guid: 26a0ec16f217c5d4fad98ecfe7a35446, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Hippo_1
+    clip: {fileID: 8300000, guid: 36c5beb9f3fa9bf4a970a17b8fdf6c05, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Hippo_2
+    clip: {fileID: 8300000, guid: 2d3233f6d0f01ff47863887d6aefdc12, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Papyrus
+    clip: {fileID: 8300000, guid: 06e3a8356dc64a04d81bbed798fa7697, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Diet_1
+    clip: {fileID: 8300000, guid: 3398116ac9d1635418172243df7ef665, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Diet_2
+    clip: {fileID: 8300000, guid: a971fdb9e2b164943a42e8e1f0091a15, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Boat_1
+    clip: {fileID: 8300000, guid: b36bfc66d58c68c4fb6f966de0ba8e30, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Boat_2
+    clip: {fileID: 8300000, guid: 05aa225e014e5fa4791deb63a0efc306, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Intro_1
+    clip: {fileID: 8300000, guid: aee4cf104bf0ccf4fbb2fb8e826a2086, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Intro_2
+    clip: {fileID: 8300000, guid: 4be1ce3e4dffade4baa8529f8674c4d2, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Intro_Sphinx
+    clip: {fileID: 8300000, guid: 4c9bd494ae632a54b8205e63a7800fc9, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Outro_1
+    clip: {fileID: 8300000, guid: 1be04354f53d4c44aa3f59f075627bec, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Outro_2
+    clip: {fileID: 8300000, guid: 0bffadcc207b3b248b4ad0eb1f2e5157, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: MiniGame_Outro_3
+    clip: {fileID: 8300000, guid: 1d71acaa902ff17469776f91d4f4c7d3, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Floods_1
+    clip: {fileID: 8300000, guid: 845f3fbe8f065034bbb6fa3a9fab5c8b, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Info_Floods_2
+    clip: {fileID: 8300000, guid: 2df51a323a7ee98459f9359224ac205b, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_FalseAnswer
+    clip: {fileID: 8300000, guid: 51b2fa3f3e308ca46a4e825de57a0943, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_GoodAnswer_1
+    clip: {fileID: 8300000, guid: 43d2dd8d017017445abcf7d28eb20d28, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_GoodAnswer_2
+    clip: {fileID: 8300000, guid: 0426ef4150fe31a4f9cd7d75a732c4ad, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_NoToken
+    clip: {fileID: 8300000, guid: 8d4af5e9c463a894c806dc49bbe08449, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_HalfToken
+    clip: {fileID: 8300000, guid: dc2292b1b5c2e6b4f816d195cfbbf344, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_FullToken_her
+    clip: {fileID: 8300000, guid: ccbb32126acf4324aa670e4a5d4987ea, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_TaweretIncantation_1
+    clip: {fileID: 8300000, guid: 1c89c45a388e66744bf2d5388efd5ae6, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_TaweretIncantation_2
+    clip: {fileID: 8300000, guid: 5f917162227c2e549bfdb82b25355439, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_Taweret_1
+    clip: {fileID: 8300000, guid: 2a72ed857d8333045b91c9142e38d6c8, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Door_Taweret_2
+    clip: {fileID: 8300000, guid: a0642ac018d73d04e9373e2b2a6b06d4, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
+  - name: Nile_Question_Beverage
+    clip: {fileID: 8300000, guid: 8273c859f2a968c47a35059fd331a50f, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixer: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2, type: 2}
+    source: {fileID: 0}
 --- !u!1 &1771564201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,18 +1823,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8060213999907199546}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &397158408953997674 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7663258059243418448, guid: dac76afa6f908904dae7ceea5a6046a9,
+--- !u!224 &5966369860935694555 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4402106094490641121, guid: dac76afa6f908904dae7ceea5a6046a9,
     type: 3}
   m_PrefabInstance: {fileID: 8060213999907199546}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2472304184358878242 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5590306768391857688, guid: dac76afa6f908904dae7ceea5a6046a9,
@@ -1640,9 +1877,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &5966369860935694555 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4402106094490641121, guid: dac76afa6f908904dae7ceea5a6046a9,
+--- !u!114 &397158408953997674 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7663258059243418448, guid: dac76afa6f908904dae7ceea5a6046a9,
     type: 3}
   m_PrefabInstance: {fileID: 8060213999907199546}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

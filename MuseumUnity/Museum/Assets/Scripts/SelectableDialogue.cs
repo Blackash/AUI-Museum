@@ -33,6 +33,8 @@ public class SelectableDialogue : MonoBehaviour
 
     public void updateSelector()
     {
+        if (selector == dialogues.Length - 1)
+            return;
         bool[] tmp = TokenManager.Instance.GetHalfTokens();
         int tmp2 = 0;
         if (tmp[0])
@@ -42,7 +44,7 @@ public class SelectableDialogue : MonoBehaviour
         }
         if (tmp[1])
         {
-            secondTokenObj.SetActive(false);
+            secondTokenObj.SetActive(true);
             tmp2++;
         }
             

@@ -12,18 +12,21 @@ public class MinigameManager : Singleton<MinigameManager>
     [SerializeField] GameObject doorMinigame;
     [SerializeField] GameObject gameUI;
     [SerializeField] DialogueTrigger alreadyHaveTokenDialogue;
-    public bool inMinigame = true;
+    public bool CanMove = true;
 
 
     public void StartMinigame(MiniGames mini, int tokenValue)
     {
         bool[] tmp = TokenManager.Instance.GetHalfTokens();
-        if (tmp[tokenValue-1] == true)
+        if (mini != MiniGames.Door)
         {
-            alreadyHaveTokenDialogue.TriggerDialogue();
-            return;
+            if (tmp[tokenValue - 1] == true)
+            {
+                alreadyHaveTokenDialogue.TriggerDialogue();
+                return;
+            }
         }
-        inMinigame = false;
+        CanMove = false;
         gameUI.SetActive(false);
         switch (mini)
         {
@@ -55,24 +58,24 @@ public class MinigameManager : Singleton<MinigameManager>
 
     public void MinigameEnd()
     {
-        inMinigame = true;
+        CanMove = true;
         gameUI.SetActive(true);
     }
 
     public void InDialogue()
     {
-        inMinigame = false;
+        CanMove = false;
         gameUI.SetActive(false);
     }
 
     public void DialogueEnd()
     {
-        inMinigame = true;
+        CanMove = true;
         gameUI.SetActive(true);
     }
     public bool GetIfCanAction()
     {
-        return inMinigame;
+        return CanMove;
     }
 
 }

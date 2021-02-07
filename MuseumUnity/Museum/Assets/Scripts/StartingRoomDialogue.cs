@@ -31,6 +31,7 @@ public class StartingRoomDialogue : MonoBehaviour
         {
             if (!isEndingDialogue)
             {
+                count = 0;
                 return;
             }
             SceneManager.LoadScene("EndDemoScene");
