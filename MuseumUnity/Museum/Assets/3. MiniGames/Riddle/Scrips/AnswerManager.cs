@@ -14,6 +14,7 @@ public class AnswerManager : MonoBehaviour
     [SerializeField] private GameObject startImage;
     [SerializeField] private GameObject endImage;
     [SerializeField] private GameObject floorProjection;
+    [SerializeField] private DialogueTrigger endMinigameDialogue;
 
     [System.Serializable]
     public class Riddle
@@ -146,7 +147,8 @@ public class AnswerManager : MonoBehaviour
         floorProjection.SetActive(true);
         tokenValue = n;
         start = true;
-        StartCoroutine(StartImage());
+        if(count%2 == 0)
+            StartCoroutine(StartImage());
         
         prepareMinigame(count);
         count++;
@@ -175,6 +177,7 @@ public class AnswerManager : MonoBehaviour
             //triggero qua un dialogue
             MinigameManager.Instance.MinigameEnd();
             floorProjection.SetActive(false);
+            endMinigameDialogue.TriggerDialogue();
             gameObject.SetActive(false);
         }
         

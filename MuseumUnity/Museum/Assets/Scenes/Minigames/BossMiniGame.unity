@@ -199,80 +199,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111500035}
   m_CullTransparentMesh: 0
---- !u!1 &187013127
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 187013128}
-  - component: {fileID: 187013130}
-  - component: {fileID: 187013129}
-  m_Layer: 5
-  m_Name: Scarab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &187013128
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187013127}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1300346436}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -850.33, y: 465}
-  m_SizeDelta: {x: 87.33981, y: 95.74075}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &187013129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187013127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c40260ce779369442a1678ac4f2ae98d, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &187013130
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187013127}
-  m_CullTransparentMesh: 0
 --- !u!1 &224473631
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,8 +578,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659075604}
+  - component: {fileID: 659075606}
+  - component: {fileID: 659075605}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: ScarabList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -675,9 +603,48 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -844, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -844, y: 18.6}
+  m_SizeDelta: {x: 100, y: 1001.6982}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &659075605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659075603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44406bb11daefc547a7c86dea8a84a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scarabPrefab: {fileID: 2944351857705884440, guid: c0e89ddee5b17bc40a9994742b60b989,
+    type: 3}
+--- !u!114 &659075606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659075603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
 --- !u!1 &737020445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,7 +1456,6 @@ RectTransform:
   - {fileID: 1679853315}
   - {fileID: 1397708080}
   - {fileID: 659075604}
-  - {fileID: 187013128}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1590,6 +1556,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e6ae8a0dff3b6eb42a1a3d324bc6ea3f, type: 3}
   - {fileID: 21300000, guid: 69077b79e03279448bb4075621227fe6, type: 3}
   - {fileID: 21300000, guid: ba195ad176ca6d340804b7d14d195b79, type: 3}
+  score: {fileID: 659075605}
 --- !u!1 &1343115745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,8 +1674,15 @@ MonoBehaviour:
     - "Con Antico Egitto si intende la civilt\xE0 sviluppatasi lungo il fiume Nilo
       a partire dalle cateratte, a sud e al confine con l\u2019attuale Sudan, alla
       foce, al delta, nel Mar Mediterraneo, per un\u2019estensione co"
+    time: []
+    sound: []
   spriteLeft: {fileID: 0}
+  spriteRight: {fileID: 0}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
   isMinigame: 1
+  isPartOfBigDialogue: 0
 --- !u!4 &1346786092
 Transform:
   m_ObjectHideFlags: 0

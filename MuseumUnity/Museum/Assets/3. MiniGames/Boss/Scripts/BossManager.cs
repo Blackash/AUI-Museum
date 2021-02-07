@@ -9,6 +9,7 @@ public class BossManager : MonoBehaviour
     [SerializeField] DialogueTrigger questions;
     [SerializeField] Image hourglassImage;
     [SerializeField] Sprite[] hourglassImageList;
+    [SerializeField] ScoreManager score;
     private bool reset;
     private int currentQuestion;
     private int currentCount = 0;
@@ -32,6 +33,7 @@ public class BossManager : MonoBehaviour
             //reset timer
             answerManager.nextQuestion();
             currentQuestion++;
+            score.AddScore();
             questions.NextQuestion();
         }
         else
@@ -40,6 +42,7 @@ public class BossManager : MonoBehaviour
             answerManager.WrongAnswer();
             answerManager.nextQuestion();
             currentQuestion = 0;
+            score.ResetScore();
             questions.ResetQuestion();
         }
     }

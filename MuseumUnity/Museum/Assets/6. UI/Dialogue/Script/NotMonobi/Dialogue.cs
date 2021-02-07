@@ -10,4 +10,5 @@ public class Dialogue
     [TextArea(3, 10)]
     public string[] sentences;
     public float[] time;
+    public string[] sound = default;
 }

@@ -28,7 +28,8 @@ public class DialogueManager : Singleton<DialogueManager>
 
     public void StartDialogue(Dialogue dialogue, Sprite leftCharS, Sprite rightCharS)
     {
-        MinigameManager.Instance.InDialogue();
+        if(!isMinigame)
+            MinigameManager.Instance.InDialogue();
         Debug.Log("Starting conversation with " + dialogue.name);
 
         leftChar.GetComponent<Image>().sprite = leftCharS;
@@ -56,7 +57,6 @@ public class DialogueManager : Singleton<DialogueManager>
         }
 
         string sentence = sentences.Dequeue();
-
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -73,7 +73,8 @@ public class DialogueManager : Singleton<DialogueManager>
 
     public void EndDialogue()
     {
-        MinigameManager.Instance.DialogueEnd();
+        if (!isMinigame)
+            MinigameManager.Instance.DialogueEnd();
         Debug.Log("End Conversation");
         if (!isMinigame)
         {

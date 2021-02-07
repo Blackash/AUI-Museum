@@ -20,6 +20,7 @@ public class DressUpManager : MonoBehaviour
     [SerializeField] private GameObject startImage;
     [SerializeField] private GameObject endImage;
     [SerializeField] private GameObject FloorProjection;
+    [SerializeField] private DialogueTrigger endMinigameDialogue;
     private int tokenValue = 0;
     private int phase;
     private bool start;
@@ -76,6 +77,10 @@ public class DressUpManager : MonoBehaviour
 
     private void prepareMinigame()
     {
+        foreach (Transform child in dressListObj.transform)
+        {
+            Destroy(child.gameObject);
+        }
         numberOfPanels = 0;
         phase = 1;
         correctDress = -1;
@@ -96,7 +101,8 @@ public class DressUpManager : MonoBehaviour
         pyramid.transform.localScale = new Vector3(1f, 1f, 1f);
         warDrobe.SetActive(true);
         AddCorrectDresses(socialClass);
-        switch(socialClass)
+        AddRandomDresses(socialClass);
+        switch (socialClass)
         {
             case SocialClass.FARAONE: Description.text = descriptionText[0];
                 break;
@@ -134,6 +140,27 @@ public class DressUpManager : MonoBehaviour
             }
         }
         correctDress = 0;
+    }
+
+    private void AddRandomDresses(SocialClass sc)
+    {
+        List<int> tmpList = new List<int>();
+        int k;
+        for (int i = numberOfPanels; i < 6 ; i++)
+        {
+            do
+            {
+                k = UnityEngine.Random.Range(0, dressList.Length - 1);
+            } while (dressList[k].socialClass == sc || tmpList.Contains(k));
+
+            GameObject tmp = Instantiate(imagePrefab);
+            tmp.transform.SetParent(dressListObj.transform);
+            tmp.GetComponent<DragAndDrop>().dressSO = dressList[k];
+            tmp.GetComponent<DragAndDrop>().canvas = GetComponent<Canvas>();
+                
+            
+        }
+        
     }
 
     public void correctSocialClass()
@@ -181,6 +208,7 @@ public class DressUpManager : MonoBehaviour
             //triggero qua un dialogue
             FloorProjection.SetActive(false);
             MinigameManager.Instance.MinigameEnd();
+            endMinigameDialogue.TriggerDialogue();
             gameObject.SetActive(false);
         }
     }

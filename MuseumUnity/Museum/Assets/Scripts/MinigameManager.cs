@@ -11,11 +11,18 @@ public class MinigameManager : Singleton<MinigameManager>
     [SerializeField] GameObject OfferingMinigame;
     [SerializeField] GameObject doorMinigame;
     [SerializeField] GameObject gameUI;
+    [SerializeField] DialogueTrigger alreadyHaveTokenDialogue;
     public bool inMinigame = true;
 
 
     public void StartMinigame(MiniGames mini, int tokenValue)
     {
+        bool[] tmp = TokenManager.Instance.GetHalfTokens();
+        if (tmp[tokenValue-1] == true)
+        {
+            alreadyHaveTokenDialogue.TriggerDialogue();
+            return;
+        }
         inMinigame = false;
         gameUI.SetActive(false);
         switch (mini)
@@ -40,6 +47,7 @@ public class MinigameManager : Singleton<MinigameManager>
             case MiniGames.Door:
                 {
                     doorMinigame.SetActive(true);
+                    doorMinigame.GetComponent<AnswerOptionManager>().StartMinigame();
                     break;
                 }
         }
