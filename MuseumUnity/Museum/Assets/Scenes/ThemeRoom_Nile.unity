@@ -4996,16 +4996,12 @@ MonoBehaviour:
     sentences:
     - Before I let you go through this door, I must know if you are serious about
       your mission.
-    - What is the most common beverage in Egyptian diet? Hot chocolate, beer or orange
-      juice?
     time:
     - 5
-    - 7
     sound:
     - Door_Taweret_2
-    - Nile_Question_Beverage
-  spriteLeft: {fileID: 21300000, guid: d42f5134b51da174fa42c054c1a9e813, type: 3}
-  spriteRight: {fileID: 21300000, guid: dea3e995f21dfa94f811c2713086d856, type: 3}
+  spriteLeft: {fileID: 21300000, guid: 11131839043b1e74a82d8bfd5f38b8c5, type: 3}
+  spriteRight: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   startMiniGame: 1
   tokenValue: 0
   miniGame: 4
@@ -5280,8 +5276,8 @@ MonoBehaviour:
     - 8
     sound:
     - Door_Taweret_1
-  spriteLeft: {fileID: 21300000, guid: d42f5134b51da174fa42c054c1a9e813, type: 3}
-  spriteRight: {fileID: 21300000, guid: 77ed71061ecb32b46a5deffb079f7de3, type: 3}
+  spriteLeft: {fileID: 21300000, guid: 77a7801c2dcd8ca4390cff6883a5a458, type: 3}
+  spriteRight: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   startMiniGame: 0
   tokenValue: 0
   miniGame: 0
@@ -5994,7 +5990,7 @@ MonoBehaviour:
   - {fileID: 979253818}
   - {fileID: 939636716}
   isStartingDialogue: 0
-  isEndingDialogue: 0
+  isEndingDialogue: 1
 --- !u!1 &1077179388
 GameObject:
   m_ObjectHideFlags: 0
@@ -12455,6 +12451,10 @@ PrefabInstance:
       propertyPath: dialogue.sound.Array.data[0]
       value: Door_GoodAnswer_2
       objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.name
+      value: Taweret-2
+      objectReference: {fileID: 0}
     - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.size
       value: 1
@@ -12475,6 +12475,10 @@ PrefabInstance:
     - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.time.Array.data[0]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.name
+      value: token-end minigame
       objectReference: {fileID: 0}
     - target: {fileID: 902992294, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12506,6 +12510,52 @@ PrefabInstance:
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.data[0]
       value: Door_GoodAnswer_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.name
+      value: Taweret-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.time.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: What is the most common beverage in the Egyptian diet?
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Nile_Question_Beverage
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9,
+        type: 3}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 11131839043b1e74a82d8bfd5f38b8c5,
+        type: 3}
+    - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.name
+      value: diet qs
       objectReference: {fileID: 0}
     - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
@@ -12610,6 +12660,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minigames
       objectReference: {fileID: 0}
+    - target: {fileID: 3487413757164401949, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: answers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487413757164401949, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: answers.Array.data[0]
+      value: Hot chocolate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487413757164401949, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: answers.Array.data[1]
+      value: Beer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487413757164401949, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: answers.Array.data[2]
+      value: Orange juice
+      objectReference: {fileID: 0}
     - target: {fileID: 4162396176528523627, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: FloorProjection
@@ -12642,11 +12712,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4,
         type: 3}
+    - target: {fileID: 4429263101664574765, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.name
+      value: compeleted mini game
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343690841011613254, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_Text
+      value: "HOW TO PLAY:\n\n1. Read the character description.\n2. Grab and drag
+        the correct clothing to the proper area of the person. \n3. Place the character
+        on the correct level of the social hierarchy pyramid.\n\nGood luck!"
+      objectReference: {fileID: 0}
     - target: {fileID: 7638708835781808296, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: floorProjection
       value: 
       objectReference: {fileID: 1848775879}
+    - target: {fileID: 8002237985152315480, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_Text
+      value: "HOW TO PLAY:\n\n1. Solve the riddle. \n2. Use the hieroglyphs on the
+        floor to spell the word. \n\nSpell the answer correctly, before Anubis reaches
+        you. \n\nGood luck! "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
 --- !u!1001 &3242467152631536737

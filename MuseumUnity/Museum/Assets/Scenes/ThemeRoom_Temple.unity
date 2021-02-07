@@ -1350,6 +1350,11 @@ PrefabInstance:
       propertyPath: answers.Array.data[2]
       value: 'A make-up technique '
       objectReference: {fileID: 0}
+    - target: {fileID: 3487413757164401949, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: correct
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4162396176528523627, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: FloorProjection
