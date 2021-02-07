@@ -2028,8 +2028,21 @@ PrefabInstance:
     - target: {fileID: 6343690841011613254, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: m_Text
-      value: "How to Play:\n1. Read the character description.\n2. Grab and drag
-        the clothing to the proper area of the person. \n3. "
+      value: "HOW TO PLAY:\n\n1. Read the character description.\n2. Grab and drag
+        the correct clothing to the proper area of the person. \n3. Place the character
+        on the correct level of the social hierarchy pyramid.\n\nGood luck!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343690841011613254, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002237985152315480, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_Text
+      value: "HOW TO PLAY:\n\n1. Solve the riddle. \n2. Use the hieroglyphs on the
+        floor to spell the word. \n\nSpell the answer correctly, before Anubis reaches
+        you. \n\nGood luck! "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
