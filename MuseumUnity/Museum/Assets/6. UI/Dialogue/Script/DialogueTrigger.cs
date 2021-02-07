@@ -53,8 +53,8 @@ public class DialogueTrigger : MonoBehaviour
         for(int i=0; i<d.sentences.Length; i++)
         {
 
-            if (!(d.sound[i].Equals("None")))
-                FindObjectOfType<DialogueSoundManager>().Play(d.sound[i]);
+            /*if (!(d.sound[i].Equals("None")))
+                FindObjectOfType<DialogueSoundManager>().Play(d.sound[i]);*/
             yield return new WaitForSeconds(d.time[i]);
             NextQuestion();
         }
