@@ -5875,7 +5875,7 @@ MonoBehaviour:
   dialogue:
     name: fish_coffin_mini_game
     sentences:
-    - Oo look children! Look's like we are playing a game!
+    - Brace yourselves, the Sphinx is coming!
     time:
     - 5
     sound:
