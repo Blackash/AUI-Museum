@@ -358,6 +358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartingDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 4741861279158940851, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -2169,6 +2174,11 @@ PrefabInstance:
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.name
       value: end 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 337397509082758383, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_Text
+      value: "The pyramid of Giza is\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}

@@ -1192,6 +1192,11 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: horus exit 1
       objectReference: {fileID: 0}
+    - target: {fileID: 337397509082758383, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: m_Text
+      value: 'What does the Udjat eye not represent? '
+      objectReference: {fileID: 0}
     - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: dialogue.time.Array.size
@@ -4873,7 +4878,7 @@ PrefabInstance:
     - target: {fileID: 4741861279158940851, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -5538,7 +5543,7 @@ MonoBehaviour:
   - {fileID: 1630649190}
   - {fileID: 179185871}
   isStartingDialogue: 0
-  isEndingDialogue: 1
+  isEndingDialogue: 0
 --- !u!1 &862975752
 GameObject:
   m_ObjectHideFlags: 0
