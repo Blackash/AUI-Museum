@@ -479,5 +479,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3068466150402324643, guid: 3bedadb13df04a24dbefff1512cdf64f,
+        type: 3}
+      propertyPath: m_Text
+      value: "HOW TO PLAY:\n\n1. Read the question. \n2. Select the correct sacrifices.
+        \n3. If the flame is red, the selection is wrong. \n     If the flame is
+        green, the selection is right. \n\nGood luck! May the gods be with you. "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bedadb13df04a24dbefff1512cdf64f, type: 3}
