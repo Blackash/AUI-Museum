@@ -257,7 +257,7 @@ PrefabInstance:
     - target: {fileID: 8164078558771037576, guid: b174c414a297af24da4dfe59daa3e638,
         type: 3}
       propertyPath: m_TagString
-      value: Selectable
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b174c414a297af24da4dfe59daa3e638, type: 3}
@@ -273,40 +273,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 12621761}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &12621764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12621763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: horus_content2
-    sentences:
-    - In the creation myth of Heliopolis, Nut, goddess of the Sky, represented as
-      a bending woman covered of stars, mated with Geb, her twin brother god of the
-      Earth.
-    - 'She gave birth to Osiris, Isis, Horus, Seth and Nephthys, major gods whose
-      myths are fundamental to the ancient Egyptian religion. '
-    - 'She gives order to the cosmos and protects it from chaos. Her toes and fingers,
-      on which she takes equilibrium to stand on the earth, are the cardinal points. '
-    time:
-    - 15
-    - 10
-    - 15
-    sound: []
-  spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
-  spriteRight: {fileID: 21300000, guid: 6f3711af2243a02428def064818730dc, type: 3}
-  startMiniGame: 0
-  tokenValue: 0
-  miniGame: 0
-  isMinigame: 0
-  isPartOfBigDialogue: 0
 --- !u!65 &12621765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -316,7 +282,7 @@ BoxCollider:
   m_GameObject: {fileID: 12621763}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.28169024, y: 0.7201911, z: 0.41123894}
   m_Center: {x: 0, y: 0.000000059604645, z: 0.000000059604645}
@@ -525,8 +491,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1908525156}
-  - {fileID: 141407774}
+  - {fileID: 1040775451}
+  - {fileID: 1477286070}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -578,8 +544,9 @@ MonoBehaviour:
     sentences:
     - "\u2026 like Anubis\u2026"
     time:
-    - 3
-    sound: []
+    - 2
+    sound:
+    - Temple_Intro_5
   spriteLeft: {fileID: 21300000, guid: 646004a80d991fe498c1af16c7cd5812, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -767,41 +734,9 @@ Transform:
   m_LocalPosition: {x: 4.098, y: 0.971, z: 1.931}
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
---- !u!1 &141407773
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1477286069}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 141407774}
-  m_Layer: 0
-  m_Name: Sekhmet2 (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &141407774
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1477286069}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141407773}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1477286070}
-  - {fileID: 1477286071}
-  m_Father: {fileID: 89810953}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &166532845
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,10 +879,9 @@ MonoBehaviour:
     - ' Let us see if you can answer my question. I shall let you go through this
       door if you tell me...'
     time:
-    - 5
+    - 9
     sound:
-    - Door_Taweret_2
-    - Nile_Question_Beverage
+    - Door_Horus_2
   spriteLeft: {fileID: 21300000, guid: 42bbd532a4080d641971fc0000d14cf9, type: 3}
   spriteRight: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   startMiniGame: 1
@@ -995,7 +929,7 @@ PrefabInstance:
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.38268343
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
@@ -1005,7 +939,7 @@ PrefabInstance:
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.92387956
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
@@ -1020,7 +954,7 @@ PrefabInstance:
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
@@ -1187,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.data[0]
-      value: Door_GoodAnswer_2
+      value: Door_Horus_GoodAnswer_2
       objectReference: {fileID: 0}
     - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: tokenValue
@@ -1244,11 +1178,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.data[0]
-      value: Door_GoodAnswer_1
+      value: Door_Horus_GoodAnswer_1
       objectReference: {fileID: 0}
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: tokenValue
@@ -1325,7 +1259,7 @@ PrefabInstance:
     - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: dialogue.sound.Array.data[0]
-      value: Door_FalseAnswer
+      value: Door_Horus_FalseAnswer
       objectReference: {fileID: 0}
     - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
@@ -1646,6 +1580,703 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.size
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].name
+      value: Temple_Intro_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5935a0c2ae040384f930ff1526a5b5f6, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].name
+      value: Temple_Intro_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9dde7bc54b9fda84bab2e3170ab0fd0d, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].name
+      value: Temple_Intro_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 903d5f0c3f329da48a0f3e9929db8394, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].name
+      value: Temple_Intro_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b8d8b421a033384c887dcfad12fbf73, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].name
+      value: Temple_Intro_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 153a03d7b7bef8245b01342e9d18a0a1, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].name
+      value: Temple_Intro_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 99f143e951a3ed246b6842c6d32645bd, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].name
+      value: Temple_Intro_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6488d7999d1a1c749adb63595570e8ca, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].name
+      value: Temple_Intro_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d133e4560c4a4a34285b80aea44ee085, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].name
+      value: Temple_Info_Luxor_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b54fa4e31a38e841a340b86207a74f9, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].name
+      value: Temple_Info_Luxor_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c0cf355d20693d41995eb9e92174114, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].name
+      value: Temple_Info_Mummy_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f88bc62d3595c045b975ff45546fae7, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].name
+      value: Temple_Info_Mummy_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a2c218a0954bb2498926364ba6888cf, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].name
+      value: Temple_Info_Mummy_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f175dae296a07c48a4af942c5f3c641, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].name
+      value: Temple_Info_NutGeb_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 18f7036631487be428b9e4293fa1a18e, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].name
+      value: Temple_Info_NutGeb_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f335de6a52d5efd479f26bcbc68ebd3e, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].name
+      value: Temple_Info_NutGeb_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9107985137e824a4687fdaffb9b73660, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].name
+      value: Temple_Info_Osiris_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 927d90d15999a3d4585d53a9176c4d97, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].name
+      value: Temple_Info_Osiris_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: cadf1d2bb99bc794db4009c7d4e18ca3, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].name
+      value: Temple_Info_Osiris_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d5cc1d5513b29a48844799e9c85fb5e, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].name
+      value: Temple_Info_Ra_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9dfd8c91ae159f6479b07ad5877103b0, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].name
+      value: Temple_Info_Ra_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2160f208c2495ee44bc3103c08a4b93a, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].name
+      value: Temple_Info_Udjat_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f3edff80c666a142a912c8b9d0be6e8, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].name
+      value: Temple_Info_Udjat_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5dad45947526c884f942646654bc4e21, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].name
+      value: Temple_Info_WeighHearts_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e4fb43d9eeeaea41a7f3cf5c116f397, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[57].name
+      value: Temple_Info_WeighHearts_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[57].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b01c0bef1ea394b4dae6592c0b570f13, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[57].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[57].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[57].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[58].name
+      value: Door_HorusIncantation_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[58].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c058d1e746446c34e963d2aac149a528, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[58].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[58].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[58].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[59].name
+      value: Door_HorusIncantation_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[59].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 14f046c6d7585ad41a6791d18a03d3ef, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[59].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[59].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[59].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[60].name
+      value: Door_Horus_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[60].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c605ea7a78e571488da78b879265c6c, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[60].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[60].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[60].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[61].name
+      value: Door_Horus_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[61].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c225570f1c70ffd4ab1af10dba6c1efb, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[61].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[61].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[61].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[62].name
+      value: Door_Horus_FalseAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[62].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 685cf4181320ed24f851d648d86f4cbf, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[62].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[62].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[62].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[63].name
+      value: Door_Horus_GoodAnswer_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[63].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 66b0e34d276db054d969e9362df71480, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[63].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[63].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[63].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[64].name
+      value: Door_Horus_GoodAnswer_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[64].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f4fc82cca3b68f4aa22bf05921deba9, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[64].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[64].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[64].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[65].name
+      value: Door_FullToken_him
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[65].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b405addb511b26947b5c67de6801e647, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[65].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[65].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[65].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
     - target: {fileID: 8060213999968721283, guid: c000c95f6f65c90419365090408100bc,
         type: 3}
       propertyPath: playerController
@@ -1782,8 +2413,6 @@ Transform:
   - {fileID: 50210878}
   - {fileID: 1734817220}
   - {fileID: 493025642}
-  - {fileID: 819477000}
-  - {fileID: 3242467152631536738}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2064,6 +2693,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 4243699309619047747, guid: 1901fd884af0053489ff691967b22a8b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     - target: {fileID: 7847934884124305658, guid: 1901fd884af0053489ff691967b22a8b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2098,10 +2732,11 @@ MonoBehaviour:
   dialogue:
     name: eyeofrah_minigame
     sentences:
-    - Look children! A game is about to start!
+    - Ready, children?
     time:
     - 5
-    sound: []
+    sound:
+    - MiniGame_Intro_1
   spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
   spriteRight: {fileID: 21300000, guid: 9cd7c6ae37e9a0845aad1387e92874b4, type: 3}
   startMiniGame: 1
@@ -2301,12 +2936,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413565995}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.78, y: 0.971, z: 5.34}
-  m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.15, y: 0.10000001, z: 0.10000001}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &422086586
 GameObject:
@@ -2436,7 +3071,8 @@ MonoBehaviour:
     - Sorry?
     time:
     - 3
-    sound: []
+    sound:
+    - Temple_Intro_3
   spriteLeft: {fileID: 21300000, guid: 77a7801c2dcd8ca4390cff6883a5a458, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -2486,7 +3122,7 @@ BoxCollider:
   m_GameObject: {fileID: 431646113}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2730,12 +3366,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488102493}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.74, y: 1.17, z: -1.79}
   m_LocalScale: {x: 0.3, y: 0.4, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &493025638
 GameObject:
@@ -2920,6 +3556,11 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6913d1d39972e0d43bca2f731a509e1e,
         type: 3}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6913d1d39972e0d43bca2f731a509e1e,
+        type: 3}
+      propertyPath: m_TagString
       value: Selectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2930,56 +3571,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 509411894}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &509411896 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6913d1d39972e0d43bca2f731a509e1e,
-    type: 3}
-  m_PrefabInstance: {fileID: 509411894}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &509411897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509411896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: stela ra_content
-    sentences:
-    - Ra is the sun-god. Every day, he travels on his solar boat through the sky
-      where he shines a bright light on the human realm.
-    - "Every night, his boat goes in the Douat, the river of the underworld, where
-      he fights with Apophis, the snake of the darkness. He succeeds each time to
-      kill the snake, and that is why the sun rises every morning. \r"
-    time:
-    - 10
-    - 20
-    sound: []
-  spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
-  spriteRight: {fileID: 21300000, guid: a3752696adda84549bf8711b9f1eae74, type: 3}
-  startMiniGame: 0
-  tokenValue: 0
-  miniGame: 0
-  isMinigame: 0
-  isPartOfBigDialogue: 0
---- !u!65 &509411898
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509411896}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &542338078
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,22 +4451,6 @@ Transform:
   m_Father: {fileID: 1424654331}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &640651462
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1040775450}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1040775452}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &666472023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3966,8 +4541,8 @@ Transform:
   m_LocalPosition: {x: 4.098, y: 0.971, z: 1.216}
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1001 &675860982
 PrefabInstance:
@@ -4158,8 +4733,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 20
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -4189,6 +4769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: tokenValue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Temple_Intro_2
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -4228,7 +4813,7 @@ PrefabInstance:
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 51
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -4248,7 +4833,7 @@ PrefabInstance:
     - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: LongDialogue.Array.size
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -4265,6 +4850,21 @@ PrefabInstance:
       propertyPath: LongDialogue.Array.data[3]
       value: 
       objectReference: {fileID: 1461507778}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.data[4]
+      value: 
+      objectReference: {fileID: 113344216}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.data[5]
+      value: 
+      objectReference: {fileID: 1828586955}
+    - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: LongDialogue.Array.data[6]
+      value: 
+      objectReference: {fileID: 1606010652}
     - target: {fileID: 4741861279158940851, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_Name
@@ -4283,6 +4883,11 @@ PrefabInstance:
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
@@ -4345,6 +4950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: tokenValue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Temple_Intro_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f09428ab8311af45bd935aad31d3a5b, type: 3}
@@ -4440,12 +5050,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736881430}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.97, y: 1.628, z: 11.131}
   m_LocalScale: {x: 0.2, y: 0.1, z: 0.4}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &741614821
 PrefabInstance:
@@ -4628,12 +5238,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776940071}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 2.77, y: 0.971, z: 5.34}
-  m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.15, y: 0.10000001, z: 0.10000001}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &801346249
 GameObject:
@@ -4740,101 +5350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b72e0cd33614d84aa266899164edfc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &819476999
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 314830427}
-    m_Modifications:
-    - target: {fileID: 3242467153092098244, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_Range
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.29883623
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.64085644
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.29883623
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.64085644
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.10000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420988, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_Name
-      value: Spotlight (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 519cdc2117802a145bc97f03c8cd7831, type: 3}
---- !u!4 &819477000 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-    type: 3}
-  m_PrefabInstance: {fileID: 819476999}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &840881910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4846,9 +5361,10 @@ GameObject:
   - component: {fileID: 840881913}
   - component: {fileID: 840881912}
   - component: {fileID: 840881911}
+  - component: {fileID: 840881914}
   m_Layer: 0
   m_Name: NutAndGeb
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4932,6 +5448,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &840881914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840881910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - In the creation myth of Heliopolis, Nut, goddess of the Sky, represented as
+      a bending woman covered of stars, mated with Geb, her twin brother god of the
+      Earth.
+    - 'She gave birth to Osiris, Isis, Horus, Seth and Nephthys, major gods whose
+      myths are fundamental to the ancient Egyptian religion. '
+    - 'She gives order to the cosmos and protects it from chaos. Her toes and fingers,
+      on which she takes equilibrium to stand on the earth, are the cardinal points. '
+    time:
+    - 14
+    - 11
+    - 15
+    sound:
+    - Temple_Info_NutGeb_1
+    - Temple_Info_NutGeb_2
+    - Temple_Info_NutGeb_3
+  spriteLeft: {fileID: 21300000, guid: ee667628e1724c54183019d889bbbed0, type: 3}
+  spriteRight: {fileID: 21300000, guid: 374e04553e58aa24d8542cef3c8a0393, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &859296894
 GameObject:
   m_ObjectHideFlags: 0
@@ -5168,8 +5721,8 @@ Transform:
   m_LocalPosition: {x: 3.363, y: 1.257, z: 4.467}
   m_LocalScale: {x: 0.15, y: 0.3, z: 0.2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1001 &870440151
 PrefabInstance:
@@ -5341,12 +5894,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872019793}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.13, y: 1.604, z: 6.318}
   m_LocalScale: {x: 0.4, y: 0.5, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &911105858
 GameObject:
@@ -5441,6 +5994,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &971475227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 6913d1d39972e0d43bca2f731a509e1e,
+    type: 3}
+  m_PrefabInstance: {fileID: 509411894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &971475231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971475227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Ra is the sun-god. Every day, he travels on his solar boat through the sky
+      where he shines a bright light on the human realm.
+    - "Every night, his boat goes in the Douat, the river of the underworld, where
+      he fights with Apophis, the snake of the darkness. He succeeds each time to
+      kill the snake, and that is why the sun rises every morning. \r"
+    time:
+    - 11
+    - 20
+    sound:
+    - Temple_Info_Ra_1
+    - Temple_Info_Ra_2
+  spriteLeft: {fileID: 21300000, guid: df774e5829656fb4d819699d45c9898b, type: 3}
+  spriteRight: {fileID: 21300000, guid: a3752696adda84549bf8711b9f1eae74, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &971475232
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971475227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 3.1126127}
+  m_Center: {x: -0.33675078, y: 0.12806255, z: 0.46069616}
 --- !u!1 &978170633
 GameObject:
   m_ObjectHideFlags: 0
@@ -5620,12 +6225,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981337807}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.087, y: 0.971, z: 5.34}
-  m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.15, y: 0.10000001, z: 0.10000001}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &984747578
 GameObject:
@@ -5979,36 +6584,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 717bb6f7039f40a47a6a5e1a39762a2c, type: 3}
---- !u!4 &1040775451
+--- !u!4 &1040775451 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 717bb6f7039f40a47a6a5e1a39762a2c,
     type: 3}
   m_PrefabInstance: {fileID: 1040775450}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269581978}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1830111928}
-  m_Father: {fileID: 1908525156}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1040775452
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1040775450}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640651462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1908525156}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1044942601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6392,8 +6973,8 @@ Transform:
   m_LocalPosition: {x: 4.098, y: 0.971, z: 3.791}
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1 &1137275183
 GameObject:
@@ -6574,29 +7155,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150185794}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.97, y: 1.628, z: 12.886}
   m_LocalScale: {x: 0.2, y: 0.1, z: 0.4}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1152410711
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1477286069}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1477286071}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1158509136
 GameObject:
   m_ObjectHideFlags: 0
@@ -6683,12 +7248,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158509136}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.145, y: 0.971, z: 5.34}
-  m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.15, y: 0.10000001, z: 0.10000001}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1180168660
 PrefabInstance:
@@ -6794,7 +7359,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b86d43c484fbec347b787750d064e35b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.18999994
+      value: -0.357
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b86d43c484fbec347b787750d064e35b,
         type: 3}
@@ -6895,15 +7460,16 @@ MonoBehaviour:
   dialogue:
     name: offerings_minigame
     sentences:
-    - Oh goodie! Another game!
+    - On your mark...
     time:
     - 5
-    sound: []
+    sound:
+    - MiniGame_Intro_2
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
   spriteRight: {fileID: 21300000, guid: 0f349a13398cf3d44b38066dd07b4052, type: 3}
   startMiniGame: 1
   tokenValue: 1
-  miniGame: 3
+  miniGame: 1
   isMinigame: 0
   isPartOfBigDialogue: 0
 --- !u!65 &1193046001
@@ -7021,9 +7587,11 @@ MonoBehaviour:
       amulets of the Udjat eye as a protection, and boats were decorated with it
       so that they would \u201Csee\u201D the path. "
     time:
+    - 20
     - 15
-    - 15
-    sound: []
+    sound:
+    - Temple_Info_Udjat_1
+    - Temple_Info_Udjat_2
   spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   spriteRight: {fileID: 21300000, guid: ed02ef3bdd780524a89d3398772f5259, type: 3}
   startMiniGame: 0
@@ -7227,8 +7795,8 @@ Transform:
   m_LocalPosition: {x: 4.098, y: 0.971, z: 2.785}
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1 &1252966110
 GameObject:
@@ -7316,29 +7884,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252966110}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.97, y: 1.59, z: 0.29}
   m_LocalScale: {x: 0.2, y: 0.3, z: 0.4}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1269581978
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1040775450}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1040775451}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1324675694
 GameObject:
   m_ObjectHideFlags: 0
@@ -8014,9 +8566,10 @@ GameObject:
   - component: {fileID: 1424654331}
   - component: {fileID: 1424654330}
   - component: {fileID: 1424654329}
+  - component: {fileID: 1424654332}
   m_Layer: 0
   m_Name: WeighingHearts
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8100,6 +8653,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1424654332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424654328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - When ancient Egyptians died, they believed that their heart was weighed. Anubis,
+      the god the Dead, held the balance, and Thot, the god of Writing and Mathematics,
+      wrote the results.
+    - 'If they had done good things, their heart was light, and they could access
+      afterlife. If not, they were eaten by Ammit, the goddess with a crocodile head,
+      a lion upper body and a hippopotamus lower body. '
+    time:
+    - 15
+    - 20
+    sound:
+    - Temple_Info_WeighHearts_1
+    - Temple_Info_WeighHearts_2
+  spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
+  spriteRight: {fileID: 21300000, guid: 28369b3cb6f9b2046967a05e335ba130, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &1427856142
 GameObject:
   m_ObjectHideFlags: 0
@@ -8151,7 +8738,7 @@ MonoBehaviour:
     time:
     - 12
     sound:
-    - Door_FullToken_her
+    - Door_FullToken_him
   spriteLeft: {fileID: 21300000, guid: a51cf33ec29306847a1195caba5c81fc, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -8460,8 +9047,9 @@ MonoBehaviour:
     sentences:
     - "\u2026to major gods\u2026"
     time:
-    - 3
-    sound: []
+    - 2
+    sound:
+    - Temple_Intro_4
   spriteLeft: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -8719,7 +9307,7 @@ MonoBehaviour:
     - Door_NoToken
   spriteLeft: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
-  startMiniGame: 1
+  startMiniGame: 0
   tokenValue: 0
   miniGame: 4
   isMinigame: 0
@@ -8808,36 +9396,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6ea40506b82ee7408d01716e6c8de66, type: 3}
---- !u!4 &1477286070
+--- !u!4 &1477286070 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d6ea40506b82ee7408d01716e6c8de66,
     type: 3}
   m_PrefabInstance: {fileID: 1477286069}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929867317}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1534217771}
-  m_Father: {fileID: 141407774}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1477286071
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1477286069}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152410711}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 141407774}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1492611060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9019,12 +9583,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515697377}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.57, y: 0.971, z: 5.34}
-  m_LocalScale: {x: 0.15, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.15, y: 0.10000001, z: 0.10000001}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1534217767
 GameObject:
@@ -9205,12 +9769,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553758629}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.71, y: 2.489, z: 6.09}
   m_LocalScale: {x: 0.3, y: 0.2, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1564813241
 PrefabInstance:
@@ -9443,10 +10007,13 @@ MonoBehaviour:
       thanks to her magic powers. They had a son, Horus, and Osiris went back to
       the underworld to reign over the dead. '
     time:
+    - 22
     - 20
     - 15
-    - 15
-    sound: []
+    sound:
+    - Temple_Info_Osiris_1
+    - Temple_Info_Osiris_2
+    - Temple_Info_Osiris_3
   spriteLeft: {fileID: 21300000, guid: 646004a80d991fe498c1af16c7cd5812, type: 3}
   spriteRight: {fileID: 21300000, guid: 819d1c7fe3141294bad269338c170bfa, type: 3}
   startMiniGame: 0
@@ -9617,7 +10184,9 @@ MonoBehaviour:
     time:
     - 20
     - 20
-    sound: []
+    sound:
+    - Temple_Intro_7
+    - Temple_Intro_8
   spriteLeft: {fileID: 21300000, guid: 74bc7c14854836d4994988ec7da24a92, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -9710,61 +10279,10 @@ PrefabInstance:
     - target: {fileID: 8164078558771037576, guid: 8379bedfdfc576c47bf63559a9fb4352,
         type: 3}
       propertyPath: m_TagString
-      value: Selectable
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8379bedfdfc576c47bf63559a9fb4352, type: 3}
---- !u!1 &1628613208 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 8379bedfdfc576c47bf63559a9fb4352,
-    type: 3}
-  m_PrefabInstance: {fileID: 1628613207}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1628613209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1628613208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: thot_content
-    sentences:
-    - When ancient Egyptians died, they believed that their heart was weighed. Anubis,
-      the god the Dead, held the balance, and Thot, the god of Writing and Mathematics,
-      wrote the results.
-    - 'If they had done good things, their heart was light, and they could access
-      afterlife. If not, they were eaten by Ammit, the goddess with a crocodile head,
-      a lion upper body and a hippopotamus lower body. '
-    time:
-    - 15
-    - 20
-    sound: []
-  spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
-  spriteRight: {fileID: 21300000, guid: d21e8516630a5ee4ba2fdb1e81533088, type: 3}
-  startMiniGame: 0
-  tokenValue: 0
-  miniGame: 0
-  isMinigame: 0
-  isPartOfBigDialogue: 0
---- !u!65 &1628613210
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1628613208}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.1843022, y: 4.840873, z: 1.6608948}
-  m_Center: {x: -0.91441923, y: 1.2000105, z: -12.509312}
 --- !u!1 &1630649188
 GameObject:
   m_ObjectHideFlags: 0
@@ -9816,7 +10334,7 @@ MonoBehaviour:
     time:
     - 8
     sound:
-    - Door_Taweret_1
+    - Door_Horus_1
   spriteLeft: {fileID: 21300000, guid: 390f16a1c2baf50479f0045a97c7e5b8, type: 3}
   spriteRight: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
   startMiniGame: 0
@@ -10267,11 +10785,11 @@ MonoBehaviour:
     - "you, who looks at our glorious country with that powerful glance of your falcon
       form, please receive us...Horus! \r"
     time:
-    - 10
-    - 10
+    - 11
+    - 12
     sound:
-    - Door_TaweretIncantation_1
-    - Door_TaweretIncantation_2
+    - Door_HorusIncantation_1
+    - Door_HorusIncantation_2
   spriteLeft: {fileID: 21300000, guid: 61b64297a850ff04b88e71bff7850d35, type: 3}
   spriteRight: {fileID: 21300000, guid: abd12a00f2b06ca4cb58b8aa52b26a5c, type: 3}
   startMiniGame: 0
@@ -10458,12 +10976,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725635091}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.97, y: 1.47, z: 5.34}
   m_LocalScale: {x: 0.2, y: 0.3, z: 0.4}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1734817216
 GameObject:
@@ -10615,7 +11133,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1783757469
 GameObject:
@@ -10815,6 +11333,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1788838175}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1790373457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790373458}
+  m_Layer: 0
+  m_Name: Explanations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790373458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790373457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1252966114}
+  - {fileID: 1725635095}
+  - {fileID: 1950084805}
+  - {fileID: 736881434}
+  - {fileID: 1150185798}
+  - {fileID: 872019797}
+  - {fileID: 1158509140}
+  - {fileID: 1515697381}
+  - {fileID: 981337811}
+  - {fileID: 413565999}
+  - {fileID: 776940075}
+  - {fileID: 1112264982}
+  - {fileID: 1220951698}
+  - {fileID: 125347972}
+  - {fileID: 666472027}
+  - {fileID: 865026520}
+  - {fileID: 1553758633}
+  - {fileID: 1971231078}
+  - {fileID: 488102497}
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1796608842
 GameObject:
   m_ObjectHideFlags: 0
@@ -11054,7 +11621,8 @@ MonoBehaviour:
     - ...
     time:
     - 2
-    sound: []
+    sound:
+    - Temple_Intro_6
   spriteLeft: {fileID: 21300000, guid: 1621ddd5fc6573e479e5c080233bd9a1, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -11335,6 +11903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OuterUpper
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 73e6fe0eba7817d4dba0c75aa3e6c6b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73e6fe0eba7817d4dba0c75aa3e6c6b4, type: 3}
 --- !u!4 &1854683260 stripped
@@ -11376,10 +11949,13 @@ MonoBehaviour:
       was the home for this soul or spirit. If the body was destroyed, the spirit
       might be lost. "
     time:
-    - 25
-    - 25
-    - 25
-    sound: []
+    - 17
+    - 18
+    - 20
+    sound:
+    - Temple_Info_Mummy_1
+    - Temple_Info_Mummy_2
+    - Temple_Info_Mummy_3
   spriteLeft: {fileID: 21300000, guid: 74bc7c14854836d4994988ec7da24a92, type: 3}
   spriteRight: {fileID: 21300000, guid: 290da2c7279d9a24ab9dd19bd862bd13, type: 3}
   startMiniGame: 0
@@ -11534,38 +12110,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 286823270}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1908525155
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1040775450}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1908525156}
-  m_Layer: 0
-  m_Name: Sekhmet1 (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1908525156
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1040775450}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908525155}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1040775451}
-  - {fileID: 1040775452}
-  m_Father: {fileID: 89810953}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1915064232
 GameObject:
   m_ObjectHideFlags: 0
@@ -11597,22 +12141,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1929867317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1477286069}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1477286070}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1950084801
 GameObject:
   m_ObjectHideFlags: 0
@@ -11699,12 +12227,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950084801}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.97, y: 1.628, z: 9.38}
   m_LocalScale: {x: 0.2, y: 0.1, z: 0.4}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971231074
 GameObject:
@@ -11792,12 +12320,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971231074}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 4.93, y: 2.489, z: 0.93}
-  m_LocalScale: {x: 0.3, y: 0.2, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 0.2, z: 0.10000001}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_Father: {fileID: 1790373458}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1986268050
 GameObject:
@@ -12472,101 +13000,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8164078560036633891}
   m_Mesh: {fileID: -2432090755550338912, guid: 9bdaa5b5f414c8d4fb0b3bf60a50586c, type: 3}
---- !u!1001 &3242467152631536737
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 314830427}
-    m_Modifications:
-    - target: {fileID: 3242467153092098244, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_Range
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.29883623
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.64085644
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.29883623
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.64085644
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.10000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3242467153894420988, guid: 519cdc2117802a145bc97f03c8cd7831,
-        type: 3}
-      propertyPath: m_Name
-      value: Spotlight
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 519cdc2117802a145bc97f03c8cd7831, type: 3}
---- !u!4 &3242467152631536738 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3242467153894420928, guid: 519cdc2117802a145bc97f03c8cd7831,
-    type: 3}
-  m_PrefabInstance: {fileID: 3242467152631536737}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8164078558467556016
 GameObject:
   m_ObjectHideFlags: 0
@@ -12644,9 +13077,11 @@ MonoBehaviour:
     - 'At the entrance stood two obelisks, the smaller of which is now located in
       Place de la Concorde in Paris. '
     time:
-    - 15
-    - 10
-    sound: []
+    - 14
+    - 9
+    sound:
+    - Temple_Info_Luxor_1
+    - Temple_Info_Luxor_2
   spriteLeft: {fileID: 21300000, guid: 735ae84fbd4fbd642a39b4c1fa821e83, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
