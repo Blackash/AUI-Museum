@@ -122,6 +122,99 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &11688856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11688857}
+  - component: {fileID: 11688860}
+  - component: {fileID: 11688859}
+  - component: {fileID: 11688858}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &11688857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11688856}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 0.99, y: 1, z: 0.99}
+  m_Children: []
+  m_Father: {fileID: 725104624}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &11688858
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11688856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &11688859
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11688856}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6e7f4fd4d4ea5f04caf7f72fa3484d71, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &11688860
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11688856}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &50210874
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,8 +303,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50210874}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 4.8, z: 0}
-  m_LocalScale: {x: 1.01, y: 1, z: 1.6}
+  m_LocalPosition: {x: 0, y: 4.8, z: -1}
+  m_LocalScale: {x: 1.01, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 456715343}
   m_RootOrder: 1
@@ -235,8 +328,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -271,12 +369,22 @@ PrefabInstance:
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: dialogue.time.Array.data[1]
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: tokenValue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Palace_Intro_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861278820782480, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[1]
+      value: Palace_Intro_3
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940849, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -336,7 +444,7 @@ PrefabInstance:
     - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: LongDialogue.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940850, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -352,7 +460,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LongDialogue.Array.data[3]
       value: 
-      objectReference: {fileID: 689537311}
+      objectReference: {fileID: 0}
     - target: {fileID: 4741861279158940851, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_Name
@@ -361,7 +469,7 @@ PrefabInstance:
     - target: {fileID: 4741861279158940851, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -375,8 +483,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
+      propertyPath: dialogue.sound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
         type: 3}
@@ -435,6 +548,11 @@ PrefabInstance:
       propertyPath: tokenValue
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4741861279697108018, guid: 2f09428ab8311af45bd935aad31d3a5b,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Palace_Intro_1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f09428ab8311af45bd935aad31d3a5b, type: 3}
 --- !u!4 &58372853 stripped
@@ -443,6 +561,64 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 58372852}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &64399976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 64399978}
+  - component: {fileID: 64399977}
+  m_Layer: 0
+  m_Name: DIalogue4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &64399977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64399976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Let us try again.
+    time:
+    - 4
+    sound:
+    - Door_Osiris_Again
+  spriteLeft: {fileID: 21300000, guid: 482e0637cf0153142ba2426af653b940, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 1
+  tokenValue: 0
+  miniGame: 4
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!4 &64399978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64399976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1221487216}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &65952270
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,11 +701,11 @@ MonoBehaviour:
     - " ruler of the deceased whose murder indignated all of Egypt, let us receive
       the privilege of your presence, \u2026 Osiris!"
     time:
-    - 10
-    - 10
+    - 9.5
+    - 12
     sound:
-    - Door_TaweretIncantation_1
-    - Door_TaweretIncantation_2
+    - Door_OsirisIncantation_1
+    - Door_OsirisIncantation_2
   spriteLeft: {fileID: 21300000, guid: 61b64297a850ff04b88e71bff7850d35, type: 3}
   spriteRight: {fileID: 21300000, guid: 2dbc06a577b71214597a6c1d76363d03, type: 3}
   startMiniGame: 0
@@ -893,8 +1069,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127182748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 2.5, z: 0}
-  m_LocalScale: {x: 0.2, y: 5, z: 16}
+  m_LocalPosition: {x: 5, y: 2.5, z: -1}
+  m_LocalScale: {x: 0.2, y: 5, z: 20}
   m_Children: []
   m_Father: {fileID: 456715343}
   m_RootOrder: 3
@@ -923,13 +1099,17 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132801429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 501684134}
   - {fileID: 1885117804}
   - {fileID: 1242919865}
   - {fileID: 863800385}
+  - {fileID: 2099344904}
+  - {fileID: 669233983}
+  - {fileID: 1193978552}
+  - {fileID: 1045686021}
   m_Father: {fileID: 456715343}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -982,6 +1162,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.67
       objectReference: {fileID: 0}
+    - target: {fileID: 9042027999438259571, guid: fef3698436ce89842838750c6d59b0e9,
+        type: 3}
+      propertyPath: field of view
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -995,7 +1180,7 @@ PrefabInstance:
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
@@ -1138,7 +1323,7 @@ MonoBehaviour:
     time:
     - 12
     sound:
-    - Door_FullToken_her
+    - Door_FullToken_him
   spriteLeft: {fileID: 21300000, guid: a51cf33ec29306847a1195caba5c81fc, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -1146,6 +1331,54 @@ MonoBehaviour:
   miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 1
+--- !u!1 &217491326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 8876b07511b4a304ca8a4298f349dbe2,
+    type: 3}
+  m_PrefabInstance: {fileID: 454722654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &217491328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217491326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7615664, y: 2.2262652, z: 1.0506139}
+  m_Center: {x: -0.54336584, y: -0.026863428, z: -0.3933512}
+--- !u!114 &217491330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217491326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'The Great Sphinx was a spiritual guardian to the pyramids: its head represented
+      a pharaoh, the most powerful person in Egypt, and its body was shaped as a
+      lion, the most powerful animal in the known world.'
+    time:
+    - 15
+    sound:
+    - Palace_Info_Sphinx
+  spriteLeft: {fileID: 21300000, guid: b45e6ff5d511930448e1ca5b41ff3ec6, type: 3}
+  spriteRight: {fileID: 21300000, guid: 9d3d25cda5d953844a6abbf043c266e2, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &253458570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,7 +1407,7 @@ BoxCollider:
   m_GameObject: {fileID: 253458570}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1406,6 +1639,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Home_Chest
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 67d9c0d24143f6245b020e9a7c3b9323,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d9c0d24143f6245b020e9a7c3b9323, type: 3}
 --- !u!1 &361804086
@@ -1431,13 +1669,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361804086}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1816666, y: 0.816, z: -0.15333293}
-  m_LocalScale: {x: 0.83333325, y: 1, z: 0.83333325}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 4.0060005, y: 1.313, z: 4.748}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 459432861}
-  m_Father: {fileID: 725104624}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &365462861
 GameObject:
@@ -1489,7 +1727,7 @@ MonoBehaviour:
     time:
     - 2
     sound:
-    - Door_GoodAnswer_2
+    - Seti_NextDoor
   spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
   startMiniGame: 0
@@ -1525,7 +1763,7 @@ BoxCollider:
   m_GameObject: {fileID: 384378950}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1588,7 +1826,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &399675985
 GameObject:
@@ -1671,7 +1909,7 @@ Transform:
   - {fileID: 1582192817}
   - {fileID: 1050486703}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &411132946
 GameObject:
@@ -1760,8 +1998,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411132946}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 2.5, z: 0}
-  m_LocalScale: {x: 0.2, y: 5, z: 16}
+  m_LocalPosition: {x: -5, y: 2.5, z: -1}
+  m_LocalScale: {x: 0.2, y: 5, z: 20}
   m_Children: []
   m_Father: {fileID: 456715343}
   m_RootOrder: 2
@@ -1779,7 +2017,7 @@ GameObject:
   - component: {fileID: 445582117}
   - component: {fileID: 445582116}
   m_Layer: 0
-  m_Name: Dead_PyramidsPic (1)
+  m_Name: Dead_PyramidsGlass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1792,11 +2030,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445582114}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0, y: 0, z: -0.05}
-  m_LocalScale: {x: 13, y: 9, z: 0.100000046}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.3820004, y: 2.553106, z: -6.629999}
+  m_LocalScale: {x: 5.2000027, y: 3.6000001, z: 0.10000008}
   m_Children: []
-  m_Father: {fileID: 1252642628}
+  m_Father: {fileID: 1220211351}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &445582116
@@ -1808,7 +2046,7 @@ BoxCollider:
   m_GameObject: {fileID: 445582114}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1866,6 +2104,514 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.size
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].name
+      value: Seti_NextDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ac55a8465d68f44eb03aaed4f37b409, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[33].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].name
+      value: Palace_Intro_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a1003e834cd71664e832d6fbd9303b3e, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[34].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].name
+      value: Palace_Intro_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4cb6ef1da8d4b1740be57e92c358f3c7, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[35].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].name
+      value: Palace_Intro_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ddfb385ed7775fb42848c26f21970cd1, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[36].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].name
+      value: Palace_Intro_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a18433286f941c341abeab1889a6da60, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[37].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].name
+      value: Palace_Info_Cleopatra_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d0ebda67bd28ed3469aee1e42cad1902, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[38].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].name
+      value: Palace_Info_Cleopatra_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 09c8862139cada1449d2e1c968d1cebc, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[39].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].name
+      value: Palace_Info_Cats_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 27533bd5350d6494a863fa6d9d372b89, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[40].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].name
+      value: Palace_Info_Cats_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb368130a83e1f4680df072bfde0a7d, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[41].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].name
+      value: Palace_Info_Giza_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e79b2d26a1260a44b941622c1355c6c2, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[42].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].name
+      value: Palace_Info_Giza_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6713820f865f02345a982ffb5377c2ef, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[43].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].name
+      value: Palace_Info_Hieroglyphs_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c932490fb79d7846a53f522dfc8fa25, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[44].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].name
+      value: Palace_Info_Hieroglyphs_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8578f2c64a779f941995dc29d389f0d2, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[45].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].name
+      value: Palace_Info_Sphinx
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fb6455b625dea4b40aa86e44e27c1e69, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[46].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].name
+      value: Palace_Info_Tutankhamun_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b66a2e4fce5a5441892e4dacde11a45, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[47].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].name
+      value: Palace_Info_Tutankhamun_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 23544758682a4194d8fbf52b7e475568, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[48].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].name
+      value: Door_Osiris_FalseAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 49ac902078cac084da208ec415f15007, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[49].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].name
+      value: Door_Osiris_GoodAnswer_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d8e4b60a99c865d48bbc4a96005190e1, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[50].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].name
+      value: Door_Osiris_GoodAnswer_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ce8fb5dd89247d441b17fe6acdc69cca, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[51].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].name
+      value: Door_OsirisIncantation_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c3816240454cb6341800aa6068f7acb4, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[52].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].name
+      value: Door_OsirisIncantation_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d699d85a5585f444c98931c362ac877e, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[53].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].name
+      value: Door_FullToken_him
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b405addb511b26947b5c67de6801e647, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[54].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].name
+      value: Door_Osiris_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a756f182537f9d848b703aff670368ac, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[55].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].name
+      value: Door_Osiris_Again
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 455fc0906e40cab47b9106d3bb489c08, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[56].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
     - target: {fileID: 8060213999968721283, guid: c000c95f6f65c90419365090408100bc,
         type: 3}
       propertyPath: playerController
@@ -2015,6 +2761,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Sphinx
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8876b07511b4a304ca8a4298f349dbe2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8876b07511b4a304ca8a4298f349dbe2, type: 3}
 --- !u!1 &456715342
@@ -2050,10 +2801,6 @@ Transform:
   - {fileID: 127182752}
   - {fileID: 132801430}
   - {fileID: 674231136}
-  - {fileID: 2099344904}
-  - {fileID: 669233983}
-  - {fileID: 1193978552}
-  - {fileID: 1045686021}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2119,10 +2866,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -25
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 959cae079ad1bca41be22e4a8104e3bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7bae2ffc6d0684049bb33eced0d3451a, type: 2}
     - target: {fileID: 919132149155446097, guid: 959cae079ad1bca41be22e4a8104e3bd,
         type: 3}
       propertyPath: m_Name
       value: Bastet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 959cae079ad1bca41be22e4a8104e3bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959cae079ad1bca41be22e4a8104e3bd, type: 3}
@@ -2139,6 +2896,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 32541279, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c67aac656bc135e48adfb7f2010f8e28,
+        type: 3}
+    - target: {fileID: 48072361, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: LongDialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 48072361, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: LongDialogue.Array.data[2]
+      value: 
+      objectReference: {fileID: 365462863}
     - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: It seems like you have arrived to the entrance of the pyramid. Seti,
@@ -2153,6 +2923,19 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: end 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_Osiris_GoodAnswer_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 376246216, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3167775b107c68347b57e645dab5ffb2,
+        type: 3}
     - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.name
       value: end of minigame
@@ -2161,6 +2944,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1625366500, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3545ae719eb517445a5f0ad422814b0d,
+        type: 3}
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: "Oh my! I am happy to witness than a few millenniums after us, some
@@ -2174,6 +2962,14 @@ PrefabInstance:
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.name
       value: end 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_Osiris_GoodAnswer_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: dialogue.time.Array.data[0]
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 337397509082758383, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
@@ -2198,7 +2994,7 @@ PrefabInstance:
     - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: dialogue.time.Array.data[0]
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 337397509141500719, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
@@ -2237,6 +3033,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.name
       value: wrong trivia ans
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936559052956231483, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: dialogue.sound.Array.data[0]
+      value: Door_Osiris_FalseAnswer
       objectReference: {fileID: 0}
     - target: {fileID: 2794760557326924675, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
@@ -2301,7 +3102,7 @@ PrefabInstance:
     - target: {fileID: 3487413757164401949, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
       propertyPath: answers.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3487413757164401949, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
@@ -2322,6 +3123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: correct
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487413757164401949, guid: 3d83c7b1647a26544b6d219d863fce0d,
+        type: 3}
+      propertyPath: answers.Array.data[3]
+      value: A mountain
       objectReference: {fileID: 0}
     - target: {fileID: 4162396176528523627, guid: 3d83c7b1647a26544b6d219d863fce0d,
         type: 3}
@@ -2542,6 +3348,65 @@ Transform:
   m_Father: {fileID: 132801430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &516010154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 516010157}
+  - component: {fileID: 516010156}
+  - component: {fileID: 516010155}
+  m_Layer: 0
+  m_Name: Door Range
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &516010155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516010154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad9a2b5be6b53f4e8e0ae1f412ad1b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRange: 0
+  door: {fileID: 674231135}
+--- !u!65 &516010156
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516010154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4, y: 8, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &516010157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516010154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.69, y: 0.48, z: 15.6}
+  m_LocalScale: {x: 1.3256576, y: 1, z: 2.1232}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &577132916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,6 +3500,58 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577132916}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &581162254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 52ae20aed72c9b84697648a5fb63e6e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1699672641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &581162256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581162254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3779485, y: 1.6771332, z: 0.6683866}
+  m_Center: {x: 1.106428, y: 0.2461577, z: -0.65314215}
+--- !u!114 &581162258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581162254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: rosette
+    sentences:
+    - 'Two types of hieroglyphs existed: ideograms, that represented a word, and
+      phonograms, that represented a sound (like the letters used today). The names
+      of people were represented in amulets.'
+    - The Egyptologist Champollion deciphered the writing system, thanks to the mythical
+      Rosette stone on which a big text was written and translated in Greek.
+    time:
+    - 15
+    - 15
+    sound:
+    - Palace_Info_Hieroglyphs_1
+    - Palace_Info_Hieroglyphs_2
+  spriteLeft: {fileID: 21300000, guid: d4dff3ef2acd541459f17995fe42feb1, type: 3}
+  spriteRight: {fileID: 21300000, guid: af30d2dc383f6584ba02c6696e79d22a, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &608450229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,7 +3688,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 456715343}
+    m_TransformParent: {fileID: 132801430}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
@@ -2786,7 +3703,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.7
+      value: 0.3000002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
@@ -2811,7 +3728,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
@@ -2951,7 +3868,7 @@ Transform:
   - {fileID: 90847620}
   - {fileID: 577132917}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &674231135
 GameObject:
@@ -3012,6 +3929,7 @@ MonoBehaviour:
   - {fileID: 1758935584}
   - {fileID: 2068280939}
   - {fileID: 1592920365}
+  - {fileID: 64399976}
   selector: 0
   firstTokenObj: {fileID: 74623983}
   secondTokenObj: {fileID: 1259294229}
@@ -3027,65 +3945,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.176204, y: 4.497057, z: 1.302455}
-  m_Center: {x: 0.034334898, y: 0.46217442, z: -0.15122747}
---- !u!1 &689537310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 689537312}
-  - component: {fileID: 689537311}
-  m_Layer: 0
-  m_Name: GameObject (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &689537311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689537310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: dia-3.2
-    sentences:
-    - Though, a lot of grave robbers found our heritage before scholars. They egoistically
-      profited from it to enrich themselves.
-    time:
-    - 5
-    sound: []
-  spriteLeft: {fileID: 21300000, guid: 1331c013ef0edcf4fb47045ccfc0f178, type: 3}
-  spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
-  startMiniGame: 0
-  tokenValue: 0
-  miniGame: 0
-  isMinigame: 0
-  isPartOfBigDialogue: 1
---- !u!4 &689537312
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689537310}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 58372853}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.034334898, y: 0.3, z: 3}
 --- !u!1 &725104620
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,10 +4036,9 @@ Transform:
   m_LocalPosition: {x: 4.19, y: 0.497, z: 4.53}
   m_LocalScale: {x: 1.2, y: 1, z: 1.2}
   m_Children:
-  - {fileID: 361804087}
-  - {fileID: 1668450655}
+  - {fileID: 11688857}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &727115163
 GameObject:
@@ -3351,7 +4210,7 @@ BoxCollider:
   m_GameObject: {fileID: 817838873}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3680,6 +4539,59 @@ Transform:
   m_Father: {fileID: 132801430}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &958121324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 750cd2aa066a75f47a6f3cc6d8b3ab2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1522765252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &958121326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958121324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.4, z: 0.6}
+  m_Center: {x: -0.026645645, y: 0.064674884, z: -0.5795293}
+--- !u!114 &958121328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958121324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: cleopatra
+    sentences:
+    - 'Cleopatra the VII was a powerful Pharaoh and a queen of legendary beauty.
+      Julius Caesar and Marc Antony, a powerful roman emperor and a powerful roman
+      general, fell in love with her. '
+    - According to the legend, after her throne fell in the hands of Octavius, she
+      committed suicide by letting a cobra, the animal symbol of Ra and Egyptian
+      tradition, bite her.
+    time:
+    - 17
+    - 15
+    sound:
+    - Palace_Info_Cleopatra_1
+    - Palace_Info_Cleopatra_2
+  spriteLeft: {fileID: 21300000, guid: a51cf33ec29306847a1195caba5c81fc, type: 3}
+  spriteRight: {fileID: 21300000, guid: 04067aa31b6dd484f86fa5e7f6525ca2, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1 &984747578
 GameObject:
   m_ObjectHideFlags: 0
@@ -3768,8 +4680,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984747578}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4, y: 1, z: 1.8}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 1.4, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 456715343}
   m_RootOrder: 0
@@ -3819,7 +4731,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5a3b5df80a110674ebe3d025b8bde676,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a3b5df80a110674ebe3d025b8bde676,
         type: 3}
@@ -3863,7 +4775,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 456715343}
+    m_TransformParent: {fileID: 132801430}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -3878,7 +4790,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.44
+      value: 0.55999994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -3903,7 +4815,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -4392,7 +5304,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 456715343}
+    m_TransformParent: {fileID: 132801430}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -4407,7 +5319,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.44
+      value: 0.55999994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -4422,7 +5334,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -4432,7 +5344,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5643422af4621e478147ebe139758d0,
         type: 3}
@@ -4578,6 +5490,39 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 451959436}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1220211350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220211351}
+  m_Layer: 0
+  m_Name: Dead_Pyramids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1220211351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220211350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.15, y: -0.09110618, z: 18.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1468342416}
+  - {fileID: 445582115}
+  - {fileID: 1252642628}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1221487215
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,6 +5553,7 @@ Transform:
   - {fileID: 1758935585}
   - {fileID: 2068280940}
   - {fileID: 1592920366}
+  - {fileID: 64399978}
   m_Father: {fileID: 674231136}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4809,9 +5755,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1252642628}
   - component: {fileID: 1252642627}
+  - component: {fileID: 1252642630}
+  - component: {fileID: 1252642629}
   m_Layer: 0
-  m_Name: Dead_PyramidsPic (1)
-  m_TagString: Untagged
+  m_Name: Dead_PyramidsPic
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4874,14 +5822,58 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252642626}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.818, y: 2.462, z: 12.360001}
-  m_LocalScale: {x: 0.40000015, y: 0.4, z: 1}
-  m_Children:
-  - {fileID: 1468342416}
-  - {fileID: 445582115}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_LocalPosition: {x: 1.3320003, y: 2.553106, z: -6.629999}
+  m_LocalScale: {x: 0.40000018, y: 0.4, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1220211351}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1252642629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252642626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: giza
+    sentences:
+    - 'The Great Pyramid of Giza is the oldest and the tallest of the three pyramids
+      near Cairo. '
+    - 'Standing at almost 150 meters, it was the tallest building in the world for
+      a bit less than 4 millenniums. It was built as a tomb for the Pharaoh Cheops
+      and is one of the Seven Wonders of the World. '
+    time:
+    - 6.5
+    - 16
+    sound:
+    - Palace_Info_Giza_1
+    - Palace_Info_Giza_2
+  spriteLeft: {fileID: 21300000, guid: d42f5134b51da174fa42c054c1a9e813, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2ac1fad114c9e1749b4fb27292b754db, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &1252642630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252642626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.000003, y: 7.98, z: 0.20000005}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1259294229
 GameObject:
   m_ObjectHideFlags: 0
@@ -4914,6 +5906,56 @@ Transform:
   m_Father: {fileID: 674231136}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1259452205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 959cae079ad1bca41be22e4a8104e3bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 459432860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1259452207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259452205}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5385296, y: 0.58294064, z: 0.5847538}
+  m_Center: {x: 0.26709417, y: 0.18746978, z: 0.31283766}
+--- !u!114 &1259452209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259452205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: cats
+    sentences:
+    - Cats were first domesticated by Egyptians! These lovely creatures were believed
+      to be the incarnation of the goddess Bastet and seen as the protectors of households.
+    - 'They had their own dedicated cemeteries and were sometimes mummified. '
+    time:
+    - 15
+    - 7
+    sound:
+    - Palace_Info_Cats_1
+    - Palace_Info_Cats_2
+  spriteLeft: {fileID: 21300000, guid: 61b64297a850ff04b88e71bff7850d35, type: 3}
+  spriteRight: {fileID: 21300000, guid: e18da01d3ffccac4b8276b248beb76c9, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1001 &1268284786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5119,7 +6161,7 @@ BoxCollider:
   m_GameObject: {fileID: 1367097662}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5264,6 +6306,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a4039e019beb764a97286d6a369cccd, type: 3}
+--- !u!1 &1402151785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 67d9c0d24143f6245b020e9a7c3b9323,
+    type: 3}
+  m_PrefabInstance: {fileID: 356176063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1402151786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402151785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: game1
+    sentences:
+    - Ready, children?
+    time:
+    - 5
+    sound:
+    - MiniGame_Intro_1
+  spriteLeft: {fileID: 21300000, guid: a71ddf04eba6c9b428298ce6cb73af5b, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2514f83bfbe6d3f4a8f2a6584740e1d6, type: 3}
+  startMiniGame: 1
+  tokenValue: 1
+  miniGame: 1
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &1402151787
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402151785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64396906, y: 0.4531492, z: 0.50506455}
+  m_Center: {x: 0.013466105, y: 0.1030215, z: -1.0569936}
 --- !u!1001 &1464616095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5366,7 +6454,7 @@ GameObject:
   - component: {fileID: 1468342414}
   - component: {fileID: 1468342413}
   m_Layer: 0
-  m_Name: Dead_PyramidsPic
+  m_Name: Dead_PyramidsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5381,7 +6469,7 @@ BoxCollider:
   m_GameObject: {fileID: 1468342412}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5439,11 +6527,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468342412}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.062000282}
-  m_LocalScale: {x: 13, y: 9, z: 0.100000046}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.27, y: 2.553106, z: -6.629999}
+  m_LocalScale: {x: 5.2000027, y: 3.6000001, z: 0.10000008}
   m_Children: []
-  m_Father: {fileID: 1252642628}
+  m_Father: {fileID: 1220211351}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1483710790 stripped
@@ -5557,7 +6645,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 750cd2aa066a75f47a6f3cc6d8b3ab2d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.432
+      value: -0.405
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750cd2aa066a75f47a6f3cc6d8b3ab2d,
         type: 3}
@@ -5587,7 +6675,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 750cd2aa066a75f47a6f3cc6d8b3ab2d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 750cd2aa066a75f47a6f3cc6d8b3ab2d,
         type: 3}
@@ -5613,6 +6701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bakelite_mirror2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 750cd2aa066a75f47a6f3cc6d8b3ab2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 750cd2aa066a75f47a6f3cc6d8b3ab2d, type: 3}
@@ -5746,7 +6839,6 @@ Transform:
   - {fileID: 203754048}
   - {fileID: 69216498}
   - {fileID: 1671466466}
-  - {fileID: 2048119347}
   m_Father: {fileID: 1221487216}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5766,7 +6858,7 @@ MonoBehaviour:
   - {fileID: 203754049}
   - {fileID: 69216499}
   - {fileID: 1671466467}
-  - {fileID: 2048119348}
+  - {fileID: 0}
   isStartingDialogue: 0
   isEndingDialogue: 1
 --- !u!1 &1614159180
@@ -5796,7 +6888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614159180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0010097757, y: 1.3977311, z: -0.00040400028}
+  m_LocalPosition: {x: 0, y: 1.4, z: 0.005}
   m_LocalScale: {x: 0.99, y: 2.45, z: 0.99}
   m_Children: []
   m_Father: {fileID: 2091647712}
@@ -6047,7 +7139,7 @@ Transform:
   m_Children:
   - {fileID: 1367097663}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1668450654
 GameObject:
@@ -6072,13 +7164,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668450654}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.23, y: 0.68000007, z: -0.019166468}
-  m_LocalScale: {x: 0.83333325, y: 1, z: 0.83333325}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.1670003, y: 1.177, z: 4.254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 108406390}
-  m_Father: {fileID: 725104624}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1671466465
 GameObject:
@@ -6127,16 +7219,17 @@ MonoBehaviour:
     name: 
     sentences:
     - "Hm. I\u2019ve heard you across three rooms. Are you not ashamed, Seti, of
-      the mess you do? Poor Anubis must be tired, after all this time. \r"
+      the mess you do? Poor Anubis must be tired, after all this time. \rAnyway,
+      children."
     time:
-    - 8
+    - 15
     sound:
-    - Door_Taweret_1
+    - Door_Osiris_1
   spriteLeft: {fileID: 21300000, guid: bd1d9149284eeaf41aa5c41cbca7902e, type: 3}
   spriteRight: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
-  startMiniGame: 0
+  startMiniGame: 1
   tokenValue: 0
-  miniGame: 0
+  miniGame: 4
   isMinigame: 0
   isPartOfBigDialogue: 1
 --- !u!1001 &1699672641
@@ -6205,6 +7298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fiveHundred
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52ae20aed72c9b84697648a5fb63e6e7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52ae20aed72c9b84697648a5fb63e6e7, type: 3}
@@ -6361,9 +7459,9 @@ MonoBehaviour:
     - Door_NoToken
   spriteLeft: {fileID: 21300000, guid: 34b3e68faf4bd1d48ae957c730e8e5a4, type: 3}
   spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
-  startMiniGame: 1
+  startMiniGame: 0
   tokenValue: 0
-  miniGame: 4
+  miniGame: 0
   isMinigame: 0
   isPartOfBigDialogue: 0
 --- !u!1 &1764498673
@@ -6765,8 +7863,9 @@ MonoBehaviour:
     - Though, a lot of grave robbers found our heritage before scholars. They egoistically
       profited from it to enrich themselves.
     time:
-    - 5
-    sound: []
+    - 13
+    sound:
+    - Palace_Intro_4
   spriteLeft: {fileID: 21300000, guid: f9b86f1d02e6bf840ba9b61f5e1463a5, type: 3}
   spriteRight: {fileID: 21300000, guid: 214e0da4ab3775247a1e2e640dc08919, type: 3}
   startMiniGame: 0
@@ -6816,7 +7915,7 @@ BoxCollider:
   m_GameObject: {fileID: 2030657876}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -6879,67 +7978,8 @@ Transform:
   m_LocalScale: {x: 1.1, y: 1, z: 1.9}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2048119346
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2048119347}
-  - component: {fileID: 2048119348}
-  m_Layer: 0
-  m_Name: GameObject (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2048119347
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048119346}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1592920366}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2048119348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048119346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - Anyway, children!
-    time:
-    - 3
-    sound:
-    - Door_Taweret_2
-    - Nile_Question_Beverage
-  spriteLeft: {fileID: 21300000, guid: d46e7f2bb17961e4e86bbf595b77f875, type: 3}
-  spriteRight: {fileID: 21300000, guid: 15016af0c70143a48b2afda424ab8ce7, type: 3}
-  startMiniGame: 1
-  tokenValue: 0
-  miniGame: 4
-  isMinigame: 0
-  isPartOfBigDialogue: 1
 --- !u!1 &2068280939
 GameObject:
   m_ObjectHideFlags: 0
@@ -7192,7 +8232,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 456715343}
+    m_TransformParent: {fileID: 132801430}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
@@ -7207,7 +8247,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.7
+      value: 0.3000002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
@@ -7232,7 +8272,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 375df59493645c646a730924df5262b6,
         type: 3}
@@ -7305,7 +8345,7 @@ BoxCollider:
   m_GameObject: {fileID: 2110658860}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7368,7 +8408,7 @@ Transform:
   m_LocalScale: {x: 1.1, y: 1, z: 1.9}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2710110016639951
 GameObject:
@@ -8392,13 +9432,55 @@ GameObject:
   - component: {fileID: 6786037781196555800}
   - component: {fileID: 4139332072414903215}
   - component: {fileID: 1391294306096965570}
+  - component: {fileID: 1247706240244573925}
+  - component: {fileID: 1247706240244573924}
   m_Layer: 0
   m_Name: tut chair back modified 1
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1247706240244573924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247706240244573923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: game2
+    sentences:
+    - Ready, children?
+    time:
+    - 4
+    sound:
+    - MiniGame_Intro_1
+  spriteLeft: {fileID: 21300000, guid: 3aaec3c1755942540970cb16a9fbd6f1, type: 3}
+  spriteRight: {fileID: 21300000, guid: 1cbd8f98e19642b4e929d08891676c3b, type: 3}
+  startMiniGame: 1
+  tokenValue: 2
+  miniGame: 2
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &1247706240244573925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247706240244573923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 1, z: 1}
+  m_Center: {x: 0.1, y: 0.43000004, z: 0.4090148}
 --- !u!4 &1250094337628687129
 Transform:
   m_ObjectHideFlags: 0
@@ -9501,13 +10583,62 @@ GameObject:
   - component: {fileID: 4920440090737307608}
   - component: {fileID: 2941668394567787206}
   - component: {fileID: 2372295353416650446}
+  - component: {fileID: 2429559502398245856}
+  - component: {fileID: 2429559502398245855}
   m_Layer: 0
   m_Name: tutmask front and side no beard
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2429559502398245855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2429559502398245854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - "Tutankhamun was 9 years old when he became Pharaoh (but he died at the age
+      of 18). When members of the team that discovered his tomb unexpectedly died
+      a few months later, a myth was born\u2026 "
+    - 'The curse of the Pharaoh: who entered pyramids, thus disturbing ancient Egyptian
+      tombs and mummies, were afflicted with bad luck, illness or death. Do not worry
+      though, a lot of Egyptologists are still alive. '
+    time:
+    - 16
+    - 19
+    sound:
+    - Palace_Info_Tutankhamun_1
+    - Palace_Info_Tutankhamun_2
+  spriteLeft: {fileID: 21300000, guid: 2ea54612bd2458d49846d8e093b1f081, type: 3}
+  spriteRight: {fileID: 21300000, guid: 703ec4bb378f0a74c9aecc2c8c3cc61a, type: 3}
+  startMiniGame: 0
+  tokenValue: 1
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 0
+--- !u!65 &2429559502398245856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2429559502398245854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0994933, y: 2, z: 2.9249434}
+  m_Center: {x: -3.120511, y: 0.5290673, z: 1.6814365}
 --- !u!4 &2441404544383638249
 Transform:
   m_ObjectHideFlags: 0

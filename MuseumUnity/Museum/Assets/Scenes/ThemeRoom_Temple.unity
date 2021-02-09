@@ -496,6 +496,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &105089971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 105089972}
+  - component: {fileID: 105089973}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &105089972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105089971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 211478919}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &105089973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105089971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: horus exit 2
+    sentences:
+    - Nice, let's go!
+    time:
+    - 6
+    sound:
+    - Seti_NextDoor
+  spriteLeft: {fileID: 21300000, guid: b22f23844b4f3444ca8e49801fa6abf0, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 0
+  tokenValue: 0
+  miniGame: 0
+  isMinigame: 0
+  isPartOfBigDialogue: 1
 --- !u!1 &113344214
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,6 +964,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.67
       objectReference: {fileID: 0}
+    - target: {fileID: 9042027999438259571, guid: fef3698436ce89842838750c6d59b0e9,
+        type: 3}
+      propertyPath: field of view
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 9042028001040361337, guid: fef3698436ce89842838750c6d59b0e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1096,6 +1159,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 32541279, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ca3ea72ea33af94ba89272fbf74a584,
+        type: 3}
+    - target: {fileID: 48072361, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: LongDialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 48072361, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: LongDialogue.Array.data[2]
+      value: 
+      objectReference: {fileID: 211478920}
     - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.size
       value: 1
@@ -1131,6 +1207,11 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: horus exit 2
       objectReference: {fileID: 0}
+    - target: {fileID: 376246216, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4d2177d8bf68354c95085844ef61e22,
+        type: 3}
     - target: {fileID: 617668313, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.size
       value: 1
@@ -1157,6 +1238,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1625366500, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e8c84d0d8d762f43a89927c0126f441,
+        type: 3}
     - target: {fileID: 2046740739, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.size
       value: 1
@@ -1404,6 +1490,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
+--- !u!4 &211478919 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 48072360, guid: 3d83c7b1647a26544b6d219d863fce0d,
+    type: 3}
+  m_PrefabInstance: {fileID: 211478918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &211478920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d,
+    type: 3}
+  m_PrefabInstance: {fileID: 211478918}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &214437213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,7 +1691,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.size
-      value: 66
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[33].name
@@ -2279,6 +2383,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[65].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[66].name
+      value: Door_Horus_Again
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[66].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c2cd510f83a77504d9922c76f671858e, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[66].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[66].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[66].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[67].name
+      value: Seti_NextDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[67].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ac55a8465d68f44eb03aaed4f37b409, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[67].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[67].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[67].audioMixer
       value: 
       objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
         type: 2}
@@ -6808,6 +6954,7 @@ Transform:
   - {fileID: 1475041013}
   - {fileID: 1817765921}
   - {fileID: 859296895}
+  - {fileID: 1843333002}
   m_Father: {fileID: 1070492304}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6884,6 +7031,7 @@ MonoBehaviour:
   dialogues:
   - {fileID: 1475041012}
   - {fileID: 1817765920}
+  - {fileID: 859296894}
   - {fileID: 859296894}
   selector: 0
   firstTokenObj: {fileID: 1324675694}
@@ -11821,6 +11969,64 @@ Transform:
   m_Father: {fileID: 1040775451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1843333001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843333002}
+  - component: {fileID: 1843333003}
+  m_Layer: 0
+  m_Name: DIalogue4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843333002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843333001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1064172698}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1843333003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843333001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: half token
+    sentences:
+    - You again?... You better have studied this time.
+    time:
+    - 7
+    sound:
+    - Door_Horus_Again
+  spriteLeft: {fileID: 21300000, guid: 178c9a177d57f904d870bd56333bb8cf, type: 3}
+  spriteRight: {fileID: 21300000, guid: 2cbcea17b41fe4c4c997391f84f1fbf9, type: 3}
+  startMiniGame: 1
+  tokenValue: 0
+  miniGame: 4
+  isMinigame: 0
+  isPartOfBigDialogue: 0
 --- !u!1001 &1854683259
 PrefabInstance:
   m_ObjectHideFlags: 0

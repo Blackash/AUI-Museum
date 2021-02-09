@@ -1261,7 +1261,7 @@ PrefabInstance:
     - target: {fileID: 331631244860869407, guid: e65b5f178b78e9145a197c81f4be8cf5,
         type: 3}
       propertyPath: answers.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 331631244860869407, guid: e65b5f178b78e9145a197c81f4be8cf5,
         type: 3}
@@ -1287,6 +1287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: answers.Array.data[2]
       value: Orange juice
+      objectReference: {fileID: 0}
+    - target: {fileID: 331631244860869407, guid: e65b5f178b78e9145a197c81f4be8cf5,
+        type: 3}
+      propertyPath: answers.Array.data[3]
+      value: Lemonade
       objectReference: {fileID: 0}
     - target: {fileID: 3481658229935053142, guid: e65b5f178b78e9145a197c81f4be8cf5,
         type: 3}
