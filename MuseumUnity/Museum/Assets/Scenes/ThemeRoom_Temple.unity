@@ -1208,7 +1208,7 @@ PrefabInstance:
     - target: {fileID: 48072361, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: LongDialogue.Array.data[2]
       value: 
-      objectReference: {fileID: 211478920}
+      objectReference: {fileID: 105089973}
     - target: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d, type: 3}
       propertyPath: dialogue.sound.Array.size
       value: 1
@@ -1533,18 +1533,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 211478918}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &211478920 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 65447953, guid: 3d83c7b1647a26544b6d219d863fce0d,
-    type: 3}
-  m_PrefabInstance: {fileID: 211478918}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3673f1e5f075641ab3c9a17fb831d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &214437213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,7 +1716,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.size
-      value: 68
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[33].name
@@ -2236,12 +2224,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[57].name
-      value: Temple_Info_WeighHearts_2
+      value: Temple_Info_WeighHearts_1
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[57].clip
       value: 
-      objectReference: {fileID: 8300000, guid: b01c0bef1ea394b4dae6592c0b570f13, type: 3}
+      objectReference: {fileID: 8300000, guid: 0e4fb43d9eeeaea41a7f3cf5c116f397, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[57].volume
       value: 1
@@ -2257,12 +2245,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[58].name
-      value: Door_HorusIncantation_1
+      value: Temple_Info_WeighHearts_2
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[58].clip
       value: 
-      objectReference: {fileID: 8300000, guid: c058d1e746446c34e963d2aac149a528, type: 3}
+      objectReference: {fileID: 8300000, guid: b01c0bef1ea394b4dae6592c0b570f13, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[58].volume
       value: 1
@@ -2278,12 +2266,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[59].name
-      value: Door_HorusIncantation_2
+      value: Door_HorusIncantation_1
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[59].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 14f046c6d7585ad41a6791d18a03d3ef, type: 3}
+      objectReference: {fileID: 8300000, guid: c058d1e746446c34e963d2aac149a528, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[59].volume
       value: 1
@@ -2299,12 +2287,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[60].name
-      value: Door_Horus_1
+      value: Door_HorusIncantation_2
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[60].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 4c605ea7a78e571488da78b879265c6c, type: 3}
+      objectReference: {fileID: 8300000, guid: 14f046c6d7585ad41a6791d18a03d3ef, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[60].volume
       value: 1
@@ -2320,12 +2308,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[61].name
-      value: Door_Horus_2
+      value: Door_Horus_1
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[61].clip
       value: 
-      objectReference: {fileID: 8300000, guid: c225570f1c70ffd4ab1af10dba6c1efb, type: 3}
+      objectReference: {fileID: 8300000, guid: 4c605ea7a78e571488da78b879265c6c, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[61].volume
       value: 1
@@ -2341,12 +2329,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[62].name
-      value: Door_Horus_FalseAnswer
+      value: Door_Horus_2
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[62].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 685cf4181320ed24f851d648d86f4cbf, type: 3}
+      objectReference: {fileID: 8300000, guid: c225570f1c70ffd4ab1af10dba6c1efb, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[62].volume
       value: 1
@@ -2362,12 +2350,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[63].name
-      value: Door_Horus_GoodAnswer_1
+      value: Door_Horus_FalseAnswer
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[63].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 66b0e34d276db054d969e9362df71480, type: 3}
+      objectReference: {fileID: 8300000, guid: 685cf4181320ed24f851d648d86f4cbf, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[63].volume
       value: 1
@@ -2383,12 +2371,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[64].name
-      value: Door_Horus_GoodAnswer_2
+      value: Door_Horus_GoodAnswer_1
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[64].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 0f4fc82cca3b68f4aa22bf05921deba9, type: 3}
+      objectReference: {fileID: 8300000, guid: 66b0e34d276db054d969e9362df71480, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[64].volume
       value: 1
@@ -2404,12 +2392,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[65].name
-      value: Door_FullToken_him
+      value: Door_Horus_GoodAnswer_2
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[65].clip
       value: 
-      objectReference: {fileID: 8300000, guid: b405addb511b26947b5c67de6801e647, type: 3}
+      objectReference: {fileID: 8300000, guid: 0f4fc82cca3b68f4aa22bf05921deba9, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[65].volume
       value: 1
@@ -2425,12 +2413,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[66].name
-      value: Door_Horus_Again
+      value: Door_FullToken_him
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[66].clip
       value: 
-      objectReference: {fileID: 8300000, guid: c2cd510f83a77504d9922c76f671858e, type: 3}
+      objectReference: {fileID: 8300000, guid: b405addb511b26947b5c67de6801e647, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[66].volume
       value: 1
@@ -2446,12 +2434,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[67].name
-      value: Seti_NextDoor
+      value: Door_Horus_Again
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[67].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 4ac55a8465d68f44eb03aaed4f37b409, type: 3}
+      objectReference: {fileID: 8300000, guid: c2cd510f83a77504d9922c76f671858e, type: 3}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[67].volume
       value: 1
@@ -2462,6 +2450,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
       propertyPath: sounds.Array.data[67].audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
+        type: 2}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[68].name
+      value: Seti_NextDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[68].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ac55a8465d68f44eb03aaed4f37b409, type: 3}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[68].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[68].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243127179, guid: c000c95f6f65c90419365090408100bc, type: 3}
+      propertyPath: sounds.Array.data[68].audioMixer
       value: 
       objectReference: {fileID: 24300002, guid: 84a71d976af4b17499cc7659fed767c2,
         type: 2}
@@ -7410,7 +7419,7 @@ MonoBehaviour:
   - {fileID: 1475041012}
   - {fileID: 1817765920}
   - {fileID: 859296894}
-  - {fileID: 859296894}
+  - {fileID: 1843333001}
   selector: 0
   firstTokenObj: {fileID: 1324675694}
   secondTokenObj: {fileID: 1394104189}
@@ -10441,7 +10450,7 @@ GameObject:
   - component: {fileID: 1553758634}
   m_Layer: 0
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
