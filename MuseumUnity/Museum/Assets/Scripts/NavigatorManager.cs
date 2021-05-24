@@ -25,14 +25,14 @@ public class NavigatorManager : MonoBehaviour
     {
         if (!MinigameManager.Instance.GetIfCanAction())
             return;
-        if (_trasform.position.z > 4)
+        if (_trasform.position.z > 0.8f)
         {
             playerController.MoveFront(true);
         }
         else
         {
 
-            if (_trasform.position.z < -4)
+            if (_trasform.position.z < -0.3)
             {
                 playerController.MoveBack(true);
             }
@@ -41,11 +41,11 @@ public class NavigatorManager : MonoBehaviour
                 playerController.MoveBack(false); //se chiamato con il false, fa rimare fermo il player
             }
         }
-        if (_shoulderLeftTrasform.localPosition.z - _shoulderRightTrasform.localPosition.z > 0.3f)
+        if (_shoulderLeftTrasform.localPosition.z - _shoulderRightTrasform.localPosition.z > 0.4f)
             mouseManager.CameraRotationRight(true);
         else
         {
-            if (_shoulderLeftTrasform.localPosition.z - _shoulderRightTrasform.localPosition.z < -0.3f)
+            if (_shoulderLeftTrasform.localPosition.z - _shoulderRightTrasform.localPosition.z < -0.4f)
                 mouseManager.CameraRotationLeft(true);
             else
             {

@@ -21,8 +21,8 @@ public class FloorManager : MonoBehaviour
             transformM.Add(selectorM.transform);
         if (navigatorM != null)
             transformM.Add(navigatorM.transform);
-        if (bagM != null)
-            transformM.Add(bagM.transform);
+        /*if (bagM != null)
+            transformM.Add(bagM.transform);*/ //commentato per test in magik room
         StartCoroutine(PositionRoutine());
     }
 
@@ -45,7 +45,7 @@ public class FloorManager : MonoBehaviour
 
     private bool inRightPosition(Transform t)
     {
-        if (t.localPosition.x < 5 && t.localPosition.x > -5)
+        if (t.localPosition.x < 2 && t.localPosition.x > -2)
             return true;
         return false;
     }
@@ -58,7 +58,7 @@ public class FloorManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             if (!CheckIfInPosition())
             {
-                //Debug.Log("mettersi in posizione");
+                Debug.Log("mettersi in posizione");
             }
         }
             
